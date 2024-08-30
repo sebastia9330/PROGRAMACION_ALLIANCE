@@ -84,3 +84,74 @@ WHERE
 UPDATE PEDIDO
 SET FECHA_ENTREGA = '09/09/2024'
 WHERE CODIGO_PEDIDO = 2058;
+
+-- Muestra los nombres de los productos y su precio de venta, ordenados de mayor a menor precio.
+
+SELECT NOMBRE,PRECIO_VENTA
+FROM PRODUCTO
+ORDER BY PRECIO_VENTA DESC;
+
+--Encuentra el nombre del cliente y el límite de crédito de aquellos clientes que tienen un empleado asignado (CODIGO_EMPLEADO es 1009).
+SELECT NOMBRE_CLIENTE, NOMBRE_CONTACTO, APELLIDO_CONTACTO
+FROM CLIENTE
+WHERE CODIGO_EMPLEADO = NULL;
+
+--Muestra el nombre de la ciudad y el número total de pedidos realizados por cada oficina. Usa una unión entre las tablas OFICINA y PEDIDO.
+SELECT OFICINA.CIUDAD, COUNT(PEDIDO.CODIGO_PEDIDO) AS TOTAL_PEDIDOS
+FROM OFICINA
+JOIN EMPLEADO ON OFICINA.CODIGO_OFICINA = EMPLEADO.CODIGO_OFICINA
+JOIN CLIENTE ON EMPLEADO.CODIGO_EMPLEADO = CLIENTE.CODIGO_EMPLEADO
+JOIN PEDIDO ON CLIENTE.CODIGO_CLIENTE = PEDIDO.CODIGO_CLIENTE
+GROUP BY OFICINA.CIUDAD;
+
+--Muestra los nombres de los empleados que no tienen un código de oficina asignado (CODIGO_OFICINA es NULL).
+SELECT NOMBRE
+FROM EMPLEADO
+WHERE CODIGO_OFICINA = NULL;
+
+--Encuentra los productos que no han sido vendidos. Muestra su código y nombre. (Tip: usa una subconsulta con la tabla DETALLE_PEDIDO).
+SELECT
+    CODIGO_PRODUCTO,
+    NOMBRE
+FROM
+    PRODUCTO
+WHERE
+    CODIGO_PRODUCTO NOT IN (
+        SELECT CODIGO_PRODUCTO
+        FROM DETALLE_PEDIDO
+);
+
+
+--Muestra el nombre y apellido de los empleados y el nombre de su oficina correspondiente.
+--Si un empleado no tiene oficina asignada, muestra "Sin Oficina" en su lugar.
+SELECT E.NOMBRE, E.APELLIDO1, E.APELLIDO2, O.CIUDAD
+FROM EMPLEADO E
+LEFT JOIN OFICINA O ON E.CODIGO_OFICINA = O.CODIGO_OFICINA;
+
+--Muestra los códigos de pedido y las fechas de pedido de aquellos pedidos que se realizaron en los últimos 30 días.
+SELECT CODIGO_PEDIDO, FECHA_PEDIDO
+FROM PEDIDO
+WHERE FECHA_PEDIDO >= SYSDATE - 30;
+
+--Encuentra el nombre del cliente y el total pagado por cada cliente. Usa la tabla PAGO para calcular el total pagado.
+SELECT C.NOMBRE_CLIENTE, C.APELLIDO_CONTACTO, SUM(P.TOTAL)
+FROM CLIENTE C
+JOIN PAGO P ON C.CODIGO_CLIENTE = P.CODIGO_CLIENTE
+GROUP BY C.CODIGO_CLIENTE, C.NOMBRE_CLIENTE, c.apellido_contacto;
+
+
+--Muestra el nombre de los empleados y la cantidad total de pedidos que han gestionado. Ordena el resultado 
+--por la cantidad de pedidos en orden descendente.
+SELECT E.NOMBRE, E.APELLIDO1, E.APELLIDO2, COUNT(P.CODIGO_PEDIDO) AS TOTAL_PEDIDOS
+FROM EMPLEADO E
+JOIN CLIENTE C ON E.CODIGO_EMPLEADO = C.CODIGO_EMPLEADO
+JOIN PEDIDO P ON C.CODIGO_CLIENTE = P.CODIGO_CLIENTE
+GROUP BY E.NOMBRE, E.APELLIDO1, E.APELLIDO2
+ORDER BY TOTAL_PEDIDOS DESC;
+
+--Muestra los nombres de los productos que tienen más de 5 líneas de detalle de pedido (esto es, han sido pedidos más de 5 veces).
+SELECT P.CODIGO_PRODUCTO, P.NOMBRE, COUNT(CANTIDAD) AS PEDIDO_MAS
+FROM PRODUCTO P
+JOIN DETALLE_PEDIDO DP ON P.CODIGO_PRODUCTO = DP.CODIGO_PRODUCTO
+GROUP BY P.CODIGO_PRODUCTO, P.NOMBRE
+HAVING COUNT(CANTIDAD) <= 10;
