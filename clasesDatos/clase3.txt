@@ -1,0 +1,183 @@
+¡Por supuesto! Continuemos con la **Clase 3** del **Nivel 0** del programa. En esta clase, nos enfocaremos en la **limpieza de datos** utilizando **Pandas** en Python, que es un paso crucial en cualquier proyecto de análisis o ciencia de datos.
+
+---
+
+### **Clase 3: Limpieza de Datos con Pandas**
+
+#### Objetivo:
+Al final de esta clase, deberás comprender cómo limpiar y preparar un conjunto de datos utilizando **Pandas**. Aprenderás a:
+1. Identificar y manejar valores nulos.
+2. Corregir inconsistencias en los datos (nombres, mayúsculas/minúsculas, etc.).
+3. Eliminar duplicados.
+4. Modificar tipos de datos para asegurar que los datos sean utilizables.
+
+---
+
+### **Conceptos a Aprender:**
+
+1. **Manejo de valores nulos**:
+   - Los datos reales a menudo tienen valores faltantes. Veremos cómo identificarlos y qué hacer con ellos (eliminarlos o reemplazarlos).
+
+2. **Corrección de datos inconsistentes**:
+   - Los datos pueden venir con errores como espacios adicionales, diferencias en mayúsculas/minúsculas, o nombres escritos de manera inconsistente. Aprenderemos cómo normalizarlos.
+
+3. **Eliminación de duplicados**:
+   - Es posible que el conjunto de datos contenga filas duplicadas. Veremos cómo identificarlas y eliminarlas.
+
+4. **Conversión de tipos de datos**:
+   - Los datos numéricos a veces se cargan como cadenas de texto, o fechas que no se interpretan correctamente. Aprenderemos a convertir tipos de datos para que sean utilizables.
+
+---
+
+### **Parte 1: Identificar y manejar valores nulos**
+
+Los valores nulos (o faltantes) pueden aparecer en tus datos. Pandas ofrece varias formas de lidiar con estos valores.
+
+#### 1.1 Identificar valores nulos:
+Puedes usar `isnull()` para identificar valores nulos en el DataFrame:
+
+```python
+import pandas as pd
+
+# Cargar el conjunto de datos
+df = pd.read_csv('ventas.csv')
+
+# Verificar si hay valores nulos
+print(df.isnull().sum())
+```
+
+#### 1.2 Reemplazar o eliminar valores nulos:
+Dependiendo de la situación, puedes decidir eliminar las filas que contengan valores nulos o reemplazarlos con un valor como la media o la mediana.
+
+- **Eliminar valores nulos**:
+
+```python
+# Eliminar filas con valores nulos
+df_limpio = df.dropna()
+print(df_limpio)
+```
+
+- **Reemplazar valores nulos con la media**:
+
+```python
+# Reemplazar valores nulos en la columna 'precio' con la media de la columna
+df['precio'].fillna(df['precio'].mean(), inplace=True)
+print(df.head())
+```
+
+---
+
+### **Parte 2: Corregir inconsistencias en los datos**
+
+Es común encontrar inconsistencias en los datos, como diferencias en el uso de mayúsculas y minúsculas, o espacios en blanco adicionales.
+
+#### 2.1 Normalizar nombres (mayúsculas/minúsculas):
+Puedes convertir todos los valores de una columna a minúsculas o mayúsculas para uniformidad:
+
+```python
+# Convertir todos los nombres de productos a minúsculas
+df['producto'] = df['producto'].str.lower()
+print(df['producto'].head())
+```
+
+#### 2.2 Eliminar espacios adicionales:
+A veces, los datos contienen espacios en blanco que pueden generar errores.
+
+```python
+# Eliminar espacios en blanco al inicio y al final de los valores de la columna 'producto'
+df['producto'] = df['producto'].str.strip()
+print(df['producto'].head())
+```
+
+---
+
+### **Parte 3: Eliminar duplicados**
+
+Los datos duplicados pueden distorsionar los análisis. Podemos eliminarlos usando `drop_duplicates()`.
+
+```python
+# Eliminar filas duplicadas
+df_sin_duplicados = df.drop_duplicates()
+print(df_sin_duplicados)
+```
+
+---
+
+### **Parte 4: Conversión de tipos de datos**
+
+A veces, los tipos de datos no son los esperados (por ejemplo, una columna numérica puede estar almacenada como texto). Esto puede interferir con tus análisis.
+
+#### 4.1 Convertir cadenas de texto a números:
+Si una columna numérica está en formato de texto, puedes convertirla:
+
+```python
+# Convertir la columna 'precio' a un tipo de dato numérico
+df['precio'] = pd.to_numeric(df['precio'], errors='coerce')
+print(df.dtypes)
+```
+
+#### 4.2 Convertir fechas a formato de fecha:
+Para trabajar con fechas correctamente, deben estar en el formato adecuado.
+
+```python
+# Convertir la columna 'fecha_venta' a formato de fecha
+df['fecha_venta'] = pd.to_datetime(df['fecha_venta'], errors='coerce')
+print(df.dtypes)
+```
+
+---
+
+### **Tarea Práctica - Limpieza de Datos**
+
+En esta tarea, deberás limpiar un conjunto de datos que contenga inconsistencias y valores faltantes.
+
+#### Instrucciones:
+
+1. **Cargar el conjunto de datos**: Usa un archivo CSV que contenga valores nulos, datos inconsistentes y duplicados.
+2. **Identificar valores nulos**: Usa `isnull()` para verificar cuántos valores faltan en cada columna.
+3. **Manejar valores nulos**: Elimina o reemplaza los valores nulos de una columna numérica.
+4. **Corregir inconsistencias**:
+   - Normaliza el texto de una columna (por ejemplo, conviértelo todo a minúsculas o elimina espacios en blanco).
+5. **Eliminar duplicados**: Identifica y elimina filas duplicadas.
+6. **Conversión de tipos de datos**:
+   - Asegúrate de que todas las columnas tengan el tipo de dato correcto (numérico, de texto o fecha).
+   
+### **Tarea Práctica - Parte 2: Preparación para el Proyecto Final**
+
+Esta tarea de limpieza de datos te acerca a tu proyecto final. Como parte del proyecto, tendrás que:
+1. Cargar un conjunto de datos más grande y hacer una limpieza exhaustiva de los mismos.
+2. Asegurarte de que los datos estén listos para un análisis descriptivo y la aplicación de modelos de inteligencia artificial.
+
+### **Datos de ejemplo para la tarea:**
+
+Puedes usar el siguiente conjunto de datos de ejemplo para tus prácticas, o buscar uno similar en [Kaggle](https://www.kaggle.com) o [data.gov](https://www.data.gov).
+
+```csv
+producto,categoria,precio,unidades_vendidas,fecha_venta
+Producto A,Categoria 1,100,50,2021-01-01
+Producto B,Categoria 2,,30,2021-02-15
+ Producto C,Categoria 3,200,15,2021-03-10
+Producto D ,Categoria 1,300,NaN,2021-04-05
+Producto E ,Categoria 2,150,60,2021-05-20
+Producto E ,Categoria 2,150,60,2021-05-20  # Fila duplicada
+Producto F ,Categoria 1,100,25,2021-06-10
+```
+
+---
+
+### **Proyecto Final - Módulo 1:**
+El manejo y limpieza de datos es una de las partes más importantes de cualquier proyecto de análisis de datos. Para el proyecto final de este módulo, deberás:
+1. Cargar un conjunto de datos extenso.
+2. Realizar la limpieza de los datos (valores nulos, duplicados, etc.).
+3. Dejar los datos listos para análisis y generación de modelos de predicción.
+
+---
+
+### **Material de Apoyo**:
+- Documentación oficial de Pandas: [Pandas Docs](https://pandas.pydata.org/docs/)
+- Tutorial interactivo de Pandas: [Kaggle Pandas Course](https://www.kaggle.com/learn/pandas)
+- Tutorial en vídeo sobre limpieza de datos: [YouTube Tutorial](https://www.youtube.com/results?search_query=data+cleaning+with+pandas)
+
+---
+
+Cuando completes la tarea, no dudes en compartir tus resultados para recibir feedback. ¡Mucho éxito con la limpieza de datos!
