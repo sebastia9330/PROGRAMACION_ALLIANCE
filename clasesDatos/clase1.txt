@@ -1,0 +1,152 @@
+Clase 1: Fundamentos de Programación en Python
+
+Objetivos:
+1. Entender qué es un lenguaje de programación.
+2. Aprender los conceptos básicos de programación en Python: variables, tipos de datos y operaciones básicas.
+3. Practicar con ejemplos sencillos.
+4. Dejar una tarea práctica que te acerque a los proyectos finales.
+
+---
+
+1. ¿Qué es un lenguaje de programación?
+
+Un lenguaje de programación es una herramienta que nos permite decirle a la computadora qué hacer. Python es uno de los 
+lenguajes más populares hoy en día, especialmente en ciencia de datos, análisis de datos e inteligencia artificial, 
+debido a su simplicidad y poder.
+
+Ejemplo básico:
+Cuando escribimos `print("Hello, world!")` en Python, estamos diciéndole a la computadora que nos muestre la frase 
+"Hello, world!" en pantalla.
+
+---
+
+2. Variables y Tipos de Datos en Python
+
+Una **variable** es un contenedor que almacena datos. En Python, no necesitas especificar el tipo de dato al crear una 
+variable (es un lenguaje de tipado dinámico), ya que Python lo asigna automáticamente.
+
+Tipos de datos comunes:
+1. Enteros (int): Números sin decimales. Ej: `3`, `45`, `-100`.
+2. Flotantes (float): Números con decimales. Ej: `3.14`, `-0.001`.
+3. Cadenas de texto (str): Textos entre comillas. Ej: `"hola"`, `"Python"`.
+4. Booleanos (bool): Verdadero o falso. Ej: `True`, `False`.
+
+Sintaxis:
+```python
+ Ejemplo de variables en Python
+edad = 25             # Variable de tipo entero
+pi = 3.14159          # Variable de tipo flotante
+nombre = "Juan"       # Variable de tipo string
+es_estudiante = True  # Variable booleana
+```
+
+---
+
+3. Operaciones Básicas
+
+Python permite realizar operaciones básicas fácilmente, como suma, resta, multiplicación y división.
+
+```python
+# Operaciones matemáticas
+x = 10
+y = 5
+
+suma = x + y           # Suma
+resta = x - y          # Resta
+multiplicacion = x * y # Multiplicación
+division = x / y       # División
+
+Mostrando los resultados
+print("Suma:", suma)
+print("Resta:", resta)
+print("Multiplicación:", multiplicacion)
+print("División:", division)
+```
+
+---
+
+4. Comentarios
+
+Los comentarios son partes del código que no se ejecutan. Se utilizan para hacer anotaciones.
+
+```python
+# Esto es un comentario de una línea
+```
+
+Para comentarios de varias líneas:
+```python
+"""
+Esto es un comentario
+de varias líneas.
+"""
+```
+
+---
+
+5. Entrada de Datos
+
+Python permite solicitar información al usuario mediante `input()`. Todo lo que se recibe a través de `input()` 
+es de tipo `str` (cadena de texto), pero se puede convertir a otros tipos.
+
+```python
+# Solicitar nombre y edad del usuario
+nombre = input("¿Cuál es tu nombre? ")
+edad = int(input("¿Cuántos años tienes? "))
+
+# Mostrar los datos
+print("Hola", nombre, ", tienes", edad, "años.")
+```
+
+---
+
+Ejemplo Completo: Calculadora de Edad
+Apliquemos lo que hemos aprendido creando un programa simple que pregunte al usuario su nombre y edad, y luego calcule 
+cuántos años tendrá dentro de 5 años.
+
+```python
+# Pedir al usuario su nombre y edad
+nombre = input("Por favor, ingresa tu nombre: ")
+edad = int(input("Por favor, ingresa tu edad: "))
+
+# Calcular la edad dentro de 5 años
+edad_futura = edad + 5
+
+# Mostrar el resultado
+print("Hola", nombre, ". En 5 años tendrás", edad_futura, "años.")
+```
+
+---
+
+### **Tarea Práctica 1: Calculadora de Tiempo de Trabajo**
+
+Para la primera tarea práctica, crearás un programa que le pregunte al usuario cuántos años ha trabajado en su empresa, 
+y luego calcularás cuántos días ha trabajado (suponiendo que trabaja todos los días del año). Este ejercicio te ayudará a 
+consolidar los fundamentos y es un paso pequeño hacia la lógica que utilizarás en análisis de datos.
+
+#### **Requerimientos:**
+1. Pregunta al usuario su nombre.
+2. Pregunta cuántos años ha trabajado en su empresa.
+3. Calcula cuántos días ha trabajado en total (suponiendo que trabaja los 365 días del año).
+4. Muestra un mensaje con el total de días trabajados.
+
+#### **Formato del código (Guía):**
+```python
+# Pedir al usuario su nombre
+nombre = input("¿Cuál es tu nombre? ")
+
+# Pedir cuántos años ha trabajado
+anios_trabajados = int(input("¿Cuántos años has trabajado en tu empresa? "))
+
+# Calcular cuántos días ha trabajado en total
+dias_trabajados = anios_trabajados * 365
+
+# Mostrar el resultado
+print(nombre, ", has trabajado un total de", dias_trabajados, "días.")
+```
+
+---
+
+### **Conclusión de la Clase 1**
+En esta primera clase, aprendiste los fundamentos de Python, incluyendo variables, tipos de datos y operaciones básicas. Todo lo que hemos cubierto hoy te servirá como base para trabajar con datos más complejos en el futuro. Además, la tarea práctica te ayudará a afianzar estos conceptos y a empezar a pensar en lógica algorítmica.
+
+---
