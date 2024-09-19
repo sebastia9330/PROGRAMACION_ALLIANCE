@@ -1,0 +1,79 @@
+**Clase 2: Instalación y Configuración Inicial**!
+
+**Clase 2: Instalación y Configuración Inicial de ODI 12c**
+Objetivos:
+    - Conocer los requisitos previos para instalar ODI 12c.
+    - Instalar y configurar ODI 12c.
+    - Configurar el agente autónomo para ejecutar tareas.
+
+**1. Requisitos de Instalación de ODI 12c**
+Antes de instalar ODI, es importante asegurarse de que el entorno esté preparado. Aquí tienes los componentes esenciales 
+que debes tener:
+
+    - Java Development Kit (JDK):** ODI requiere JDK 8 o superior. Asegúrate de tenerlo instalado y correctamente 
+    configurado en tu sistema.
+    - Base de Datos (Oracle Database 12c o superior):** ODI necesita una base de datos donde se almacenarán los 
+    repositorios. Ya que estás utilizando Oracle Database 21c, cumple este requisito.
+    - Memoria RAM:** Al menos 4 GB, aunque se recomienda 8 GB o más para un rendimiento óptimo.
+    - Espacio en Disco:** Unos 10 GB libres para la instalación y las operaciones básicas.
+
+**2. Instalación de ODI 12c**
+Sigue estos pasos para instalar ODI 12c en tu sistema:
+
+1. **Descarga ODI 12c:**
+   - Ve al sitio oficial de Oracle y descarga la versión de ODI 12c que sea compatible con tu sistema operativo.
+   
+2. **Extrae e inicia el instalador:**
+   - Una vez descargado, extrae los archivos del instalador y ejecuta el archivo `setup.exe` (Windows) o 
+   `runInstaller.sh` (Linux).
+   
+3. **Instalación de ODI:**
+   - **Selecciona las opciones de instalación** que prefieras, como si instalarás con soporte Java EE 
+   (si estás planeando usar WebLogic) o como standalone (autónomo).
+   - **Ruta de instalación:** Elige una ubicación adecuada en tu sistema.
+   - **Configuración del agente autónomo:** Si estás utilizando el modo standalone, ODI instalará un agente autónomo que 
+   puedes configurar más adelante.
+
+4. **Configura el dominio:**
+   - Durante la instalación, tendrás que definir o seleccionar un dominio para ODI, un espacio lógico donde se gestionarán 
+   las conexiones y ejecuciones.
+   
+**3. Configuración del Agente Autónomo**
+Un agente es necesario para ejecutar los trabajos de integración (ETL). El agente autónomo es ideal si no tienes un 
+servidor de aplicaciones como WebLogic.
+
+1. **Creación del Agente:**
+   - Abre ODI Studio y navega a la pestaña **Topología**.
+   - Ve a **Physical Architecture** y selecciona **Agents**.
+   - Haz clic en "New Agent" y define los parámetros del agente:
+     - **Nombre del Agente:** Puedes nombrarlo `AGENTE_ODI` o algo descriptivo.
+     - **Port:** Elige un puerto no utilizado (por ejemplo, 20910).
+
+2. **Configuración del archivo `odiparams.bat` o `odiparams.sh`:**
+   - Localiza este archivo en la carpeta de instalación de ODI.
+   - Configura las variables necesarias, como el puerto y los parámetros del agente.
+
+3. **Iniciar el Agente:**
+   - Para iniciar el agente, ejecuta el archivo `agent.bat` (Windows) o `agent.sh` (Linux) ubicado en el directorio de 
+   instalación del agente.
+
+#### **4. Verificación de la instalación**
+1. **Conexión a Repositorios:**
+   - Asegúrate de que ODI Studio esté correctamente conectado a tus repositorios (repositorio maestro y repositorio de 
+   trabajo). Puedes usar las credenciales que configuraste durante la instalación.
+
+2. **Prueba del agente:**
+   - Ve a la pestaña **Operaciones** en ODI Studio.
+   - Intenta ejecutar una operación simple para verificar que el agente esté funcionando correctamente.
+
+---
+
+**Tarea práctica:**
+
+1. **Instala ODI 12c:** Si aún no lo has hecho, realiza el proceso de instalación de ODI en tu entorno y asegúrate de 
+que puedas iniciar ODI Studio.
+   
+2. **Configura el agente autónomo:** Crea un agente autónomo y asegúrate de que esté corriendo correctamente.
+
+3. **Prueba de conexión:** Verifica que ODI Studio esté conectado correctamente a los repositorios que creaste en 
+Oracle Database 21c.

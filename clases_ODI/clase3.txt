@@ -1,0 +1,109 @@
+**Clase 3: Exploración de la Interfaz de Usuario de ODI**.
+
+Objetivos:
+    - Familiarizarse con los diferentes paneles y áreas de trabajo de ODI Studio.
+    - Comprender las funcionalidades principales de cada sección de la interfaz.
+
+ODI Studio es la herramienta gráfica donde diseñarás y gestionarás los procesos de integración de datos. La interfaz está 
+dividida en varias pestañas que te permiten realizar diferentes tareas, desde la configuración de la topología hasta la 
+creación de proyectos y monitoreo de ejecuciones.
+
+**1. Navegación por ODI Studio**
+Cuando abres ODI Studio, notarás cuatro áreas clave de trabajo:
+
+1. Topología
+    - Aquí defines todas las conexiones a tus fuentes de datos (bases de datos, archivos, Excel, etc.) y los agentes ODI 
+    que ejecutarán los procesos.
+    - Secciones clave:
+        - Physical Architecture: Define la configuración física de las tecnologías (conexiones a las bases de datos, archivos, etc.).
+        - Logical Architecture: Aquí defines representaciones lógicas que vinculan los recursos físicos.
+        - Contexts: Contextos para definir en qué entorno estás trabajando (desarrollo, pruebas, producción).
+
+2. Diseño (Designer)
+   - Es el área donde desarrollarás tus proyectos de integración de datos. Aquí es donde crearás modelos, mappings 
+   (interfaces), paquetes, escenarios y procedimientos.
+   - Secciones clave:
+     - Models: Representa las estructuras de tus datos (tablas, archivos, etc.) que ODI usará.
+     - Projects: Contiene todos los componentes de tu proyecto, como mappings, paquetes, y variables.
+     - Global Objects: Objetos compartidos entre proyectos, como secuencias y variables globales.
+
+3. Operaciones (Operator)
+   - Esta sección es donde puedes monitorear y gestionar la ejecución de los procesos ETL. Desde aquí puedes ver logs, 
+   reiniciar procesos, y revisar errores.
+   - **Secciones clave:**
+        - Sessions: Monitorea las ejecuciones de tus mappings y otros componentes.
+        - Scenarios: Gestión de escenarios para ejecutar procesos programados o manualmente.
+
+4. Seguridad
+   - Aquí gestionas los usuarios y los roles dentro de ODI. Puedes asignar permisos específicos a los usuarios dependiendo 
+   de su rol en el equipo de desarrollo o administración.
+   - Secciones clave:
+        - Profiles: Configuración de perfiles de seguridad.
+        - Users: Definición de usuarios y roles.
+
+**2. Detalles de cada área de trabajo**
+
+Topología
+    - Physical Architecture: Aquí configurarás las conexiones físicas a los sistemas que ODI debe integrar. Esto incluye 
+    la base de datos Oracle que estás utilizando, archivos planos, Excel y otros sistemas de terceros. Cada tecnología 
+    tiene un "Data Server" y "Physical Schema" que representan la conexión y las estructuras de datos dentro de esa 
+    conexión.
+
+    - Logical Architecture: Esta capa representa las tecnologías de manera abstracta, para que los desarrolladores no 
+    tengan que preocuparse de las configuraciones físicas durante el desarrollo. Aquí puedes mapear tus servidores físicos 
+    a una estructura lógica.
+
+    - Contexts: Los contextos permiten que el mismo proyecto sea usado en diferentes entornos (desarrollo, pruebas, 
+    producción) sin necesidad de modificar la lógica del proyecto.
+
+Diseño (Designer)
+    - Models: Esta sección permite hacer un "Reverse Engineering" de tus fuentes de datos. ODI tomará la estructura de 
+    las tablas y otros objetos y las convertirá en modelos dentro de ODI. Aquí es donde importarás las estructuras de 
+    las tablas que usarás en tus mappings.
+
+    - Projects: Es donde desarrollas tus procesos de integración. Los **Mappings (Interfaces)** son donde defines cómo 
+    los datos fluyen desde las fuentes hasta los destinos. También puedes crear **Paquetes**, que son flujos de trabajo 
+    que agrupan mappings, variables, y condiciones de ejecución.
+
+Operaciones (Operator)
+    - En esta área puedes monitorear las ejecuciones actuales y pasadas de los procesos de ODI. Cada ejecución genera 
+    logs que puedes revisar para identificar errores o problemas de rendimiento. También puedes detener y reiniciar 
+    sesiones desde aquí.
+
+Seguridad
+    - En la pestaña de seguridad, puedes gestionar quién tiene acceso a qué partes de ODI. Aquí es donde asignarás los 
+    permisos para los distintos usuarios y perfiles de seguridad.
+
+**3. Explorar ODI Studio**
+
+Interacción clave con la interfaz:
+    1. Topología:
+        - Explora la pestaña de Topología y revisa si ya tienes configurada alguna tecnología. Intenta crear una nueva 
+        conexión a una base de datos o a un archivo.
+
+    2. Diseño (Designer):
+       - Navega a la pestaña "Models" y explora cómo puedes crear un modelo para una base de datos existente.
+       - Ve a la pestaña "Projects" y crea un proyecto de prueba. Dentro del proyecto, intenta crear una carpeta y 
+       explorar cómo se crean mappings simples.
+
+    3. Operaciones (Operator):
+        - Si ya tienes algún proceso en ejecución, revisa las sesiones. Explora los logs de ejecución.
+
+    4. **Seguridad:**
+        - Revisa los perfiles de seguridad y observa cómo se pueden gestionar los usuarios y roles.
+
+---
+
+### **Tarea práctica:**
+
+1. **Explora las pestañas de ODI Studio:**
+   - Navega por las cuatro pestañas principales: **Topología**, **Diseño**, **Operaciones** y **Seguridad**. Familiarízate 
+   con cada una y anota las funciones que encuentres más relevantes.
+
+2. **Crea un proyecto de prueba:**
+   - En la pestaña **Diseño**, crea un nuevo proyecto de prueba y una carpeta dentro del proyecto. Explora las opciones 
+   de creación de mappings e interfaces.
+
+3. **Revisa conexiones:** 
+   - En la pestaña **Topología**, revisa las conexiones que tienes configuradas (si ya has hecho alguna), o intenta 
+   configurar una nueva conexión a una fuente de datos simple como un archivo Excel o una base de datos Oracle.

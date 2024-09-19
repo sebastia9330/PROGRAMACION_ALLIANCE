@@ -1,0 +1,57 @@
+**Módulo 1: Fundamentos de ODI 12c**.
+
+**Clase 1: Introducción a ODI**
+Objetivos:
+    - Comprender qué es Oracle Data Integrator (ODI).
+    - Diferenciar entre ETL y ELT.
+    - Familiarizarse con la arquitectura y los componentes principales de ODI.
+
+**1. ¿Qué es Oracle Data Integrator (ODI)?**
+ODI es una herramienta de integración de datos que permite el diseño de procesos de carga, transformación y extracción de 
+datos. A diferencia de las herramientas tradicionales ETL (Extract, Transform, Load), ODI emplea el enfoque ELT 
+(Extract, Load, Transform), lo que significa que los datos son extraídos y cargados en el destino antes de ser 
+transformados. Esto aprovecha la potencia de las bases de datos para manejar grandes volúmenes de datos.
+
+Características clave de ODI:
+    - Arquitectura flexible.
+    - Alta escalabilidad para proyectos de integración de datos complejos.
+    - Capacidad de conectarse a múltiples fuentes de datos (bases de datos, archivos, aplicaciones, etc.).
+    - Control de errores y recuperación de fallos.
+
+**2. ETL vs. ELT**
+    - **ETL (Extract, Transform, Load):** En este enfoque tradicional, los datos son **extraídos** de las fuentes, 
+    **transformados** en un servidor ETL y luego **cargados** en el destino.
+    - **ELT (Extract, Load, Transform):** En ODI, los datos son **extraídos** de las fuentes, **cargados** en el destino 
+    (por ejemplo, un data warehouse) y luego **transformados** dentro del destino utilizando el motor de la base de datos.
+
+Ventajas del ELT en ODI:
+    - Aprovecha la potencia de procesamiento de la base de datos, reduciendo la sobrecarga en servidores ETL.
+    - Optimiza la velocidad al evitar transferencias innecesarias de datos.
+    - Mejor manejo de grandes volúmenes de datos.
+
+**3. Arquitectura de ODI**
+ODI tiene una arquitectura compuesta por varios elementos clave:
+
+    - Repositorios (Master y Work Repositories):
+    - Master Repository: Contiene la información de configuración y seguridad de ODI.
+    - Work Repository: Contiene los proyectos, escenarios y ejecuciones de integración.
+
+    - Agente ODI: Responsable de la ejecución de los jobs (tareas) que se crean en ODI. Puede ser autónomo o Java EE 
+    (en servidores de aplicaciones como WebLogic).
+
+    - ODI Studio: La interfaz gráfica donde se diseñan, desarrollan y monitorean los procesos de integración de datos.
+
+    - Topología: Define las diferentes tecnologías (bases de datos, archivos, etc.) y cómo ODI se conecta a ellas.
+
+---
+
+**Tarea práctica:**
+
+1. Investigación: Investiga más sobre el enfoque ELT frente al ETL y anota 2 o 3 ventajas que consideres importantes de 
+utilizar ELT con ODI.
+   
+2. Explora la arquitectura: Si ya tienes ODI instalado, abre ODI Studio y explora las diferentes pestañas de la interfaz 
+para familiarizarte con los componentes principales: Topología, Diseño, Operaciones, Seguridad.
+
+3. Diagrama: Haz un esquema sencillo (en papel o digital) de la arquitectura de ODI, mostrando cómo se relacionan los 
+repositorios, el agente, y las fuentes de datos.
