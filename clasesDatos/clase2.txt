@@ -1,0 +1,139 @@
+¡Claro! Continuemos con la **Clase 2** del **Nivel 0** del programa para formarte como **científico de datos, analista de datos, ingeniero de datos y experto en inteligencia artificial**. En esta clase, nos adentraremos en la manipulación básica de **datos en Python** utilizando la librería **Pandas**.
+
+---
+
+### **Clase 2: Manipulación de Datos con Pandas**
+
+#### Objetivo:
+Al final de esta clase, deberás entender cómo cargar, explorar y manipular datos básicos usando **Pandas**. Serás capaz de:
+1. Cargar conjuntos de datos desde diferentes fuentes.
+2. Explorar los datos (entender cómo se ven, cuántas filas y columnas tienen).
+3. Manipular los datos (seleccionar, filtrar, agregar columnas).
+
+---
+
+### **Conceptos a Aprender:**
+
+1. **Cargar datos con Pandas**:
+   - Pandas es una librería de Python que facilita trabajar con datos tabulares como hojas de cálculo o bases de datos. Utilizaremos funciones como `read_csv()` para leer datos desde un archivo CSV.
+
+2. **Explorar los datos**:
+   - Una vez que cargamos los datos, necesitamos entender cómo son. ¿Cuántas filas y columnas tiene? ¿Qué tipo de datos contiene cada columna? Utilizaremos métodos como:
+     - `.head()`: para ver las primeras filas.
+     - `.info()`: para ver un resumen de las columnas y tipos de datos.
+     - `.describe()`: para ver estadísticas descriptivas de las columnas numéricas.
+
+3. **Manipulación de los datos**:
+   - Pandas te permite realizar manipulaciones básicas de datos. Algunas operaciones comunes son:
+     - **Seleccionar columnas específicas**: Usando la sintaxis de corchetes o el método `.loc[]`.
+     - **Filtrar filas según condiciones**: Puedes usar condicionales para seleccionar sólo ciertas filas.
+     - **Agregar nuevas columnas**: Crear nuevas variables a partir de las existentes.
+
+---
+
+### **Parte 1: Cargar un conjunto de datos**
+
+Vamos a trabajar con un archivo CSV que simula una pequeña base de datos de ventas.
+
+#### 1.1 Instalar Pandas (si no lo tienes instalado):
+Si aún no tienes Pandas, puedes instalarlo con este comando:
+
+```bash
+pip install pandas
+```
+
+#### 1.2 Cargar los datos:
+Supongamos que tenemos un archivo llamado `ventas.csv` que contiene información de ventas. El archivo tiene las siguientes columnas:
+- `producto`: Nombre del producto.
+- `categoria`: Categoría a la que pertenece el producto.
+- `precio`: Precio del producto.
+- `unidades_vendidas`: Número de unidades vendidas.
+
+Aquí está el código para cargar el archivo `ventas.csv`:
+
+```python
+import pandas as pd
+
+# Cargar el archivo CSV
+df = pd.read_csv('ventas.csv')
+
+# Mostrar las primeras 5 filas
+print(df.head())
+```
+
+### **Parte 2: Explorar los datos**
+
+Una vez que hemos cargado los datos, vamos a explorarlos para entender qué contiene el archivo:
+
+```python
+# Ver la información general del DataFrame
+print(df.info())
+
+# Obtener estadísticas descriptivas de las columnas numéricas
+print(df.describe())
+```
+
+### **Parte 3: Manipular los datos**
+
+#### 3.1 Seleccionar columnas:
+Podemos seleccionar una columna específica del DataFrame:
+
+```python
+# Seleccionar la columna 'producto'
+productos = df['producto']
+print(productos.head())
+```
+
+#### 3.2 Filtrar datos:
+Vamos a seleccionar sólo las filas donde el número de unidades vendidas sea mayor a 100:
+
+```python
+# Filtrar filas donde 'unidades_vendidas' es mayor que 100
+ventas_altas = df[df['unidades_vendidas'] > 100]
+print(ventas_altas)
+```
+
+#### 3.3 Agregar una nueva columna:
+Podemos agregar una nueva columna llamada `ingresos` que sea el producto de `precio` por `unidades_vendidas`:
+
+```python
+# Crear una nueva columna 'ingresos'
+df['ingresos'] = df['precio'] * df['unidades_vendidas']
+print(df.head())
+```
+
+---
+
+### **Tarea Práctica - Parte 1: Exploración de Datos**
+
+En esta tarea, deberás cargar un archivo CSV, explorar los datos y realizar algunas manipulaciones básicas. Puedes usar un conjunto de datos de ejemplo o descargar uno de [Kaggle](https://www.kaggle.com/datasets) o [data.gov](https://www.data.gov/).
+
+#### Instrucciones:
+
+1. **Cargar los datos**: Usa un archivo CSV que contenga al menos 3 columnas de datos y 100 filas.
+2. **Explorar los datos**: Usa `head()`, `info()`, y `describe()` para obtener información sobre los datos.
+3. **Manipular los datos**:
+   - Filtra las filas donde una columna numérica (por ejemplo, precios o ventas) sea mayor a un cierto valor.
+   - Crea una nueva columna que represente algún cálculo basado en las columnas existentes (por ejemplo, multiplicar dos columnas).
+
+### **Tarea Práctica - Parte 2: Datos más Complejos**
+
+Imagina que tu tarea es analizar ventas para un proyecto final donde deberás:
+1. **Filtrar** por un producto específico y ver cuánto ha generado en ingresos totales.
+2. **Agrupar** por categoría y ver cuál ha sido la categoría con más ingresos.
+3. **Visualizar** (opcional, para la próxima clase) los ingresos por producto usando gráficos.
+
+---
+
+### **Material de Apoyo**:
+- Documentación oficial de Pandas: [Pandas Docs](https://pandas.pydata.org/docs/)
+- Tutorial en vídeo sobre Pandas: [YouTube Pandas Tutorial](https://www.youtube.com/results?search_query=pandas+python+tutorial)
+
+---
+
+### **Proyecto Final - Módulo 1:**
+Este ejercicio de manipulación de datos te acerca a tu primer proyecto final, donde tendrás que analizar un conjunto de datos más complejo para generar reportes de análisis descriptivo y estadístico. La manipulación básica es el primer paso para aplicar modelos más avanzados en análisis de datos.
+
+---
+
+Cuando completes la tarea, no dudes en compartir los resultados y te daré feedback para que puedas seguir avanzando. ¡Mucho éxito en la práctica!
