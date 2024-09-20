@@ -1,0 +1,109 @@
+**Clase 4: Creación de Repositorios**
+
+Objetivos:
+- Comprender qué son los repositorios en ODI y su importancia.
+- Crear y configurar el repositorio maestro y el repositorio de trabajo en ODI.
+
+En ODI, los **repositorios** son componentes esenciales, ya que almacenan toda la información necesaria para ejecutar y 
+gestionar tus proyectos ETL/ELT. Existen dos tipos principales de repositorios:
+
+**1. Tipos de Repositorios en ODI**
+
+    1. Repositorio Maestro (Master Repository):
+       - Contiene información global de ODI, como la configuración de los agentes, la topología de las conexiones y la 
+       seguridad (usuarios y roles).
+       - Solo existe un repositorio maestro por instalación de ODI.
+    
+    2. Repositorio de Trabajo (Work Repository):
+       - Almacena los proyectos, escenarios y ejecuciones de ODI.
+       - Un repositorio maestro puede tener varios repositorios de trabajo asociados. Esto permite tener diferentes 
+       entornos de desarrollo, pruebas y producción conectados al mismo repositorio maestro.
+
+**2. Requisitos previos**
+Antes de comenzar, debes asegurarte de tener:
+    - Acceso a una base de datos Oracle (o cualquier base de datos compatible con ODI) donde se almacenarán los 
+    repositorios.
+    - SQL Developer o cualquier herramienta de administración de bases de datos para ejecutar scripts SQL necesarios.
+  
+Tienes Oracle Database 21c configurado, lo cual es perfecto para alojar estos repositorios.
+
+**3. Creación del Repositorio Maestro**
+Los siguientes pasos te guiarán para crear el repositorio maestro:
+
+    **Paso 1: Ejecutar el Asistente de Configuración de Repositorio (Repository Creation Utility - RCU)**
+        1. Abre **ODI Studio** y ve a la pestaña **Topología**.
+        2. Haz clic en **Master Repository Creation Wizard** para iniciar el asistente de configuración del repositorio 
+        maestro.
+    
+        3. Conectar a la base de datos:
+            - Ingresa los detalles de la conexión a la base de datos donde se almacenará el repositorio maestro 
+            (base de datos Oracle en tu caso).
+            - Proporciona las credenciales necesarias, como el nombre de la base de datos y el usuario que tendrá privilegios 
+            para crear el repositorio.
+
+        4. Crear el repositorio maestro:
+            - Define el esquema donde se almacenará el repositorio maestro. Elige un nombre adecuado para el esquema.
+            - El asistente generará los scripts necesarios para crear las tablas del repositorio maestro. Confirma la 
+            ejecución de estos scripts.
+
+    **Paso 2: Configuración del Repositorio Maestro**
+        1. Contraseña de Supervisor: Durante la creación del repositorio maestro, se te pedirá que definas una contraseña 
+        para el usuario `SUPERVISOR`, que es el administrador global de ODI.
+
+        2. Finalización del asistente: Una vez completada la creación del repositorio maestro, el asistente te mostrará un 
+        resumen de las configuraciones. Finaliza el proceso y confirma que el repositorio ha sido creado exitosamente.
+
+**4. Creación del Repositorio de Trabajo**
+Una vez creado el repositorio maestro, debes proceder a crear el repositorio de trabajo.
+
+**Paso 1: Iniciar el asistente de creación del Repositorio de Trabajo**
+    1. Ve a **Topología** y selecciona la opción **Work Repository Creation Wizard** para iniciar el asistente de 
+    configuración del repositorio de trabajo.
+
+    2. Conectar al repositorio maestro:
+        - ODI te pedirá conectarte al repositorio maestro que acabas de crear. Proporciona las credenciales de 
+        `SUPERVISOR` y la conexión a la base de datos.
+   
+    3. Configuración del Repositorio de Trabajo:
+        - Ingresa un nombre para el repositorio de trabajo. Este repositorio almacenará los proyectos, escenarios y 
+        ejecuciones.
+        - Define el esquema en la base de datos donde se almacenarán los datos del repositorio de trabajo.
+
+**Paso 2: Tipos de Repositorios de Trabajo**
+Existen dos tipos de repositorios de trabajo:
+    - **Desarrollo (Development):** Se utiliza para el desarrollo de proyectos y mappings.
+    - **Ejecución (Execution):** Solo permite la ejecución de escenarios y trabajos, no el desarrollo.
+
+Para tus fines, selecciona el **tipo de desarrollo** para poder crear y modificar proyectos.
+
+**Paso 3: Finalizar la configuración**
+    - El asistente de ODI ejecutará los scripts para crear las tablas necesarias en el esquema que seleccionaste.
+    - Una vez que el proceso haya finalizado, habrás creado un repositorio de trabajo listo para ser utilizado.
+
+### **5. Conectar ODI Studio a los Repositorios**
+Después de crear los repositorios, necesitarás conectarlos a ODI Studio:
+
+1. **Crear conexión al Repositorio Maestro:**
+   - Abre ODI Studio y selecciona **Conectar a Repositorio Maestro**.
+   - Proporciona las credenciales y la conexión a la base de datos donde creaste el repositorio maestro.
+   
+2. **Crear conexión al Repositorio de Trabajo:**
+   - Una vez conectado al repositorio maestro, puedes crear una conexión al repositorio de trabajo desde ODI Studio.
+   - Proporciona las credenciales y asegúrate de seleccionar el repositorio de trabajo correcto.
+
+### **6. Verificación de la Creación de Repositorios**
+1. **Topología:** Ve a la pestaña **Topología** en ODI Studio y asegúrate de que puedes ver los repositorios creados.
+   
+2. **Diseño:** Ve a la pestaña **Diseño** y verifica que puedes crear proyectos en el repositorio de trabajo.
+
+---
+
+### **Tarea práctica:**
+
+1. **Crea el repositorio maestro:** Sigue los pasos para crear el repositorio maestro en tu base de datos Oracle 21c.
+   
+2. **Crea el repositorio de trabajo:** Configura un repositorio de trabajo de tipo **desarrollo** utilizando el asistente de ODI Studio.
+
+3. **Verifica las conexiones en ODI Studio:** Asegúrate de que puedes conectar correctamente ODI Studio a ambos repositorios.
+
+Cuando hayas completado la creación de los repositorios, estaremos listos para avanzar a la **Clase 5: Creación y uso de Modelos**. ¿Cómo te va hasta ahora con los repositorios?

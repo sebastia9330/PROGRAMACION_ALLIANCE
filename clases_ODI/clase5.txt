@@ -1,0 +1,95 @@
+**Clase 5: Creación y Uso de Modelos en ODI**
+
+Objetivos:
+- Comprender qué es un modelo en ODI.
+- Aprender a crear y configurar un modelo en ODI.
+- Conocer el concepto de reverse-engineering y su aplicación en ODI.
+
+**1. ¿Qué es un Modelo en ODI?**
+Un **modelo** en ODI representa una estructura de datos lógica que se usa para acceder a las tablas o vistas de una 
+fuente de datos. Un modelo en ODI contiene información sobre las **tablas**, **columnas**, **índices**, **relaciones** y 
+otros objetos que forman parte de la fuente de datos. Los modelos son necesarios para construir mappings (interfaces) y 
+realizar procesos ETL/ELT.
+
+Cada modelo está asociado con un **esquema lógico**, que a su vez está vinculado a un esquema físico en la **topología** 
+de ODI. La ventaja de usar un modelo es que permite abstraer las estructuras de datos para que puedas manipularlas de 
+manera fácil dentro de los proyectos de ODI.
+
+**2. Proceso de Creación de un Modelo**
+La creación de un modelo en ODI sigue estos pasos clave:
+
+    **Paso 1: Definir el esquema físico en la topología**
+    Antes de crear un modelo, debes asegurarte de que tu fuente de datos esté correctamente configurada en la topología 
+    de ODI.
+
+        1. Abre ODI Studio y ve a la pestaña **Topología**.
+        2. Navega a **Physical Architecture** y localiza la tecnología (por ejemplo, Oracle, Excel, etc.) que estás 
+        utilizando.
+        3. Configura el **servidor de datos (Data Server)** y el **esquema físico (Physical Schema)** correspondiente.
+
+    **Paso 2: Crear el Modelo**
+        1. Dirígete a la pestaña **Designer** en ODI Studio.
+        2. Haz clic derecho en **Models** y selecciona **New Model**.
+        3. Ingresa un nombre para el modelo y selecciona el **esquema lógico** que corresponde a tu fuente de datos.
+
+    **Paso 3: Configuración del Modelo**
+        1. Tecnología: Selecciona la tecnología adecuada para el modelo (por ejemplo, Oracle, Excel, etc.).
+        2. Esquema Lógico: Asegúrate de seleccionar el esquema lógico correcto que esté mapeado al esquema físico en la 
+        topología.
+        3. Reverse Engineering: ODI puede realizar una operación de reverse engineering (ingeniería inversa) para 
+        importar automáticamente la estructura de tablas y vistas desde la base de datos. Esto facilita la creación de 
+        modelos sin tener que definir manualmente las tablas.
+
+    **Paso 4: Realizar Reverse Engineering**
+    El proceso de reverse engineering permite a ODI obtener las estructuras de las tablas y otros objetos desde la fuente 
+    de datos y crearlas dentro del modelo de ODI.
+
+        1. Dentro de la pestaña de **Models**, selecciona el modelo que acabas de crear.
+        2. Haz clic derecho sobre el modelo y selecciona **Reverse Engineer**.
+        3. Selecciona las opciones de reverse engineering que deseas (por ejemplo, solo tablas o vistas, incluir índices, 
+        etc.).
+        4. ODI conectará con la base de datos y traerá la estructura de las tablas, que se verán reflejadas en el modelo.
+
+    **Paso 5: Verificación del Modelo**
+    Una vez que el reverse engineering se haya completado:
+        1. Expande el modelo en la pestaña **Models**.
+        2. Verifica que las tablas y vistas se hayan importado correctamente. Puedes revisar los **atributos** de las 
+        tablas, como el nombre de las columnas, sus tipos de datos, las claves primarias, y las relaciones entre tablas.
+
+**3. Uso del Modelo en Mappings**
+Una vez que el modelo está creado y configurado, puedes usarlo dentro de los **Mappings** (anteriormente llamados 
+Interfaces en versiones anteriores de ODI) para definir cómo los datos fluirán desde tus fuentes a tus destinos.
+
+    - Los **Mappings** permiten tomar datos de las tablas definidas en un modelo, transformarlos (si es necesario) y 
+    cargarlos en una tabla de destino.
+    - En los mappings, los modelos son usados para seleccionar las tablas de origen, y ODI utiliza las estructuras de 
+    esas tablas para entender cómo deben ser leídas.
+
+**4. Agregar Filtros, Joins y Reglas**
+En el modelo, también puedes definir reglas adicionales, como:
+
+    - **Filtros**: Puedes definir filtros que limiten las filas que serán extraídas de las tablas durante los procesos ETL.
+    - **Joins**: Puedes agregar relaciones entre tablas si es necesario realizar combinaciones de datos en un Mapping.
+    - **Constraints**: Las restricciones como claves primarias, claves foráneas e índices también pueden ser definidas en 
+    el modelo.
+
+---
+
+**Tarea práctica:**
+
+1. **Configura un esquema físico en la topología:**
+   - Ve a la pestaña **Topología** y asegúrate de tener configurado un esquema físico para una de tus fuentes de datos 
+   (por ejemplo, Oracle o Excel).
+
+2. **Crea un nuevo modelo:**
+   - Crea un modelo en la pestaña **Designer**, seleccionando el esquema lógico adecuado.
+
+3. **Realiza reverse engineering:**
+   - Importa las tablas desde la fuente de datos usando reverse engineering. Verifica que las tablas y sus columnas se 
+   importaron correctamente.
+
+4. **Verifica y explora el modelo creado:**
+   - Expande el modelo en la pestaña **Models** y revisa las tablas y vistas importadas. Asegúrate de que las columnas, 
+   claves primarias y relaciones estén correctamente configuradas.
+
+5. **Opcional:** Define filtros o joins si crees que será necesario para futuros procesos de integración de datos.
