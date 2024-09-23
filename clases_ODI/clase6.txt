@@ -1,0 +1,114 @@
+**Clase 6: Creación de Mappings y Transformaciones de Datos**
+
+Objetivos:
+- Entender el concepto de **Mappings** en ODI.
+- Aprender a crear y configurar un Mapping.
+- Realizar transformaciones de datos usando funciones y operadores.
+- Ejecutar y verificar un Mapping.
+
+**1. ¿Qué es un Mapping en ODI?**
+Un **Mapping** en ODI (anteriormente llamado **Interface** en versiones anteriores) es el componente donde defines cómo 
+se transforman y trasladan los datos desde una o varias fuentes hasta uno o varios destinos. Los mappings permiten 
+definir el flujo de datos entre tablas de origen y destino, aplicando transformaciones, filtros y joins entre las tablas.
+
+Un Mapping incluye tres partes clave:
+- **Origen**: Las tablas o fuentes desde donde se extraerán los datos.
+- **Destino**: Las tablas o destinos donde se cargarán los datos.
+- **Transformaciones**: Las operaciones aplicadas a los datos durante su procesamiento (filtrados, agregaciones, 
+conversiones de tipo de datos, etc.).
+
+**2. Proceso de Creación de un Mapping**
+La creación de un Mapping en ODI sigue estos pasos clave:
+
+**Paso 1: Definir el Origen de Datos**
+    1. En la pestaña **Designer**, haz clic derecho en **Mappings** y selecciona **New Mapping**.
+    2. Ingresa un nombre para el Mapping.
+    3. En la parte superior de la ventana del Mapping, selecciona las **fuentes de datos**. Estas fuentes deben haber sido previamente definidas en los **Modelos** (Clase 5).
+    4. Arrastra las tablas de origen desde el panel de modelos a la sección de **Fuentes (Sources)** en la interfaz del Mapping.
+
+**Paso 2: Definir el Destino de Datos**
+    1. En la parte inferior del Mapping, selecciona la tabla o destino donde se cargarán los datos transformados.
+    2. Arrastra la tabla de destino desde el panel de modelos a la sección de **Destino (Target)** en el Mapping.
+    3. Si la tabla de destino no existe, puedes usar ODI para crear una nueva tabla automáticamente basándose en la estructura de las columnas de origen.
+
+**Paso 3: Configurar las Transformaciones**
+    1. **Mapeo de Columnas**: Arrastra las columnas de las tablas de origen hacia las columnas correspondientes en la 
+    tabla de destino.
+    2. **Aplicar Transformaciones**:
+        - Puedes aplicar funciones, expresiones y operadores durante el proceso de Mapping. Haz clic en una columna de 
+        destino para asignarle una transformación.
+        - ODI ofrece varias funciones integradas como conversiones de tipo de datos, concatenaciones, sumas, promedios, 
+        etc.
+        - Ejemplos de transformaciones comunes:
+            - **Concatenar dos columnas**: Usar la función de concatenación `CONCAT(columna1, columna2)`.
+            - **Suma de valores**: `SUM(columna)`.
+            - **Condicional IF-THEN**: `CASE WHEN columna = 'valor' THEN 'resultado' ELSE 'otro resultado' END`.
+   
+    3. **Filtros**:
+        - Puedes agregar **filtros** para limitar las filas que serán extraídas de las fuentes de datos. Por ejemplo, 
+        puedes filtrar para obtener solo las filas donde una columna tiene un valor específico.
+        - Haz clic derecho sobre la tabla de origen en el Mapping y selecciona **Add Filter**. Define las condiciones del 
+        filtro.
+   
+    4. **Joins**:
+        - Si tienes varias tablas de origen que necesitas combinar, puedes definir **joins** (combinaciones de tablas). 
+        ODI admite diferentes tipos de joins, como INNER JOIN, LEFT JOIN, etc.
+        - Haz clic derecho sobre las tablas que deseas combinar en el Mapping y selecciona **Create Join**. Define las 
+        columnas de combinación.
+
+**Paso 4: Validar el Mapping**
+Una vez que hayas configurado las fuentes, destinos y transformaciones, es importante **validar** el Mapping:
+    1. Haz clic en el botón de **Validar** en la barra de herramientas.
+    2. ODI verificará que el Mapping esté correctamente configurado, que no haya errores de columnas o de tipo de datos.
+    3. Si hay algún error, ODI te lo indicará para que puedas corregirlo antes de continuar.
+
+**Paso 5: Ejecutar el Mapping**
+    1. Después de validar el Mapping, haz clic en **Run** para ejecutarlo.
+    2. Selecciona el **agente** que se encargará de ejecutar el Mapping. Este agente es responsable de realizar la carga 
+    y transformación de los datos.
+    3. El Mapping se ejecutará y ODI comenzará a mover los datos desde las tablas de origen hacia las tablas de destino 
+    aplicando las transformaciones que definiste.
+
+**Paso 6: Verificación de Resultados**
+    1. Una vez que el Mapping ha finalizado su ejecución, ve a la pestaña **Operator** en ODI Studio.
+    2. En la pestaña **Operator** puedes ver el historial de ejecuciones, los logs y cualquier error que haya ocurrido 
+    durante la ejecución del Mapping.
+    3. Revisa los resultados para asegurarte de que los datos fueron cargados correctamente en la tabla de destino.
+
+---
+
+**3. Tipos de Transformaciones Comunes en ODI**
+ODI proporciona un conjunto robusto de funciones y operadores que puedes usar dentro de los mappings para transformar los 
+datos:
+
+    - **Matemáticas**: Sumas, restas, multiplicaciones, etc. (`SUM`, `AVG`, `MIN`, `MAX`).
+    - **Texto**: Concatenación de cadenas (`CONCAT`), subcadenas (`SUBSTR`), reemplazo de caracteres (`REPLACE`).
+    - **Fechas**: Agregar o restar días a fechas (`ADD_DAYS`), formatear fechas (`TO_DATE`).
+    - **Condicionales**: `CASE WHEN` para aplicar condiciones sobre los datos.
+    - **Conversiones de datos**: Cambiar el tipo de dato de una columna (`TO_NUMBER`, `TO_CHAR`).
+
+**4. Transformaciones Personalizadas**
+Si necesitas una transformación más compleja, ODI te permite escribir código SQL personalizado dentro del Mapping. Esto te da mucha flexibilidad si quieres aplicar reglas específicas de tu negocio.
+
+---
+
+**Tarea práctica:**
+
+1. **Crea un nuevo Mapping**:
+   - Define una fuente y un destino, y arrastra las tablas correspondientes al Mapping.
+
+2. **Aplica transformaciones**:
+   - Agrega algunas transformaciones básicas, como concatenar dos columnas o sumar valores de una columna.
+
+3. **Configura filtros y joins**:
+   - Si es necesario, define un filtro para limitar las filas extraídas y un join si estás combinando varias tablas.
+
+4. **Valida y ejecuta el Mapping**:
+   - Asegúrate de que el Mapping esté correctamente configurado, ejecútalo y verifica los resultados en la pestaña **Operator**.
+
+5. **Explora las transformaciones avanzadas**:
+   - Intenta aplicar funciones de fecha, condicionales o cualquier otra transformación que consideres útil para tu caso de uso.
+
+---
+
+Con esto habrás completado la creación básica y ejecución de un Mapping en ODI. Si todo va bien, estaremos listos para pasar a la **Clase 7: Escenarios y Ciclos en ODI**. ¿Te gustaría avanzar una vez que completes esta práctica?
