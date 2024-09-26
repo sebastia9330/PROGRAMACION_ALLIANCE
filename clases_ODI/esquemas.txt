@@ -1,0 +1,9 @@
+Ejemplo de creación de C##MASTER1 desde SYSTEM:
+
+sql
+Copiar código
+
+CREATE USER C##MASTER1 IDENTIFIED BY master_password;
+GRANT CONNECT, RESOURCE, DBA TO C##MASTER1;
+
+Importante: El uso de DBA puede ser excesivo dependiendo de los permisos que desees otorgar. Puedes asignar roles más granulares si solo se necesita acceso a objetos específicos.

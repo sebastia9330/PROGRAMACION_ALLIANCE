@@ -1,0 +1,160 @@
+enseñame la clase 36 de estos temas, y además dime 5 preguntas para retroalimentar
+se mas explicativa, para tener mas profundidad en el tema
+
+
+1. Introducción a las Bases de Datos-
+2. ¿Qué es una base de datos?-
+3. Datos y tipos de datos-
+4 Sistema Gestor de Bases de Datos (SGBD)
+5. Definición de SGBD -
+6. Características de un SGBD -
+7. Tipos de SGBD -
+8. Relacionales -
+9. No Relacionales -
+10. Multidimensional -
+11. Distribuidas -
+12. Orientadas a objetos -
+13. Herramientas de Análisis de Datos Indispensables para el Data Management -
+14. Bases de Datos Relacionales -
+15. ¿Cuándo usar una base de datos relacional? -
+16. Modelo Entidad-Relación -
+17. Entidades y atributos
+18. Cardinalidad
+19. Acciones (Operaciones en relaciones)
+20. Llave primaria y llave foránea
+21. Normalización
+22. 1FN
+23. 2FN
+24. 3FN
+25. Introducción a SQL
+26. Definición y propósito de SQL
+27. Usos de SQL
+28. Tipos de comandos SQL
+29. Comandos DDL
+30. CREATE
+31. ALTER
+32. DROP
+33. TRUNCATE
+34. RENAME
+35. Comandos DML
+36. SELECT
+37. INSERT INTO
+38. UPDATE
+39. DELETE
+40. Tablas, filas y columnas
+41. Tipos de datos de las columnas
+42. Consultas SQL Básicas
+43. WHERE
+44. GROUP BY
+45. GROUP BY + HAVING
+46. ORDER BY
+47. Consultas SQL Avanzadas
+48. INNER JOIN
+49. LEFT JOIN
+50. RIGHT JOIN
+51. FULL OUTER JOIN
+52. Subconsultas en SQL
+53. Subconsulta escalar
+54. Subconsulta de múltiples filas
+55. Subconsulta correlacionada
+56. Índices en SQL
+57. Restricciones SQL
+58. Transacciones en SQL
+59. Bases de Datos Relacionales vs. Bases de Datos No Relacionales
+60. Casos de Uso de las Bases Relacionales
+61. Futuro de las Bases de Datos Relacionales
+62. Que es la inteligencia de negocios?
+63. Conceptos y definiciones 
+64. minería de datos
+65. dashboards
+66. patrones de comportamiento
+67. anomalías
+68. segmentación de mercado
+69. predicción
+70. recolección de datos
+71. limpieza de datos
+72. transformación de datos
+73. selección de conjuntos de datos
+74. generación de informes
+75. métricas
+76. valores de referencia
+78. análisis descriptivo y estadístico
+79. staging
+80. data marts
+81. Componentes principales de la BI
+82. ETL
+83. Fase de extracción 
+84. métodos de extraccion
+85. Fase de transformación
+86. Fase de carga 
+87. Que es data warehouse?
+88. Sistema OLAP y OLTP
+89. Esquemas de un almacén de datos
+90. Reporting
+91. Analystics
+
+
+SEGUNDO SEMESTRE______________________________________________________
+92. Introducción a la Metodología Kimball -
+93. ¿Qué es la Metodología Kimball? -
+94. Definición de la Metodología -Kimball.
+95. Diferenciación de otros enfoques (como el enfoque Inmon). -
+96. Principios y Enfoques Clave de Kimball 
+97. Enfoque bottom-up (de abajo hacia arriba).
+98. Importancia de los Data Marts.
+99. Dimensionalidad: Foco en las dimensiones y hechos.
+100. Componentes del Proceso Kimball
+101. ETL (Extract, Transform, Load): Explicación del proceso de extracción, transformación y carga de datos.
+102. Modelado Dimensional: Cómo se estructuran los datos en términos de tablas de hechos y dimensiones.
+103. Data Marts Integrados: Creación de Data Marts que pueden integrarse para formar un almacén de datos completo.
+104. Calidad y Gobernanza de Datos: Mecanismos para asegurar la calidad y consistencia de los datos.
+105. Diseño de Modelos de Datos
+106. Concepto de Modelado Dimensional
+107. Diferencias con el modelado relacional.
+108. Ventajas del modelado dimensional en almacenes de datos.
+109. Esquema en Estrella (Star Schema)
+110. Definición: Descripción de su estructura (una tabla de hechos central con tablas de dimensiones directamente relacionadas).
+111. Componentes del Esquema en Estrella:
+112. Tabla de Hechos: Almacena los hechos o medidas numéricas del negocio (ventas, ingresos, etc.).
+113. Tablas de Dimensiones: Almacenan descripciones contextuales de los hechos (producto, cliente, tiempo, etc.).
+114. Ejemplo Práctico: Creación de un esquema en estrella para un caso de uso específico (por ejemplo, ventas al por menor).
+115. Ventajas: Sencillez y rendimiento en consultas.
+116. Desventajas: Redundancia de datos en las dimensiones.
+117. Esquema en Copo de Nieve (Snowflake Schema)
+118. Definición: Expansión del esquema en estrella donde las tablas de dimensiones están normalizadas.
+119. Componentes del Esquema en Copo de Nieve:
+120. Similar al esquema en estrella, pero las dimensiones están normalizadas en múltiples tablas.
+121. Ejemplo Práctico: Transformación del esquema en estrella anterior en un esquema en copo de nieve.
+122. Ventajas: Ahorro de espacio y menor redundancia de datos.
+123. Desventajas: Complejidad en las consultas y mayor cantidad de joins.
+124. Comparación entre Esquema en Estrella y Copo de Nieve
+125. Rendimiento en Consultas: Esquema en estrella suele ser más rápido debido a menos joins.
+126. Mantenimiento de Datos: Esquema en copo de nieve es más fácil de mantener por la menor redundancia.
+127. Uso de Espacio: Esquema en copo de nieve utiliza menos espacio de almacenamiento.
+128. Simplicidad: Esquema en estrella es más fácil de entender y utilizar para usuarios finales.
+129. Implementación Práctica
+130. Consideraciones para el Diseño de Modelos de Datos
+131. Identificación de hechos y dimensiones clave.
+132. Reglas para la elección entre esquema en estrella y copo de nieve.
+133. Ejemplo de Implementación con una Herramienta ETL énfasis en odi12c
+134. Proceso de diseño de un esquema en estrella y en copo de nieve utilizando una herramienta ETL común (por ejemplo, odi12c).
+135. Flujo de trabajo desde la extracción de datos, pasando por la transformación hasta la carga en un almacén de datos en odi 12c
+136. Optimización de Consultas
+137. Técnicas para optimizar consultas en esquemas en estrella y copo de nieve.
+138. Uso de índices y materialización de vistas para mejorar el rendimiento.
+139. Conclusión y Recomendaciones
+140. Resumen de la Metodología Kimball y los Esquemas
+141. Puntos clave discutidos en la presentación.
+142. Recomendaciones para la Selección del Esquema
+143. Cuándo utilizar el esquema en estrella vs. copo de nieve en proyectos de almacén de datos.
+144. Mejores Prácticas para Implementación y Mantenimiento
+145. Sugerencias para mantener la calidad de los datos y el rendimiento del sistema. 
+146. odi12c
+147. mappings
+148. mappings conectados
+149. joins
+150. filtros
+151. Excel a tabla con odi 12c
+152. vista Materializada
+153. power bi
+
