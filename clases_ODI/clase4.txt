@@ -107,3 +107,76 @@ Después de crear los repositorios, necesitarás conectarlos a ODI Studio:
 3. **Verifica las conexiones en ODI Studio:** Asegúrate de que puedes conectar correctamente ODI Studio a ambos repositorios.
 
 Cuando hayas completado la creación de los repositorios, estaremos listos para avanzar a la **Clase 5: Creación y uso de Modelos**. ¿Cómo te va hasta ahora con los repositorios?
+
+¡Excelente trabajo! Has manejado de manera efectiva las conexiones físicas, arquitecturas lógicas y contextos, lo cual es clave para trabajar con múltiples usuarios y entornos en ODI. Además, ya lograste extraer las tablas de cada esquema en los modelos, lo que indica que estás avanzando bien en la integración de datos.
+
+### **Clase 4: Mappings y Transformaciones en ODI**
+
+Ahora que tienes las conexiones físicas, arquitecturas lógicas y modelos configurados, el siguiente paso es crear **Mappings**, que te permitirán definir las transformaciones entre las tablas de origen y destino.
+
+#### **4.1 ¿Qué es un Mapping?**
+
+Un **Mapping** es un proceso en ODI donde defines cómo los datos fluyen desde una o varias fuentes hasta uno o varios destinos. En un Mapping puedes realizar transformaciones de datos, aplicar filtros, y unir tablas, entre otras operaciones.
+
+En ODI 12c, los Mappings están basados en el concepto de **Declarative Design**, lo que significa que ODI genera automáticamente el código (SQL o PL/SQL, dependiendo de la tecnología) necesario para ejecutar las transformaciones.
+
+#### **4.2 Creación de un Mapping**
+
+Vamos a crear un Mapping en ODI, tomando como base los modelos que has configurado:
+
+1. **Paso 1: Ir a la pestaña Diseño (Designer)**.
+   - En **ODI Studio**, ve a la pestaña **Diseño** y selecciona el apartado de **Mappings** dentro del proyecto que hayas creado.
+
+2. **Paso 2: Crear un nuevo Mapping**.
+   - Haz clic derecho en **Mappings** y selecciona **Nuevo Mapping**.
+   - Asigna un nombre a tu Mapping, por ejemplo: `Carga_Datos_Worker`.
+
+3. **Paso 3: Seleccionar la fuente de datos**.
+   - En el área de trabajo del Mapping, arrastra una de las **tablas de origen** desde el **modelo** que creaste.
+   - Este será tu punto de partida, es decir, la tabla de donde extraerás los datos.
+
+4. **Paso 4: Configurar las transformaciones**.
+   - En este punto, puedes aplicar transformaciones. Algunas de las transformaciones comunes incluyen:
+     - **Filtros**: Puedes agregar filtros para seleccionar solo los registros que cumplan ciertas condiciones.
+     - **Join**: Si necesitas combinar varias tablas, puedes arrastrar una segunda tabla y definir una condición de unión.
+
+5. **Paso 5: Definir el destino de los datos**.
+   - Arrastra la **tabla de destino** (donde cargarás los datos) desde otro modelo o el mismo modelo. Define cómo los campos de la tabla de origen se mapearán a los campos de la tabla de destino.
+   - Puedes hacer una **inserción** de nuevos datos, **actualizar registros existentes**, o ambas.
+
+6. **Paso 6: Validar el Mapping**.
+   - Antes de ejecutar el Mapping, ODI te permite validar la configuración. Haz clic en el botón de **Validar** para asegurarte de que no haya errores.
+
+7. **Paso 7: Ejecutar el Mapping**.
+   - Una vez validado, puedes **ejecutar** el Mapping directamente desde ODI Studio. Ve a la pestaña **Operador** para monitorear la ejecución.
+
+#### **4.3 Operadores Lógicos y Componentes de Transformación**
+
+En los Mappings, puedes utilizar diferentes **componentes de transformación** como operadores lógicos:
+
+- **Filtros**: Para seleccionar solo los registros que cumplan una condición.
+- **Join**: Para unir dos o más tablas basadas en una clave común.
+- **Agregaciones**: Para realizar operaciones como suma, promedio, conteo, etc.
+- **Set-Based Operations**: Como UNION, INTERSECT y MINUS, que combinan los resultados de varias consultas.
+
+#### **4.4 Contextos y Ejecución de Mappings**
+
+Cada Mapping que crees se puede ejecutar en diferentes **contextos**. Recuerda que ya has creado varios contextos para diferentes esquemas y usuarios.
+
+1. **Asociar el Mapping a un Contexto**:
+   - Al momento de ejecutar un Mapping, selecciona el contexto en el que se ejecutará. Esto es útil si tienes múltiples entornos (desarrollo, producción) o diferentes usuarios.
+
+2. **Monitorear la Ejecución**:
+   - Después de ejecutar el Mapping, ve a la pestaña **Operador** para ver el log de ejecución. Aquí verás si la carga de datos fue exitosa o si hubo algún error.
+
+---
+
+### **Tarea práctica: Crear y ejecutar un Mapping**
+
+1. **Crea un Mapping** que tome datos de una tabla de origen en uno de los esquemas `WORKER` y los cargue en una tabla de destino en otro esquema o en el mismo esquema.
+2. **Aplica al menos una transformación**, como un filtro o una combinación de tablas.
+3. **Ejecuta el Mapping** y verifica los resultados en la pestaña **Operador**.
+
+---
+
+Con estos pasos, empezarás a dominar las **transformaciones y cargas de datos en ODI**. Avísame cómo te va con esta tarea o si surge alguna duda en el proceso. ¡Estás avanzando muy bien!

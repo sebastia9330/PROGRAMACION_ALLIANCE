@@ -107,3 +107,74 @@ Interacción clave con la interfaz:
 3. **Revisa conexiones:** 
    - En la pestaña **Topología**, revisa las conexiones que tienes configuradas (si ya has hecho alguna), o intenta 
    configurar una nueva conexión a una fuente de datos simple como un archivo Excel o una base de datos Oracle.
+
+
+   ¡Excelente progreso! Has completado todos los pasos clave de la clase 2: la instalación de ODI 12c, la creación de los repositorios maestro y de trabajo, y la conexión exitosa a ellos.
+
+### **Clase 3: Introducción a los Componentes Clave de ODI**
+
+Ahora que tienes ODI instalado y los repositorios configurados, vamos a explorar los componentes fundamentales de **ODI 12c** y cómo usarlos en proyectos de integración de datos.
+
+#### **3.1 Overview de los Componentes Clave en ODI Studio**
+
+Cuando abres **ODI Studio**, verás diferentes pestañas y componentes principales que utilizarás en tu trabajo diario:
+
+1. **Topología**:
+   - Define la arquitectura física y lógica de las fuentes y destinos de datos. Aquí configuramos los **servidores de datos**, **conexiones JDBC**, y creamos los **agentes** que ejecutarán los trabajos.
+
+2. **Diseño (Designer)**:
+   - Aquí es donde desarrollarás los **modelos**, **mappings**, **procedimientos**, y **paquetes**. Es el núcleo para la transformación de datos en ODI.
+
+3. **Operador (Operator)**:
+   - Monitorea la ejecución de los trabajos, mostrando los logs, tiempos de ejecución y resultados de cada operación de carga de datos.
+
+4. **Seguridad**:
+   - Administra los usuarios, perfiles de seguridad, y roles. Esto es importante para gestionar los permisos en un entorno de varios usuarios.
+
+#### **3.2 Creación de una Conexión en la Topología Física**
+
+Vamos a empezar creando una **conexión física** a una base de datos en ODI. Esto es necesario para que ODI pueda interactuar con tus bases de datos Oracle.
+
+1. **Paso 1: Ir a la pestaña de Topología**.
+   - Ve a la pestaña **Topología** y selecciona el apartado de **Servidores de Datos**.
+
+2. **Paso 2: Crear un nuevo Servidor de Datos**.
+   - Haz clic derecho en **Servidor de Datos** y selecciona **Nuevo Servidor de Datos**.
+   - Elige la **tecnología**. En este caso, selecciona **Oracle**.
+   - Asigna un nombre al servidor, por ejemplo: `OracleDB_Trabajo`.
+
+3. **Paso 3: Configurar la Conexión JDBC**.
+   - En la pestaña de **Conexión JDBC**, define la URL de conexión a tu base de datos. La estructura típica para Oracle sería:
+     ```bash
+     jdbc:oracle:thin:@<host>:<puerto>:<SID>
+     ```
+   - Introduce el usuario y contraseña del esquema al que te conectarás (por ejemplo, `C##WORKER2`).
+
+4. **Paso 4: Probar la Conexión**.
+   - ODI te permite **probar** la conexión antes de guardarla. Haz clic en **Test Connection** para verificar que los parámetros son correctos.
+
+#### **3.3 Creación de un Modelo**
+
+Una vez que tengamos la conexión, vamos a crear un **modelo** en ODI. Un modelo define la estructura de los datos y está vinculado a una **conexión física**.
+
+1. **Paso 1: Ir a la pestaña Diseño (Designer)**.
+   - Ve a la pestaña **Diseño** y selecciona el apartado de **Modelos**.
+
+2. **Paso 2: Crear un Nuevo Modelo**.
+   - Haz clic derecho y selecciona **Nuevo Modelo**.
+   - Asigna un nombre y elige la **tecnología** (Oracle).
+   - Asocia este modelo al **servidor de datos** que acabas de crear en la Topología Física.
+
+3. **Paso 3: Reversar las Tablas**.
+   - ODI tiene una función llamada **Reverse Engineering**, que permite traer las tablas y estructuras de la base de datos al modelo. Selecciona la opción **Reverse Engineer** y elige las tablas que deseas incluir.
+
+---
+
+### **Tarea práctica: Crear Conexiones y Modelos**
+
+1. Crea una **conexión física** en la **Topología** a tu base de datos Oracle usando uno de los usuarios de trabajo (`C##WORKER2`, `C##WORKER3`, o `C##WORKER4`).
+2. Crea un **modelo** que esté asociado a la conexión física y utiliza la funcionalidad de **Reverse Engineering** para traer al menos una tabla de la base de datos.
+
+---
+
+Con esto damos los primeros pasos para empezar a trabajar con los datos en ODI. Avísame cómo te va con esta tarea y si tienes alguna duda durante el proceso. ¡Sigue adelante!

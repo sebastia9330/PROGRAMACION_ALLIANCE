@@ -77,3 +77,122 @@ que puedas iniciar ODI Studio.
 
 3. **Prueba de conexión:** Verifica que ODI Studio esté conectado correctamente a los repositorios que creaste en 
 Oracle Database 21c.
+
+
+¡Perfecto! Ahora vamos a adentrarnos en el **proceso de instalación y configuración de ODI 12c**. A lo largo de esta clase, vamos a instalar ODI y configurar los componentes clave como los **repositorios maestro y de trabajo**.
+
+### **Clase 2: Instalación y Configuración de ODI 12c**
+
+#### **2.1 Requisitos Previos para la Instalación de ODI 12c**
+
+Antes de empezar, asegúrate de cumplir con los siguientes requisitos:
+
+1. **Base de datos Oracle**:
+   - ODI 12c necesita una base de datos Oracle (como Oracle Database 21c, que mencionaste que ya tienes). Esta será utilizada para almacenar el Repositorio Maestro y el Repositorio de Trabajo.
+
+2. **Java Development Kit (JDK)**:
+   - ODI 12c necesita el JDK instalado (versión 1.8 o superior). Asegúrate de tenerlo configurado correctamente en tu sistema.
+   
+   **Verificación**: Puedes comprobar si tienes el JDK instalado ejecutando el siguiente comando en la terminal:
+   ```bash
+   java -version
+   ```
+
+3. **WebLogic Server**:
+   - ODI se ejecuta sobre WebLogic, por lo que necesitarás instalar **Oracle WebLogic Server** antes de ODI. WebLogic proporciona el entorno para ejecutar aplicaciones como ODI.
+
+4. **Espacio en disco y memoria**:
+   - ODI requiere al menos 10 GB de espacio libre y, dependiendo de la carga de trabajo, alrededor de 8 GB de memoria RAM (aunque 16 GB o más es recomendable para ambientes de producción).
+
+#### **2.2 Instalación de Oracle WebLogic Server**
+
+Oracle WebLogic Server es necesario para que ODI funcione correctamente. A continuación, los pasos para su instalación:
+
+1. **Descarga de WebLogic Server**:
+   - Ve al sitio web de Oracle y descarga WebLogic Server.
+   
+2. **Instalación**:
+   - Descomprime el archivo descargado y sigue las instrucciones del instalador. Durante la instalación:
+     - Elige la **instalación de desarrollo** si estás configurando un entorno de prueba o **instalación de producción** para un entorno más robusto.
+     - Define el **dominio** de WebLogic, que actuará como el contenedor de las aplicaciones, incluidas las de ODI.
+
+   **Nota**: El dominio de WebLogic es importante ya que en este contenedor se ejecutarán servicios como el Agente ODI.
+
+#### **2.3 Instalación de ODI 12c**
+
+Ahora, vamos a instalar **Oracle Data Integrator 12c**. Sigue estos pasos para asegurarte de una instalación correcta:
+
+1. **Descargar ODI 12c**:
+   - Ve a la página oficial de Oracle y descarga la versión de **ODI 12c**.
+   
+2. **Instalación de ODI**:
+   - Una vez descargado, descomprime el archivo e inicia el instalador ejecutando el script `runInstaller` (Linux) o ejecutable (Windows).
+   - Sigue el asistente de instalación, donde te pedirá que:
+     - **Configures el Middleware Home**: Este es el directorio donde se instalará ODI y sus dependencias (puede ser el mismo que usaste para WebLogic).
+     - **Instales los componentes de ODI**: Asegúrate de seleccionar los componentes básicos y, si planeas usar **Big Data**, selecciona los conectores correspondientes.
+
+3. **Configuración de dominios WebLogic para ODI**:
+   - Una vez que la instalación de ODI haya terminado, configura un **dominio WebLogic** específico para ODI. Esto permitirá ejecutar el **Agente ODI JEE**.
+   - Define un nuevo **servidor administrado** (Managed Server) para ODI dentro del dominio de WebLogic.
+
+#### **2.4 Configuración del Repositorio Maestro y del Repositorio de Trabajo**
+
+Una vez instalado ODI, necesitamos crear los repositorios donde se almacenarán los metadatos y los artefactos de integración.
+
+##### **Pasos para configurar el Repositorio Maestro**
+
+1. **Iniciar ODI Studio**:
+   - ODI Studio es la interfaz gráfica que utilizarás para diseñar y monitorear las integraciones de datos.
+
+2. **Crear una conexión a la base de datos**:
+   - Dentro de ODI Studio, ve a la pestaña de **Topología** y crea una nueva conexión a tu **Oracle Database 21c**.
+   - Usa las credenciales de uno de los usuarios que hayas creado (por ejemplo, `C##MAESTRO`).
+
+3. **Crear el Repositorio Maestro**:
+   - Una vez conectada la base de datos, selecciona la opción de **Crear Repositorio Maestro**.
+   - El asistente te pedirá:
+     - El nombre del esquema donde se almacenará el repositorio.
+     - El esquema del usuario que utilizarás para gestionar el repositorio maestro (puede ser `C##MAESTRO`).
+     - Asegúrate de definir un esquema dedicado en la base de datos para el Repositorio Maestro.
+   - Durante este proceso, ODI creará todas las tablas necesarias para gestionar las conexiones y la seguridad del sistema.
+
+##### **Pasos para configurar el Repositorio de Trabajo**
+
+1. **Conectar con el Repositorio Maestro**:
+   - Luego de crear el Repositorio Maestro, ODI te pedirá que inicies sesión en ODI Studio con las credenciales del Repositorio Maestro.
+   
+2. **Crear el Repositorio de Trabajo**:
+   - Dentro de la pestaña **Topología**, selecciona la opción **Crear Repositorio de Trabajo**.
+   - El asistente te pedirá:
+     - Un nombre para el Repositorio de Trabajo.
+     - Definir si este repositorio será **Desarrollo** o **Producción**. Elige **Desarrollo** por ahora.
+     - El usuario que se encargará de gestionar este repositorio (podría ser el usuario `C##WORKER1` que ya creaste).
+   - Al finalizar, ODI habrá creado el espacio donde se almacenarán los artefactos de integración (Mappings, Modelos, etc.).
+
+#### **2.5 Conexión de ODI Studio al Repositorio de Trabajo**
+
+Una vez que los repositorios han sido creados, necesitamos configurar ODI Studio para que se conecte al Repositorio de Trabajo.
+
+1. **Configurar la conexión a los Repositorios**:
+   - Dentro de **ODI Studio**, ve a la opción de **Conexiones** y agrega tanto el **Repositorio Maestro** como el **Repositorio de Trabajo**.
+   - Asegúrate de que los datos de conexión (usuario y contraseña de base de datos) estén correctos.
+   
+2. **Verificación de la conexión**:
+   - Luego de conectarte a ambos repositorios, verifica que puedes ver los **Modelos**, **Proyectos** y la **Topología** dentro de ODI Studio.
+
+#### **2.6 Revisión de los Componentes**
+
+- **Repositorio Maestro**: Verifica que en la pestaña de **Topología** puedes ver las conexiones, configuraciones de seguridad y demás metadatos.
+- **Repositorio de Trabajo**: En la pestaña de **Proyectos**, deberías poder crear nuevos proyectos, mappings y procedimientos.
+
+---
+
+### **Tarea práctica: Instalación y configuración**
+
+1. **Verifica que has instalado correctamente WebLogic y ODI 12c**.  
+2. **Crea el Repositorio Maestro y Repositorio de Trabajo** en tu base de datos Oracle.  
+3. **Conecta ODI Studio al Repositorio de Trabajo**.
+
+---
+
+Con esto ya hemos completado la **instalación y configuración básica de ODI 12c**. ¿Cómo te sientes con este material? ¿Todo claro hasta ahora o hay algo que quieras revisar más en detalle?

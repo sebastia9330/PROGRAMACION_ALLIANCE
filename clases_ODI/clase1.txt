@@ -66,4 +66,5 @@ ODI 12c trae varias mejoras y cambios respecto a su predecesor, ODI 11g:
 
 ---
 
+
 Con esto hemos cubierto los fundamentos de ODI. ¿Cómo te parece hasta ahora? ¿Te gustaría continuar con la instalación de ODI en la próxima clase?

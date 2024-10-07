@@ -37,3 +37,6 @@ WHERE GRANTEE = 'C##WORKER';
 
 --DARLE ESPACIO EN EL TABLESPACE A UN USUARIO
 ALTER USER nombre_usuario QUOTA UNLIMITED ON nombre_tablespace;
+
+
+--jdbc:oracle:thin:@localhost:1521/orclpdb.SRVNODO0.LOCAL

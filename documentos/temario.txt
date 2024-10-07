@@ -1,4 +1,4 @@
-enseñame la clase 36 de estos temas, y además dime 5 preguntas para retroalimentar
+enséñame la clase 37 de estos temas, y además dime 5 preguntas para retroalimentar
 se mas explicativa, para tener mas profundidad en el tema
 
 
@@ -157,4 +157,8 @@ SEGUNDO SEMESTRE______________________________________________________
 151. Excel a tabla con odi 12c
 152. vista Materializada
 153. power bi
-
+154. creación de un erp
+155. agentes en odi
+156. pl/sql básico
+157. pl/sql intermedio
+158. pl/sql avanzado
