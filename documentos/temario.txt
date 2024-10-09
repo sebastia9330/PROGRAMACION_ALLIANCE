@@ -1,4 +1,4 @@
-enséñame la clase 37 de estos temas, y además dime 5 preguntas para retroalimentar
+enséñame la clase 43 de estos temas, y además dime 5 preguntas para retroalimentar
 se mas explicativa, para tener mas profundidad en el tema
 
 
@@ -18,32 +18,32 @@ se mas explicativa, para tener mas profundidad en el tema
 14. Bases de Datos Relacionales -
 15. ¿Cuándo usar una base de datos relacional? -
 16. Modelo Entidad-Relación -
-17. Entidades y atributos
-18. Cardinalidad
-19. Acciones (Operaciones en relaciones)
-20. Llave primaria y llave foránea
-21. Normalización
-22. 1FN
-23. 2FN
-24. 3FN
-25. Introducción a SQL
-26. Definición y propósito de SQL
-27. Usos de SQL
-28. Tipos de comandos SQL
-29. Comandos DDL
-30. CREATE
-31. ALTER
-32. DROP
-33. TRUNCATE
-34. RENAME
-35. Comandos DML
-36. SELECT
-37. INSERT INTO
-38. UPDATE
-39. DELETE
-40. Tablas, filas y columnas
-41. Tipos de datos de las columnas
-42. Consultas SQL Básicas
+17. Entidades y atributos -
+18. Cardinalidad -
+19. Acciones (Operaciones en relaciones) -
+20. Llave primaria y llave foránea -
+21. Normalización -
+22. 1FN -
+23. 2FN -
+24. 3FN -
+25. Introducción a SQL -
+26. Definición y propósito de SQL -
+27. Usos de SQL -
+28. Tipos de comandos SQL -
+29. Comandos DDL -
+30. CREATE -
+31. ALTER -
+32. DROP -
+33. TRUNCATE -
+34. RENAME -
+35. Comandos DML -
+36. SELECT -
+37. INSERT INTO -
+38. UPDATE -
+39. DELETE -
+40. Tablas, filas y columnas - 
+41. Tipos de datos de las columnas -
+42. Consultas SQL Básicas -
 43. WHERE
 44. GROUP BY
 45. GROUP BY + HAVING
@@ -162,3 +162,167 @@ SEGUNDO SEMESTRE______________________________________________________
 156. pl/sql básico
 157. pl/sql intermedio
 158. pl/sql avanzado
+159. bases de datos de varios clientes (CDB)
+160. base de datos de conexión (PDB)
+161. git
+162. control de versiones
+162. manejo de versiones desde otras ramas
+163. GitHub
+164. repositorio maestro/repositorio de trabajo
+165. modelado dimensional, paso a paso
+166. apache nifi
+167. tuberías de datos, rápidas y frías
+168. apache spark, flink, airflow
+169. amazon redshift, snowfleke, amazon athena
+170. tensorflow, scikit learn
+171. amazon s3, sqs, ec2
+172. digitalocean
+173. Salesforce
+174. crm, que es como se usa y como se crea
+175. estadística enfocada para en análisis de datos, principiante
+176. estadística enfocada para en análisis de datos, intermedio
+177. estadística enfocada para en análisis de datos, avanzado
+178. PROTOCOLOS DE TRANSFERENCIA DE ARCHIVOS
+
+TERCER SEMESTRE -------------------------------------------------------
+179. Fundamentos de CS (Computer Science)
+180. Uso básico de la terminal [recomendación general]
+181. Estructuras de datos y algoritmos [recomendación general]
+182. API (Application Programming Interface) [recomendación general]
+183. REST (Representational State Transfer) [recomendación general]
+184. Datos estructurados vs. no estructurados [recomendación general]
+185. Serialización
+186. Linux [recomendación general]
+187. CLI (Command Line Interface)
+188. Vim (editor de texto)
+189. Scripting de shell
+190. Cronjobs (tareas programadas)
+191. ¿Cómo funciona la computadora? [recomendación general]
+192. ¿Cómo funciona Internet? [recomendación general]
+193. Git - Control de versiones [recomendación general]
+194. Conceptos básicos de matemáticas y estadística [recomendación general]
+195. Python [recomendación personal]
+196. Pruebas unitarias [recomendación general]
+197. Pruebas de integración [recomendación general]
+198. Pruebas funcionales [recomendación general]
+199. Fundamentos de bases de datos
+200. SQL (Structured Query Language) [recomendación general]
+201. Normalización [recomendación general]
+202. Transacciones ACID (Atomicity, Consistency, Isolation, Durability) [recomendación general]
+203. Teorema CAP (Consistency, Availability, Partition Tolerance) [recomendación general]
+204. OLTP (Online Transaction Processing) vs. OLAP (Online Analytical Processing) [recomendación general]
+205. Escalado horizontal vs. vertical [recomendación general]
+206. Modelado dimensional [recomendación general]
+207. Bases de datos relacionales
+208. MySQL [recomendación general]
+209. PostgreSQL [recomendación general]
+210. MariaDB
+211. Amazon Aurora
+212. Bases de datos no relacionales
+213. Bases de datos de documentos
+214. MongoDB [recomendación general]
+215. Elasticsearch [recomendación general]
+216. Apache CouchDB
+217. Azure CosmosDB
+218. Bases de datos de columnas anchas
+219. Apache Cassandra [recomendación general]
+220. Apache HBase [recomendación general]
+221. Google Cloud Bigtable [recomendación personal]
+222. Bases de datos gráficas
+223. Neo4j
+224. Amazon Neptune
+225. Almacenamiento de clave-valor
+226. Redis [recomendación personal]
+227. Memcached
+228. Amazon DynamoDB [recomendación general]
+229. Data warehouses (almacén de datos)
+230. Snowflake [recomendación general]
+231. Presto
+232. Apache Hive
+233. Apache Impala
+234. Amazon Redshift [recomendación general]
+235. Google BigQuery [recomendación personal]
+236. Azure Synapse
+237. ClickHouse
+238. Almacenamiento de objetos
+239. AWS S3 [recomendación general]
+240. Azure Blob Storage
+241. Google Cloud Storage
+242. Apache Ozone
+243. Fundamentos de computación en clúster
+244. Apache Hadoop [recomendación general]
+245. HDFS (Hadoop Distributed File System) [recomendación general]
+246. MapReduce [recomendación general]
+247. Arquitecturas Lambda y Kappa
+248. Hadoop administrado [recomendación general]
+249. Amazon EMR
+250. Google Dataproc
+251. Azure Data Lake
+252. Procesamiento de datos
+253. Lotes
+254. Apache Pig [recomendación general]
+255. Apache Arrow
+256. Herramienta de construcción de datos [recomendación personal]
+257. Híbrido
+258. Apache Spark [recomendación general]
+259. Apache Beam [recomendación personal]
+260. Apache Flink [recomendación general]
+261. Apache NiFi
+262. Streaming
+263. Apache Kafka [recomendación personal]
+264. Apache Storm [recomendación general]
+265. Apache Samza
+266. Amazon Kinesis
+267. Mensajería
+268. RabbitMQ [recomendación general]
+269. Apache ActiveMQ
+270. Amazon SNS & SQS
+271. Google PubSub
+272. Azure Service Bus
+273. Programación de flujos de trabajo
+274. Apache Airflow [recomendación personal]
+275. Google Composer
+276. Apache Oozie
+277. Luigi
+278. Monitoreo y observabilidad para pipelines de datos
+279. Prometheus [recomendación general]
+280. Datadog [recomendación general]
+281. Sentry [recomendación general]
+282. Monte Carlo
+283. Datafold
+284. Soda Data
+285. StatsD
+286. Redes
+287. Protocolos [recomendación general]
+288. HTTP / HTTPS
+289. TCP
+290. SSH
+291. IP
+292. DNS
+293. Firewalls [recomendación general]
+294. VPN (Virtual Private Network) [recomendación general]
+295. VPC (Virtual Private Cloud) [recomendación general]
+296. Infraestructura como código
+297. Contenedores
+298. Docker [recomendación personal]
+299. LXC
+300. Orquestación de contenedores
+301. Kubernetes [recomendación general]
+302. Docker Swarm
+303. Apache Mesos
+304. Google Kubernetes Engine (GKE) [recomendación general]
+305. Provisionamiento de infraestructura
+306. Terraform [recomendación personal]
+307. Pulumi
+308. AWS CDK [recomendación general]
+309. CI/CD (Continuous Integration/Continuous Delivery)
+310. GitHub Actions [recomendación general]
+311. Jenkins [recomendación general]
+312. Gestión de identidad y acceso
+313. Active Directory [recomendación general]
+314. Azure Active Directory
+315. Seguridad y privacidad de datos
+316. Cumplimiento legal [recomendación general]
+317. Cifrado [recomendación general]
+318. Gestión de claves [recomendación general]
+319. Gobernanza e integridad de datos
