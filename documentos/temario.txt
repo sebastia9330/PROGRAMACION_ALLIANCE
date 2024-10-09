@@ -153,7 +153,7 @@ SEGUNDO SEMESTRE______________________________________________________
 147. mappings
 148. mappings conectados
 149. joins
-150. filtros
+150. filtros, VARIABLES
 151. Excel a tabla con odi 12c
 152. vista Materializada
 153. power bi
