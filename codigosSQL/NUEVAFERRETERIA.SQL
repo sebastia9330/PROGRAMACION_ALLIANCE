@@ -66,7 +66,7 @@ CREATE TABLE TAB_EMPLEADO(
     PUESTO VARCHAR(25)
 );
 
---tablas extra
+--tablas extra creadas apartir de joins y splits
 CREATE TABLE MAYOR_CREDITO(
     CODIGO_CLIENTE VARCHAR(15),
     NOMBRE_COMPLETO VARCHAR(50),

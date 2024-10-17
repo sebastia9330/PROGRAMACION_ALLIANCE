@@ -1,0 +1,36 @@
+- OdiFileAppend:
+    Util para concatener archivos o escribir mensajes en archivos sin sobre escribir
+
+- OdiFileCopy:
+    Copia, archvos o carpetas, no copia contenidos del archivo
+
+- OdiFileDelete:
+    Elimina un archivo o varios, incluso elimina carpetas
+
+- OdiFileMove:
+    Mueve un archivo o una carpeta a un espacio designado
+
+- OdiFileWait:
+    Cuando detecta un archivo o un fichero puede ejecutar alguna de las siguientes acciones:
+    copiar, mover, suprimir, comprimir, agregar, ninguno
+
+- OdiMkDir:
+    Crea una nueva carpeta
+
+- OdiOutFile:
+    Escribe un mensaje en el archivo de texto indicado
+
+- OdiSqlUnload:
+    Escribe el resultado de una consulta sql en un archivo
+
+- OdiXMLConcat:
+    Concatena dos archivos xml por una palabra especifica que exista dentro de ellos
+
+- OdiXMLSplit:
+    Divide un archivo xml, en partes mas pequeñas 
+
+- OdiFileTransform:
+    Convierte los archvos de un formato a otro, necesita un esquema logico Spark
+
+-- OdiBeep:
+    genera un alerta de sonido, solo admite archivos .wav

@@ -328,3 +328,7 @@ TERCER SEMESTRE -------------------------------------------------------
 319. Gobernanza e integridad de datos
 
 CUARTO SEMESTRE ---------------------------------------------
+320. Apache basico
+321. Apache intermedio
+322. Apache Avanzado
+323. Apache Experto
