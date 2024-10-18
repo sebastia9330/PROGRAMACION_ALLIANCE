@@ -1,5 +1,5 @@
-enséñame la clase 44 de estos temas, y además dime 5 preguntas para retroalimentar
-se mas explicativa, para tener mas profundidad en el tema
+enséñame la clase 49 de estos temas, y además dime 5 preguntas para retroalimentar
+se mas explicativa, para tener mas profundidad en el tema, realizame ademas una pregunta sobre la clase 1 como repaso
 
 
 1. Introducción a las Bases de Datos-
@@ -45,11 +45,11 @@ se mas explicativa, para tener mas profundidad en el tema
 41. Tipos de datos de las columnas -
 42. Consultas SQL Básicas -
 43. WHERE -
-44. GROUP BY
-45. GROUP BY + HAVING
-46. ORDER BY
-47. Consultas SQL Avanzadas
-48. INNER JOIN
+44. GROUP BY -
+45. GROUP BY + HAVING -
+46. ORDER BY -
+47. Consultas SQL Avanzadas -
+48. INNER JOIN -
 49. LEFT JOIN
 50. RIGHT JOIN
 51. FULL OUTER JOIN
@@ -332,3 +332,14 @@ CUARTO SEMESTRE ---------------------------------------------
 321. Apache intermedio
 322. Apache Avanzado
 323. Apache Experto
+324. parelelismo
+
+
+
+diferencia ente -1,1 y *
+integridd de datos
+limpieza de datos
+paralelismo
+
+
+validar

@@ -32,5 +32,9 @@
 - OdiFileTransform:
     Convierte los archvos de un formato a otro, necesita un esquema logico Spark
 
--- OdiBeep:
+- OdiBeep:
     genera un alerta de sonido, solo admite archivos .wav
+
+- OdiOSCommand:
+    Util para enviar comandos de ejecucion en un archivo especifico
+
