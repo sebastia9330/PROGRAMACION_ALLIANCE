@@ -1,11 +1,11 @@
-enséñame la clase 49 de estos temas, y además dime 5 preguntas para retroalimentar
-se mas explicativa, para tener mas profundidad en el tema, realizame ademas una pregunta sobre la clase 1 como repaso
+enséñame la clase 53 de estos temas, y además dime 5 preguntas para retroalimentar
+se mas explicativa, para tener mas profundidad en el tema, realizame ademas una pregunta sobre la clase 5 como repaso
 
 
-1. Introducción a las Bases de Datos-
-2. ¿Qué es una base de datos?-
-3. Datos y tipos de datos-
-4 Sistema Gestor de Bases de Datos (SGBD)
+1. Introducción a las Bases de Datos--
+2. ¿Qué es una base de datos?--
+3. Datos y tipos de datos--
+4 Sistema Gestor de Bases de Datos (SGBD) -
 5. Definición de SGBD -
 6. Características de un SGBD -
 7. Tipos de SGBD -
@@ -50,10 +50,10 @@ se mas explicativa, para tener mas profundidad en el tema, realizame ademas una 
 46. ORDER BY -
 47. Consultas SQL Avanzadas -
 48. INNER JOIN -
-49. LEFT JOIN
-50. RIGHT JOIN
-51. FULL OUTER JOIN
-52. Subconsultas en SQL
+49. LEFT JOIN -
+50. RIGHT JOIN -
+51. FULL OUTER JOIN -
+52. Subconsultas en SQL -
 53. Subconsulta escalar
 54. Subconsulta de múltiples filas
 55. Subconsulta correlacionada
