@@ -1,5 +1,4 @@
-enséñame la clase 53 de estos temas, y además dime 5 preguntas para retroalimentar
-se mas explicativa, para tener mas profundidad en el tema, realizame ademas una pregunta sobre la clase 5 como repaso
+Comportate como un experto en ingenieria de datos, enséñame la clase 55 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 5 para practicar temas antes vistos, se la mejor profesora que puedas
 
 
 1. Introducción a las Bases de Datos--
@@ -54,8 +53,8 @@ se mas explicativa, para tener mas profundidad en el tema, realizame ademas una 
 50. RIGHT JOIN -
 51. FULL OUTER JOIN -
 52. Subconsultas en SQL -
-53. Subconsulta escalar
-54. Subconsulta de múltiples filas
+53. Subconsulta escalar -
+54. Subconsulta de múltiples filas -
 55. Subconsulta correlacionada
 56. Índices en SQL
 57. Restricciones SQL

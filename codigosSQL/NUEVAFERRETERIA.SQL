@@ -123,3 +123,11 @@ SELECT * FROM TAB_CLIENTE;
 SELECT * FROM TAB_DETALLE_PEDIDO;
 SELECT * FROM TAB_PAGO;
 SELECT * FROM TAB_PEDIDO;
+
+
+
+- defione un ROLL
+- tener un onjetivo claro
+- contexto
+- pedir una solucion
+
