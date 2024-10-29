@@ -1,0 +1,22 @@
+1. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odidg/using-journalizing.html#GUID-D3C28DCF-7B33-41D9-A202-E7991F437C62
+2. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odikm/oracle-goldengate.html#GUID-F898C3E9-0DE7-41BE-A177-3AF0F3CF4A85
+3. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odidg/creating-integration-project.html#GUID-C9D2F572-F02D-4866-8B64-7ACF093444B2
+4. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odidg/creating-and-using-mappings.html#GUID-EE365208-582B-4384-B067-D1E60A75C226
+5. https://docs.oracle.com/en/middleware/
+6. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odiun/index.html
+7. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odiad/index.html
+8. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odirf/index.html
+9. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odidg/overview-oracle-data-integrator-topology.html#GUID-41F2F7CB-E092-48E0-BFA2-C811B3C8538E
+10. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odiun/overview-oracle-data-integrator.html#GUID-4A080054-9A63-4546-93E6-01FC12DD3522
+11. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odiad/running-integration-processes.html#GUID-3B483C73-92F6-429D-961D-EE978A8DA36F
+12. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odiad/setting-topology1.html#ODIAD217
+13. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odikm/index.html
+14. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odibd/index.html
+15. https://www.oracle.com/integration/goldengate/
+16. https://docs.oracle.com/middleware/1213/odsi/index.html
+17. https://www.oracle.com/middleware/technologies/enterprise-data-quality.html
+18. https://www.oracle.com/middleware/technologies/enterprise-metadata-management.html
+19. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odidg/index.html
+20. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odikd/index.html
+
+https://github.com/sebastia9330

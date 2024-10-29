@@ -37,7 +37,7 @@ print(f"Billetes de 20: {billetes20}")
 print(f"Billetes de 5: {billetes5}")
 print(f"Billetes de 1: {billetes1}") """
 
-digito = int(input("Ingrese el número: "))
+""" digito = int(input("Ingrese el número: "))
 num1 = digito%10
 conciente = digito//10
 num2 = conciente%10
@@ -46,4 +46,13 @@ num3 = conciente%10
 ordenAsc = num3 < num2 < num1
 ordenDes = num3 > num2 > num1
 esOrdenado = ordenDes or ordenAsc
-print(f"¿Es ordenado? {esOrdenado}")
+print(f"¿Es ordenado? {esOrdenado}") """
+
+""" cantLados = int(input("Ingrese la cantidad de lados: "))
+tamañoLado = float(input("Ingrese el tamaño de un lado: "))
+perimetro = cantLados * tamañoLado
+print(f"El perimetro es: {perimetro}") """
+
+positivo = int(input("Ingresa un numero entero positivo: "))
+resultado = (positivo * (positivo + 1))/ 2
+print(f"El resultado de la suma es: {resultado}")
