@@ -53,6 +53,17 @@ tamañoLado = float(input("Ingrese el tamaño de un lado: "))
 perimetro = cantLados * tamañoLado
 print(f"El perimetro es: {perimetro}") """
 
-positivo = int(input("Ingresa un numero entero positivo: "))
-resultado = (positivo * (positivo + 1))/ 2
-print(f"El resultado de la suma es: {resultado}")
+""" positivo = int(input("Ingresa un numero entero positivo: "))
+resultado = (positivo * (positivo + 1))// 2
+print(f"La suma de los {positivo} primeros enteros {resultado}")   
+ """
+a = 1
+b = -8
+c = 12
+xmin = -b/2*a
+ymin = xmin**2 - 8*xmin + 12
+print(f"Punto: {xmin},{ymin}")
+
+x1 = (-b+(b**2 - 4*a*c)**(1/2))/(2*a)
+x2 = (-b-(b**2 - 4*a*c)**(1/2))/(2*a)
+print(f"los cortes son: {x1},{x2}")
