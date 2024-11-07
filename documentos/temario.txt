@@ -1,4 +1,4 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 61 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 11 para practicar temas antes vistos, se la mejor profesora que puedas
+Comportate como un experto en ingenieria de datos, enséñame la clase 65 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 15 para practicar temas antes vistos, se la mejor profesora que puedas
 
 
 1. Introducción a las Bases de Datos--
@@ -61,10 +61,10 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 61 de est
 58. Transacciones en SQL -
 59. Bases de Datos Relacionales vs. Bases de Datos No Relacionales
 60. Casos de Uso de las Bases Relacionales -
-61. Futuro de las Bases de Datos Relacionales
-62. Que es la inteligencia de negocios?
-63. Conceptos y definiciones 
-64. minería de datos
+61. Futuro de las Bases de Datos Relacionales -
+62. Que es la inteligencia de negocios? -
+63. Conceptos y definiciones -
+64. minería de datos -
 65. dashboards
 66. patrones de comportamiento
 67. anomalías
