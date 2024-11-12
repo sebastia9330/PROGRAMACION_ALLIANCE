@@ -20,3 +20,67 @@
 20. https://docs.oracle.com/en/middleware/fusion-middleware/data-integrator/12.2.1.3/odikd/index.html
 
 https://github.com/sebastia9330
+
+cursos realizados
+1. Fundamentos de programacion en Python
+https://www.youtube.com/playlist?list=PLvRdB5NYP8IM6tOnNXsTuYlh3_urboqk9
+
+
+
+- NUM_CODIGO                        Importante
+- VAR_RAZON_SOCIAL                  Importante 
+- VAR_SUCURSAL                      Importante
+- VAR_RAZON_SOCIAL_SUCURSAL         Importante
+- VAR_MONEDA                        Consultar si se reciben otro tipo de monedad
+- VAR_DESC_MONEDA                   Consultar si se reciben otro tipo de monedad
+- VAR_VENDEDOR                      Relevante si el analisis quiere ver el vendedor
+- VAR_RAZON_SOCIAL_VENDEDOR         Relevante si el analisis quiere ver el vendedor
+- VAR_COBRADOR                      Relevante si el analisis quiere ver el cobrador
+- VAR_RAZON_SOCIAL_COBRADOR         Relevante si el analisis quiere ver el cobrador
+- DAT_FECHA_INGRESO                 Importante
+- VAR_ANTIGUEDAD                    Calcular restando la fecha de ingreso de la fecha actual
+- VAR_CALIFICACION                  Importante para segmentacion("Todos dicen A")
+- VAR_CONDICION_DE_PAGO             Importante
+- VAR_DESC_CONDICION_DE_PAGO        Importante	
+- VAR_DIAS_GRACIA                   Dato variable por operacion, consultar
+- VAR_TIPO_CLIENTE                  Consultar si se recibe otro tipo de cliente
+- VAR_DESC_TIPO_CLIENTE             Consultar si se recibe otro tipo de cliente
+- DESC_GRUPO_DSCTO                  Dato vacio(consultar relevancia)
+- VAR_BLOQUEADO_CUPO                Importante(Cambio constante)
+- VAR_BLOQUEADO_MORA                Importante(Cambio constante)
+- VAR_CARTERA                       Importante
+- VAR_FACTURACION                   Importante
+- VAR_SECTOR_ECONOMICO              Importante
+- VAR_SERVICIO_QUE_PREDOMINA        Importante
+- VAR_TIPO_EMPRESA                  Importante
+
+
+TELEFONO
+DIRECCION
+PERSONA DE CONTACTO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 65 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 15 para practicar temas antes vistos, se la mejor profesora que puedas
+Comportate como un experto en ingenieria de datos, enséñame la clase 67 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 17 para practicar temas antes vistos, se la mejor profesora que puedas
 
 
 1. Introducción a las Bases de Datos--
@@ -65,8 +65,8 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 65 de est
 62. Que es la inteligencia de negocios? -
 63. Conceptos y definiciones -
 64. minería de datos -
-65. dashboards
-66. patrones de comportamiento
+65. dashboards -
+66. patrones de comportamiento -
 67. anomalías
 68. segmentación de mercado
 69. predicción
@@ -336,13 +336,64 @@ CUARTO SEMESTRE ---------------------------------------------
 326. SQL intermedio
 327. SQL Experto
 328. SQL Avanzado-practico
+329. Diccionario de datos
+330. Dimensiones lentamente cambiantes tipo 1,2,3
+331. Calculo Diferencial
+332. Algebra lineal
+333. Programación basica Python
+334. introduccion a ingenieria de sistemas
+335. Resolucion de problemas algoritmicos
+336. ingles 1
 
+QUINTO SEMESTRE
+--------------------------------------------------
+337. Calculo integral
+338. Matematicas discretas
+339. fisica mecanica y laboratorio
+340. programacion intermedia Python
+341. estructuras de datos
+342. ingles 2
 
+SEXTO SEMESTRE
+--------------------------------------------------
+343. Calculo en varias variables
+344. estadistica y probabilidad
+345. programacion avanzada Python
+346. bases de datos
+347. arquitectura de computadores
+348. ingles 3
 
-diferencia ente -1,1 y *
-integridd de datos
-limpieza de datos
-paralelismo
+SEPTIMO SEMESTRE
+--------------------------------------------------
+349. ecuaciones diferenciales
+350. estadistica inferencial
+351. programacion de moviles (react native)
+352. bases de datos no estructurados
+353. sistemas operativos
+354. linux(debian)
+355. programacion lineal
 
+OCTAVO SEMESTRE
+---------------------------------------------------
+356. Simulacion y metodos numericos
+357. administracion de bases de datos
+358. ingenieria de software
+359. fundamentos de Redes
+360. fundamentos de inteligencia artificial
+361. investigacion de Operaciones
 
-validar
+NOVENO SEMESTRE
+--------------------------------------------------
+362. mineria de datos
+363. computacion en la nube
+364. ciberseguridad
+365. Aprendizaje de maquina
+366. gerencia y gestion de proyectos TIC
+
+DECIMO SEMESTRE
+--------------------------------------------------
+367. Analitica de datos
+368. redes Avanzadas
+369. aprendizaje profundo
+370. Arquitecturas de tecnologias de informacion
+371. legislacion informatica
