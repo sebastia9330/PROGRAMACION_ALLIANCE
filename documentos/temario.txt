@@ -1,4 +1,4 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 67 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 17 para practicar temas antes vistos, se la mejor profesora que puedas
+Comportate como un experto en ingenieria de datos, enséñame la clase 71 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 21 para practicar temas antes vistos, se la mejor profesora que puedas
 
 
 1. Introducción a las Bases de Datos--
@@ -67,10 +67,10 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 67 de est
 64. minería de datos -
 65. dashboards -
 66. patrones de comportamiento -
-67. anomalías
-68. segmentación de mercado
-69. predicción
-70. recolección de datos
+67. anomalías -
+68. segmentación de mercado -
+69. predicción -
+70. recolección de datos -
 71. limpieza de datos
 72. transformación de datos
 73. selección de conjuntos de datos
@@ -397,3 +397,14 @@ DECIMO SEMESTRE
 369. aprendizaje profundo
 370. Arquitecturas de tecnologias de informacion
 371. legislacion informatica
+372. Como crear un pipeline de datos
+373. web scraping
+
+
+
+- documento diseño y desarrolo
+-- documento de arquitectura
+--- documento pruebas
+
+fct = mappings
+paq = paquetes
