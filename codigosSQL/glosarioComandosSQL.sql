@@ -36,3 +36,55 @@ ALTER TABLE DULCERIA ADD FECHA_INICIO DATE;
 SELECT LAST_NUMBER
 FROM USER_SEQUENCES
 WHERE SEQUENCE_NAME = 'DULCERIA_SEQ';
+
+
+--deshabilitar los indices
+ALTER INDEX ALL ON TABLA DISABLE;
+
+--rehabilitar los indices
+ALTER INDEX ALL ON TABLA REBUILD;
+
+
+
+INSERT INTO AUDITORIA_NULOS (CODIGO, FECHA_ENTREGA, FECHA_PEDIDO, FECHA_ESPERADA, FECHA_ERROR, COMENTARIO)
+    SELECT codigo_pedido, fecha_entrega, fecha_pedido, fecha_esperada, SYSDATE, 'FECHA ENTREGA NULA' AS COMENTARIO
+    FROM tab_pedido
+    WHERE fecha_entrega IS NULL
+    
+    UNION ALL
+    SELECT codigo_pedido, fecha_entrega, fecha_pedido, fecha_esperada, SYSDATE, 'FECHA PEDIDO NULA' AS COMENTARIO
+    FROM tab_pedido
+    WHERE fecha_pedido IS NULL
+    
+    UNION ALL
+    SELECT codigo_pedido, fecha_entrega, fecha_pedido, fecha_esperada, SYSDATE, 'FECHA ESPERADA NULA' AS COMENTARIO
+    FROM tab_pedido
+    WHERE fecha_esperada IS NULL;
+
+
+
+    -- Insertar datos en la tabla de auditoría
+    INSERT INTO AUDITORIA_NULOS (Columna, CantidadNulos, CODIGO)
+    SELECT 
+        'FECHA_ENTREGA' AS Columna, COUNT(*) AS CantidadNulos, 'CODIGO_PEDIDO' AS CODIGO
+    FROM TAB_PEDIDO
+    WHERE FECHA_ENTREGA IS NULL
+
+    UNION ALL
+
+    SELECT 
+        'FECHA_PEDIDO' AS Columna, COUNT(*) AS CantidadNulos, 'CODIGO_PEDIDO' AS CODIGO
+    FROM TAB_PEDIDO
+    WHERE FECHA_PEDIDO IS NULL
+
+    UNION ALL
+
+    SELECT 
+        'FECHA_ESPERADA' AS Columna, COUNT(*) AS CantidadNulos, 'CODIGO_PEDIDO' AS CODIGO
+    FROM TAB_PEDIDO
+    WHERE FECHA_ESPERADA IS NULL
+
+    SELECT *
+FROM TAB_CLIENTE
+WHERE REGEXP_LIKE(CIUDAD, '^[A-Za-zÁáÉéÍíÓóÚúÑñ\.\-]+( [A-Za-zÁáÉéÍíÓóÚúÑñ\.\-]+)*$'
+);

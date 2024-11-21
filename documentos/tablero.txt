@@ -63,3 +63,13 @@ Un documento de diseño y desarrollo es clave para definir y estructurar proyect
 ---
 
 Este formato se puede adaptar según la complejidad del proyecto, y es una guía completa que proporciona una visión clara para todas las fases del diseño y desarrollo.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+|   WAR: Warriors (Guerreros)                                                                                                                |
+|   WAR + WA: Warren McCulloch y Walter Pitts presentan su modelo de neuronas artificiales, considerada la primera inteligencia artificial.  |
+|   KOT: Philip Kotler es considerado el padre del marketing moderno.                                                                        |
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+hora del problema, tabla donde aparece y coigo, fecha a la tabla de errores, historico de errores
