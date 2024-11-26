@@ -130,4 +130,3 @@ SELECT * FROM TAB_PEDIDO;
 - tener un onjetivo claro
 - contexto
 - pedir una solucion
-
