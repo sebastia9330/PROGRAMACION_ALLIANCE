@@ -130,3 +130,15 @@ SELECT * FROM TAB_PEDIDO;
 - tener un onjetivo claro
 - contexto
 - pedir una solucion
+
+
+1. SELECT *
+FROM EMPLEADOS
+WHERE FECHA_INGRESO - SYSDATE > 10;
+
+2. SELECT E.NOMBRE, P.NOMBRE_PROYECTO
+FROM EMPLEADOS E
+LEFT JOIN ON E.ID_EMPLEADO = P.ID_RESPONSABLE;
+
+7. encuentro muy util hacer consultas con tiempo, para un analisis temporal
+8. es mejor el calculo al usar un filtro de fecha
