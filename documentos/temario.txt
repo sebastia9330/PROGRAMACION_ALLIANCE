@@ -1,4 +1,4 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 79 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 29 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
+Comportate como un experto en ingenieria de datos, enséñame la clase 81 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 31 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 
 
 1. Introducción a las Bases de Datos--
@@ -77,9 +77,10 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 79 de est
 74. generación de informes -
 75. métricas -
 76. valores de referencia -
+77. INDICES SQL
 78. análisis descriptivo y estadístico -
-79. staging
-80. data marts
+79. staging -
+80. data marts -
 81. Componentes principales de la BI
 82. ETL
 83. Fase de extracción 
@@ -406,6 +407,7 @@ DECIMO SEMESTRE
 378. Regresiones
 379. Redes neuronales
 380. Arboles de decision
+381. Variables categoricas
 
 
 

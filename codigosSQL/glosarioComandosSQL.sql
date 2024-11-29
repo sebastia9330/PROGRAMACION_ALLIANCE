@@ -97,3 +97,10 @@ TEMPORARY TABLESPACE temp;
 
 -- permiso de coneccion
 GRANT CONNECT, RESOURCE TO DEVELOPER;
+
+
+--CREACION DE SECUANCIA
+CREATE SEQUENCE DIM_CLIENTE
+START WITH 1       -- Valor inicial
+INCREMENT BY 1     -- Incremento en cada uso
+NOCACHE;
