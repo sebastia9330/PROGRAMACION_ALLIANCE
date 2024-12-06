@@ -1,4 +1,4 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 82 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 32 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
+Comportate como un experto en ingenieria de datos, enséñame la clase 86 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 36 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 
 
 1. Introducción a las Bases de Datos--
@@ -82,10 +82,10 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 82 de est
 79. staging -
 80. data marts -
 81. Componentes principales de la BI -
-82. ETL
-83. Fase de extracción 
-84. métodos de extraccion
-85. Fase de transformación
+82. ETL -
+83. Fase de extracción -
+84. métodos de extraccion -
+85. Fase de transformación -
 86. Fase de carga 
 87. Que es data warehouse?
 88. Sistema OLAP y OLTP
@@ -413,7 +413,9 @@ DECIMO SEMESTRE
 384. documento pruebas
 385. ETL con Python
 386. Construcción de Dashboards con herramientas como Power BI
-
+387. Gobierno de datos
+388. Arquitectura SGA
+389. Arquitectura PGA
 
 - documento diseño y desarrolo
 -- documento de arquitectura
