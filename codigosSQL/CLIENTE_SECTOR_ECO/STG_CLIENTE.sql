@@ -7,7 +7,9 @@
 
 
 
-
+/*=======================================================
+########## TABLA STAGING CLIENTES ##########
+=========================================================*/
 CREATE TABLE STG_CLIENTE(
     NUM_NIT NUMBER(15),
     STR_RAZON_SOCIAL VARCHAR2(100),

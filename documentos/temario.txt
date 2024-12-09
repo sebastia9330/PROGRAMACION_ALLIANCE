@@ -1,4 +1,4 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 86 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 36 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
+Comportate como un experto en ingenieria de datos, enséñame la clase 87 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 37 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 
 
 1. Introducción a las Bases de Datos--
@@ -86,7 +86,7 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 86 de est
 83. Fase de extracción -
 84. métodos de extraccion -
 85. Fase de transformación -
-86. Fase de carga 
+86. Fase de carga -
 87. Que es data warehouse?
 88. Sistema OLAP y OLTP
 89. Esquemas de un almacén de datos
@@ -403,6 +403,9 @@ DECIMO SEMESTRE
 374. Databricks
 375. Estadística de datos
 376. Machine learnig
+
+ONCE SEMESTRE
+--------------------------------------------------
 377. Algoritomos y sus tipos
 378. Regresiones
 379. Redes neuronales
@@ -414,12 +417,9 @@ DECIMO SEMESTRE
 385. ETL con Python
 386. Construcción de Dashboards con herramientas como Power BI
 387. Gobierno de datos
+
+DOCE SEMESTRE
+--------------------------------------------------
 388. Arquitectura SGA
 389. Arquitectura PGA
 
-- documento diseño y desarrolo
--- documento de arquitectura
---- documento pruebas
-
-fct = mappings
-paq = paquetes
