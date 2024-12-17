@@ -1,5 +1,5 @@
 /*
-########## Creado por: Sebastian Carrero ##########
+########## Creado por: Sebastián Carrero ##########
 ########## Fecha De Creacion: 9/12/24 #############
 ########## Dimension Sector Economico, encargada de almacenar 
 los datos de los sectores economico en los cuales operan los clientes #############

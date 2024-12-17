@@ -1,4 +1,3 @@
-Comportate como un experto en ingenieria de datos, enséñame la clase 87 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 37 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 
 
 1. Introducción a las Bases de Datos--
@@ -43,6 +42,7 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 87 de est
 40. Tablas, filas y columnas - 
 41. Tipos de datos de las columnas -
 42. Consultas SQL Básicas -
+Comportate como un experto en ingenieria de datos, enséñame la clase 93 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 43 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 43. WHERE -
 44. GROUP BY -
 45. GROUP BY + HAVING -
@@ -87,18 +87,18 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 87 de est
 84. métodos de extraccion -
 85. Fase de transformación -
 86. Fase de carga -
-87. Que es data warehouse?
-88. Sistema OLAP y OLTP
-89. Esquemas de un almacén de datos
-90. Reporting
-91. Analystics
+87. Que es data warehouse? -
+88. Sistema OLAP y OLTP -
+89. Esquemas de un almacén de datos -
+90. Reporting -
+91. Analystics -
 
 
 SEGUNDO SEMESTRE______________________________________________________
-92. Introducción a la Metodología Kimball -
-93. ¿Qué es la Metodología Kimball? -
-94. Definición de la Metodología -Kimball.
-95. Diferenciación de otros enfoques (como el enfoque Inmon). -
+92. Introducción a la Metodología Kimball 
+93. ¿Qué es la Metodología Kimball? 
+94. Definición de la Metodología Kimball.
+95. Diferenciación de otros enfoques (como el enfoque Inmon). 
 96. Principios y Enfoques Clave de Kimball 
 97. Enfoque bottom-up (de abajo hacia arriba).
 98. Importancia de los Data Marts.
@@ -422,4 +422,10 @@ DOCE SEMESTRE
 --------------------------------------------------
 388. Arquitectura SGA
 389. Arquitectura PGA
+390. Casos de error en la ETL
+391. Cómo respaldar información
+392. Cómo migrar información de una base de datos a otra
+393. Como hacer un backups
+394. migración de datos
+395. Exportar e importar datos y procesos
 
