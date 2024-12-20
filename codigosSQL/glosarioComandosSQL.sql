@@ -106,6 +106,11 @@ INCREMENT BY 1
 NOCACHE;
 
 
+--Comando para vizualizar las secuancias
+SELECT sequence_name, min_value, max_value, increment_by, cycle_flag, cache_size, last_number
+FROM user_sequences;
+
+
 FASE DE CARGA
 FASE DE PRUEBAS
 Y FASE DE AUTOMATIZACION

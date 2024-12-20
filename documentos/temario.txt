@@ -42,9 +42,9 @@
 40. Tablas, filas y columnas - 
 41. Tipos de datos de las columnas -
 42. Consultas SQL Básicas -
-Comportate como un experto en ingenieria de datos, enséñame la clase 93 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 43 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 43. WHERE -
 44. GROUP BY -
+Comportate como un experto en ingenieria de datos, enséñame la clase 94 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 45 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 45. GROUP BY + HAVING -
 46. ORDER BY -
 47. Consultas SQL Avanzadas -
@@ -95,9 +95,9 @@ Comportate como un experto en ingenieria de datos, enséñame la clase 93 de est
 
 
 SEGUNDO SEMESTRE______________________________________________________
-92. Introducción a la Metodología Kimball 
-93. ¿Qué es la Metodología Kimball? 
-94. Definición de la Metodología Kimball.
+92. Introducción a la Metodología Kimball -
+93. ¿Qué es la Metodología Kimball? -
+94. Definición de la Metodología Kimball. 
 95. Diferenciación de otros enfoques (como el enfoque Inmon). 
 96. Principios y Enfoques Clave de Kimball 
 97. Enfoque bottom-up (de abajo hacia arriba).
