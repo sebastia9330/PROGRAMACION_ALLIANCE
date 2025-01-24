@@ -402,3 +402,79 @@ FUNSTG.STG_NOMBRE
 FROM STG_FUNCIONARIO FUNSTG
 WHERE (1=1)
 );
+
+power query
+codificacion de ARCHIVOS
+
+reunion 10am
+
+
+1. Introducción (Portada e Inicio) -
+1.2 Breve historia de creación y razones por las que se creó Power BI. -
+1.3 Problemas que resuelve en la analítica de datos.
+
+2. ¿Qué es Power BI y por qué usarlo?
+2.1 Definición de Power BI. - 
+2.2 Comparación con otras herramientas de BI (ej.: Tableau, QlikView, Excel). -
+2.3 Características clave y beneficios. -
+2.4 Compatibilidad con el ecosistema de Microsoft (Excel, Azure, etc.). -
+
+3. Componentes de Power BI-
+3.1 Power BI Desktop.-
+3.2 Power BI Service.-
+3.3 Power BI Mobile.-
+3.4 Power BI Report Builder.-
+3.5 Power BI Embedded.-
+
+4. Casos de uso empresarial
+4.1 Finanzas: Monitoreo de presupuestos y gastos. -
+4.2 Marketing: Análisis de campañas. -
+4.3 Recursos Humanos: Seguimiento de métricas de empleados. -
+4.4 Ejemplos prácticos de aplicaciones empresariales. -
+
+5. Integración y conectividad con fuentes de datos
+5.1 Tipos de fuentes de datos soportadas (SQL, Excel, APIs, servicios en la nube, etc.).-
+5.2 Cómo conectar Power BI con bases de datos SQL, Excel, y APIs.-
+5.3 Ejemplo práctico: Conexión con una base de datos SQL Developer.-
+
+6. Modelado de datos en Power BI
+6.1 Creación de relaciones entre tablas.-
+6.2 Uso de medidas y columnas calculadas. -
+- las columnas calculadas consumen mucha ram al ir iterando fila por fila
+- las medidas no tienen contexto de fila, la medida es mas recomendada que la tabla calculada
+6.2.2. medidas implicitas y explicitas -
+6.3 Introducción a DAX: funciones básicas y ejemplos. -
+6.4 Beneficios de DAX en cálculos avanzados. -
+
+7. Visualización y diseño de dashboards
+7.1 Capacidades de visualización avanzada. -
+7.2 Opciones de personalización y compartición. -
+7.3 Uso de KPIs y storytelling en Power BI:
+   - Cómo contar historias con datos.
+   - Importancia de elegir visualizaciones adecuadas.
+7.4 Personalización de reportes y dashboards: -
+   - Cambios en temas y colores. -
+   - Uso de visualizaciones personalizadas desde el marketplace. -
+8. Seguridad en Power BI
+8.1 Configuración de roles y niveles de acceso.
+8.2 Concepto de Row-Level Security (RLS).
+
+9. Optimización y rendimiento en Power BI
+9.1 Técnicas para mejorar la velocidad de carga y procesamiento.
+9.2 Uso eficiente de datos y modelos.
+
+10. Exportación y publicación de dashboards
+10.1 Publicar reportes en Power BI Service.
+10.2 Compartir dashboards con equipos y clientes.
+
+11. Análisis avanzado en Power BI
+11.1 Uso de IA y Machine Learning integrado.
+11.2 Visualizaciones avanzadas con Python.
+
+12. Casos de éxito de Power BI
+12.1 Historias reales de empresas que han mejorado su desempeño con Power BI.
+
+13. Conclusión y próximos pasos
+13.1 Resumen de los puntos clave.
+13.2 Recursos adicionales para aprender más sobre Power BI (documentación oficial, cursos, comunidades).
+13.3 Espacio para preguntas y respuestas.

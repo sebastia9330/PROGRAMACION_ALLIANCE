@@ -12,3 +12,6 @@ Host: 158.247.127.76:1521
 SYSTEM
 Usuario: SYSTEM
 Contraseña: Cambio2024*
+
+
+158.247.127.76:1521/orclpdb

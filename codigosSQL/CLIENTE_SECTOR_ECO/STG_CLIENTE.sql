@@ -11,7 +11,7 @@
 ########## TABLA STAGING CLIENTES ##########
 =========================================================*/
 CREATE TABLE STG_CLIENTE(
-    NUM_NIT NUMBER(15),
+    STR_NIT NUMBER(15),
     STR_RAZON_SOCIAL VARCHAR2(100),
     STR_SUCURSAL VARCHAR2(4),
     STR_RAZON_SOCIAL_SUCURSAL VARCHAR2(100),
