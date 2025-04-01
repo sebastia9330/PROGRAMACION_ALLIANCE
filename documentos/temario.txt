@@ -1,9 +1,7 @@
-
-
 1. Introducción a las Bases de Datos--
 2. ¿Qué es una base de datos?--
 3. Datos y tipos de datos--
-4 Sistema Gestor de Bases de Datos (SGBD) --
+4. Sistema Gestor de Bases de Datos (SGBD) --
 5. Definición de SGBD --
 6. Características de un SGBD -
 7. Tipos de SGBD -
@@ -58,11 +56,10 @@
 56. Índices en SQL -
 57. Restricciones SQL -
 58. Transacciones en SQL -
-59. Bases de Datos Relacionales vs. Bases de Datos No Relacionales
+59. Bases de Datos Relacionales vs. Bases de Datos No Relacionales -
 60. Casos de Uso de las Bases Relacionales -
 61. Futuro de las Bases de Datos Relacionales -
 62. Que es la inteligencia de negocios? -
-Comportate como un profesor experto en ingenieria de datos, enséñame la clase 112 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 63 para practicar temas antes vistos, se la mejor profesora que puedas, no olvides usar ejemplos practicos
 63. Conceptos y definiciones -
 64. minería de datos -
 65. dashboards -
@@ -98,6 +95,7 @@ SEGUNDO SEMESTRE______________________________________________________
 92. Introducción a la Metodología Kimball -
 93. ¿Qué es la Metodología Kimball? -
 94. Definición de la Metodología Kimball. -
+Comportate como un profesor experto en ingenieria de datos, enséñame la clase 145 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 95 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 4 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos
 95. Diferenciación de otros enfoques (como el enfoque Inmon). 
 96. Principios y Enfoques Clave de Kimball -
 97. Enfoque bottom-up (de abajo hacia arriba). -
@@ -115,39 +113,39 @@ SEGUNDO SEMESTRE______________________________________________________
 109. Esquema en Estrella (Star Schema) -
 110. Definición: Descripción de su estructura (una tabla de hechos central con tablas de dimensiones directamente relacionadas). -
 111. Componentes del Esquema en Estrella: -
-112. Tabla de Hechos: Almacena los hechos o medidas numéricas del negocio (ventas, ingresos, etc.).
-113. Tablas de Dimensiones: Almacenan descripciones contextuales de los hechos (producto, cliente, tiempo, etc.).
-114. Ejemplo Práctico: Creación de un esquema en estrella para un caso de uso específico (por ejemplo, finanzas).
-115. Ventajas: Sencillez y rendimiento en consultas.
-116. Desventajas: Redundancia de datos en las dimensiones.
-117. Esquema en Copo de Nieve (Snowflake Schema)
-118. Definición: Expansión del esquema en estrella donde las tablas de dimensiones están normalizadas.
-119. Componentes del Esquema en Copo de Nieve:
-120. Similar al esquema en estrella, pero las dimensiones están normalizadas en múltiples tablas.
-121. Ejemplo Práctico: Transformación del esquema en estrella anterior en un esquema en copo de nieve.
-122. Ventajas: Ahorro de espacio y menor redundancia de datos.
-123. Desventajas: Complejidad en las consultas y mayor cantidad de joins.
-124. Comparación entre Esquema en Estrella y Copo de Nieve
-125. Rendimiento en Consultas: Esquema en estrella suele ser más rápido debido a menos joins.
-126. Mantenimiento de Datos: Esquema en copo de nieve es más fácil de mantener por la menor redundancia.
-127. Uso de Espacio: Esquema en copo de nieve utiliza menos espacio de almacenamiento.
-128. Simplicidad: Esquema en estrella es más fácil de entender y utilizar para usuarios finales.
-129. Implementación Práctica
-130. Consideraciones para el Diseño de Modelos de Datos
-131. Identificación de hechos y dimensiones clave.
-132. Reglas para la elección entre esquema en estrella y copo de nieve.
-133. Ejemplo de Implementación con una Herramienta ETL énfasis en odi12c
-134. Proceso de diseño de un esquema en estrella y en copo de nieve utilizando una herramienta ETL común (por ejemplo, odi12c).
-135. Flujo de trabajo desde la extracción de datos, pasando por la transformación hasta la carga en un almacén de datos en odi 12c
-136. Optimización de Consultas
-137. Técnicas para optimizar consultas en esquemas en estrella y copo de nieve.
-138. Uso de índices y materialización de vistas para mejorar el rendimiento.
-139. Conclusión y Recomendaciones
-140. Resumen de la Metodología Kimball y los Esquemas
-141. Puntos clave discutidos en la presentación.
-142. Recomendaciones para la Selección del Esquema
-143. Cuándo utilizar el esquema en estrella vs. copo de nieve en proyectos de almacén de datos.
-144. Mejores Prácticas para Implementación y Mantenimiento
+112. Tabla de Hechos: Almacena los hechos o medidas numéricas del negocio (ventas, ingresos, etc.). -
+113. Tablas de Dimensiones: Almacenan descripciones contextuales de los hechos (producto, cliente, tiempo, etc.). -
+114. Ejemplo Práctico: Creación de un esquema en estrella para un caso de uso específico (por ejemplo, finanzas). -
+115. Ventajas: Sencillez y rendimiento en consultas. -
+116. Desventajas: Redundancia de datos en las dimensiones. -
+117. Esquema en Copo de Nieve (Snowflake Schema) -
+118. Definición: Expansión del esquema en estrella donde las tablas de dimensiones están normalizadas. -
+119. Componentes del Esquema en Copo de Nieve: -
+120. Similar al esquema en estrella, pero las dimensiones están normalizadas en múltiples tablas. -
+121. Ejemplo Práctico: Transformación del esquema en estrella anterior en un esquema en copo de nieve. -
+122. Ventajas: Ahorro de espacio y menor redundancia de datos. -
+123. Desventajas: Complejidad en las consultas y mayor cantidad de joins. -
+124. Comparación entre Esquema en Estrella y Copo de Nieve -
+125. Lógica para escuelas de ingeniería -
+126. Cálculo diferencial -
+127. Física mecánica y laboratorio -
+128. Programación orientada a objetos 1 (Python) -
+129. Redes 1 -
+130. Consideraciones para el Diseño de Modelos de Datos -
+131. Identificación de hechos y dimensiones clave. -
+132. Arquitectura y mantenimiento de computadores -
+133. Ejemplo de Implementación con una Herramienta ETL énfasis en odi12c -
+134. Proceso de diseño de un esquema en estrella y en copo de nieve utilizando una herramienta ETL común (por ejemplo, odi12c). -
+135. Flujo de trabajo desde la extracción de datos, pasando por la transformación hasta la carga en un almacén de datos en odi 12c -
+136. Optimización de Consultas SQL -
+137. Técnicas para optimizar consultas en esquemas en estrella y copo de nieve. -
+138. Uso de índices y materialización de vistas para mejorar el rendimiento. - 
+139. Conclusión y Recomendaciones -
+140. Resumen de la Metodología Kimball y los Esquemas -
+141. Circuitos basicos -
+142. Recomendaciones para la Selección del Esquema -
+143. Cuándo utilizar el esquema en estrella vs. copo de nieve en proyectos de almacén de datos. -
+144. Mejores Prácticas para Implementación y Mantenimiento -
 145. Sugerencias para mantener la calidad de los datos y el rendimiento del sistema. 
 146. odi12c
 147. mappings (ODI12c)
@@ -436,3 +434,11 @@ DOCE SEMESTRE
 TRECE SEMESTRE
 --------------------------------------------------
 400. Análisis exploratorio de datos
+401. Computacion cuantica 
+402. Codigo fuente de los programas
+403. logica propocisional
+404. Ley de hom, de walt y de kirkchoff
+Servicios Pass y servicio Iaas
+Bulk Load
+firebase
+operational data store
