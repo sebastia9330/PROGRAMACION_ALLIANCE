@@ -1,0 +1,757 @@
+🧩 Nivel 1: Fundamentos de TI (0–50)
+Comportate como un profesor experto en Ciberseguridad, enséñame la clase 1 de estos temas, quiero ser un profecional en Ciberseguridad, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar 1. ¿Qué es la ciberseguridad?
+2. Tipos de amenazas
+3. Tipos de hackers
+4. Historia de la ciberseguridad
+5. Confidencialidad, integridad y disponibilidad (CIA)
+6. Sistemas operativos: Windows, Linux, macOS
+7. Estructura de redes informáticas
+8. TCP/IP y modelo OSI
+9. Direccionamiento IP
+10. Subnetting
+11. DHCP, DNS, NAT
+12. Firewalls básicos
+13. VPNs: qué son y cómo funcionan
+14. Tipos de malware: virus, troyanos, gusanos
+15. Antivirus y antimalware
+16. Concepto de hacking ético
+17. Introducción a la criptografía
+18. Criptografía simétrica vs asimétrica
+19. Hashing y funciones de resumen
+20. Certificados digitales
+
+SSL/TLS
+
+Autenticación multifactor
+
+Gestión de contraseñas
+
+Buenas prácticas de seguridad
+
+Políticas de seguridad
+
+Introducción a la virtualización
+
+Máquinas virtuales y snapshots
+
+Comandos básicos de Windows
+
+Comandos básicos de Linux
+
+Entornos de laboratorio (VirtualBox, VMware)
+
+Introducción al pentesting
+
+Conceptos de vulnerabilidad y exploit
+
+Metodologías de análisis de riesgo
+
+NIST, ISO 27001, CIS Controls
+
+¿Qué es un SIEM?
+
+¿Qué es un SOC?
+
+OWASP Top 10
+
+Ingeniería social
+
+Phishing
+
+Spoofing
+
+Seguridad en correo electrónico
+
+Navegación segura en la web
+
+Protección de dispositivos móviles
+
+Backup y recuperación
+
+Tipos de ataques comunes
+
+Denegación de servicio (DoS)
+
+DDoS
+
+Botnets
+
+Red Tor y anonimato
+
+Herramientas básicas: Wireshark, Nmap
+
+🛠️ Nivel 2: Pentesting y Hacking Ético (51–150)
+¿Qué es un pentest?
+
+Tipos de pentesting (interno, externo, físico)
+
+Fases del pentest
+
+Recolección de información pasiva
+
+Recolección activa
+
+Reconocimiento con Whois
+
+DNS enumeration
+
+Escaneo de puertos con Nmap
+
+Banner grabbing
+
+OS fingerprinting
+
+Enumeración de servicios
+
+Escaneo de vulnerabilidades (Nessus, OpenVAS)
+
+Explotación básica
+
+CVEs y Exploit-DB
+
+Bases de datos de vulnerabilidades
+
+Escalada de privilegios en Windows
+
+Escalada de privilegios en Linux
+
+Post-explotación
+
+Pivoting
+
+Mantenimiento del acceso
+
+Bypassing UAC
+
+Windows credentials dumping (Mimikatz)
+
+Ataques a redes WiFi
+
+WPA2 cracking
+
+Ataques de diccionario
+
+Captura de handshakes
+
+Ataques Man in the Middle (MitM)
+
+ARP Spoofing
+
+DNS Spoofing
+
+Sniffing de contraseñas
+
+HTTPS downgrade attack
+
+SSLStrip
+
+Ataques web comunes
+
+SQL Injection
+
+XSS
+
+CSRF
+
+LFI/RFI
+
+Command injection
+
+Directory traversal
+
+Fuzzing web apps
+
+WAF evasion
+
+Web Shells
+
+Burp Suite
+
+ZAP Proxy
+
+OWASP Juice Shop
+
+Pentesting WordPress
+
+Pentesting Joomla
+
+Ataques a bases de datos
+
+Bruteforce con Hydra
+
+Autenticación rota ...
+
+🧠 Nivel Intermedio (Temas 101–200)
+🔐 101–120. Seguridad de Aplicaciones Web
+Principios OWASP
+
+OWASP Top 10
+
+Inyección SQL
+
+Cross-Site Scripting (XSS)
+
+Cross-Site Request Forgery (CSRF)
+
+Seguridad en formularios web
+
+Autenticación y sesiones seguras
+
+Validación de entrada/salida
+
+Control de acceso a nivel de objeto
+
+Clickjacking
+
+Content Security Policy (CSP)
+
+Seguridad en APIs REST
+
+Seguridad en GraphQL
+
+Tokenización y JWT
+
+Seguridad en Single Page Applications (SPA)
+
+Seguridad en Angular/React/Vue
+
+Escaneo de seguridad automatizado
+
+Pentesting de aplicaciones web
+
+Bug bounty: cómo funciona
+
+DevSecOps y CI/CD seguro
+
+🧑‍💻 121–140. Hacking Ético (Red Team)
+Fases del Ethical Hacking
+
+Reconocimiento pasivo y activo
+
+Enumeración de servicios
+
+Escaneo de vulnerabilidades
+
+Herramientas: Nmap, Nikto, Dirb
+
+Explotación de servicios
+
+Escalada de privilegios
+
+Pivoting y movimiento lateral
+
+Post-explotación
+
+Herramientas: Metasploit, Empire
+
+Phishing avanzado
+
+Ingeniería social práctica
+
+Password cracking y hash dumping
+
+Mimikatz y Pass-the-Hash
+
+Captura de tráfico con Wireshark
+
+Evasión de antivirus
+
+Técnicas de ofuscación
+
+Ataques a Active Directory
+
+Generación de payloads
+
+C2 Frameworks (Covenant, Cobalt Strike)
+
+🛡️ 141–160. Defensa y Blue Team
+Detección de amenazas
+
+Gestión de incidentes
+
+Técnicas de logging y SIEM
+
+Splunk y Graylog
+
+Detección de intrusos (IDS/IPS)
+
+Honeypots
+
+Threat Hunting
+
+Intel de amenazas (Threat Intelligence)
+
+Análisis de comportamiento de usuarios (UEBA)
+
+Correlación de eventos
+
+Gestión de parches
+
+Respuesta a incidentes paso a paso
+
+Plan de recuperación ante desastres
+
+Plan de continuidad del negocio
+
+Detección de malware en endpoints
+
+Análisis de registros (event logs)
+
+Firewall perimetral vs. host-based
+
+Seguridad en endpoints (EDR)
+
+Antivirus y antimalware moderno
+
+Ciberdefensa activa
+
+🧬 161–180. Criptografía Aplicada
+Criptografía de clave pública vs. privada
+
+Cifrado simétrico (AES, DES)
+
+Cifrado asimétrico (RSA, ECC)
+
+Algoritmos de hashing (SHA, MD5)
+
+Ataques a funciones hash
+
+Intercambio de claves (Diffie-Hellman)
+
+Certificados digitales (X.509)
+
+PKI y ACs
+
+TLS y HTTPS
+
+SSL Stripping
+
+Seguridad en VPNs
+
+Criptografía en correos (PGP, GPG)
+
+Firma digital
+
+Blockchain básico y seguridad
+
+Criptografía poscuántica
+
+Esteganografía
+
+Secure Key Storage
+
+Hardware Security Modules (HSM)
+
+Tokens FIDO y YubiKey
+
+Protección de secretos y credenciales
+
+🧾 181–200. Cumplimiento y Legalidad
+ISO 27001
+
+NIST Framework
+
+CIS Controls
+
+PCI DSS
+
+GDPR y privacidad de datos
+
+Leyes de ciberseguridad en LATAM
+
+HIPAA
+
+SOX
+
+Evaluaciones de riesgo
+
+Política de seguridad de la información
+
+Clasificación de activos
+
+Control de acceso basado en roles
+
+Auditoría y revisiones de seguridad
+
+Seguridad contractual
+
+Seguridad en proveedores externos
+
+Gestión de identidades (IAM)
+
+Formación en ciberseguridad
+
+Seguridad física en TI
+
+Ciberseguridad en la nube (visión legal)
+
+Gobierno y cumplimiento (GRC)
+
+Avanzado: Defensa de Redes y Arquitecturas Seguras (201–250)
+Arquitectura de red segura
+
+Segmentación de redes (DMZ, VLANs)
+
+Bastionado de sistemas
+
+Secure Proxy y filtrado de contenido
+
+Seguridad en redes inalámbricas (WPA3, 802.11x)
+
+Seguridad en redes industriales (ICS/SCADA)
+
+Seguridad en redes definidas por software (SDN)
+
+Zero Trust Architecture (ZTA)
+
+Arquitecturas basadas en microsegmentación
+
+Seguridad en redes perimetrales
+
+Uso de honeypots y honeynets
+
+Seguridad en conexiones VPN
+
+Network Access Control (NAC)
+
+Proxies inversos y balanceadores seguros
+
+Secure Web Gateways
+
+Arquitectura de proxies transparentes
+
+Reverse proxy vs forward proxy
+
+Técnicas de detección de lateral movement
+
+Prevención de ataques man-in-the-middle (MitM)
+
+Seguridad en routers y switches
+
+Desactivación de servicios inseguros por defecto
+
+Técnicas de evasión en redes y detección
+
+DHCP snooping y protección ARP
+
+IP source guard
+
+Port security y MAC filtering
+
+Seguridad en redes virtualizadas (vSwitch, NSX)
+
+Seguridad en redes 5G
+
+Firewalls de nueva generación (NGFW)
+
+Deep Packet Inspection (DPI)
+
+Detección de ataques a protocolos (SMB, DNS, etc.)
+
+Seguridad en redes mesh
+
+Seguridad para IoT en redes
+
+Sistemas IDS/IPS distribuidos
+
+Arquitectura de red orientada a amenazas
+
+Análisis de topología y dependencias
+
+Segmentación basada en funciones (RBAC en red)
+
+Blindaje de red en entornos híbridos
+
+Redes con criptografía post-cuántica
+
+Gestión de identidades en red (IAM en red)
+
+Técnicas de red team y blue team en arquitectura
+
+Secure DNS y DNSSEC
+
+DNS over HTTPS (DoH) y DNS over TLS (DoT)
+
+Seguridad en servicios de nombres (mDNS, NetBIOS)
+
+Políticas de acceso a recursos compartidos
+
+Redundancia segura (STP, HSRP, VRRP)
+
+Administración segura remota (SSH, SNMPv3)
+
+Protocolos de autenticación en red (802.1X, RADIUS)
+
+Auditoría y logging de tráfico
+
+Análisis de tráfico cifrado
+
+Túneles seguros (GRE, IPsec)
+
+Nivel 5: Análisis de malware, ingeniería inversa y ofensiva avanzada (251–300)
+251. Introducción al análisis de malware
+252. Tipos de malware: virus, gusanos, troyanos, ransomware, rootkits, etc.
+253. Ciclo de vida del malware
+254. Recolección segura de muestras de malware
+255. Análisis estático vs dinámico de malware
+256. Uso de máquinas virtuales para sandboxing
+257. Herramientas de análisis estático: Strings, PEiD, Dependency Walker
+258. Herramientas de análisis dinámico: Process Monitor, Wireshark, RegShot
+259. Introducción a la ingeniería inversa de binarios
+260. Lenguaje ensamblador básico (x86, x64)
+
+261. Introducción a IDA Pro
+262. Introducción a Ghidra
+263. Técnicas de ofuscación de código y cómo detectarlas
+264. Debugging con x64dbg/OllyDbg
+265. Análisis de malware en Windows
+266. Análisis de malware en Linux
+267. Detección de keyloggers y spyware
+268. Análisis de ransomware y recuperación de claves
+269. Técnicas de evasión usadas por malware moderno
+270. Firmas YARA para detección de malware
+
+271. Automatización de análisis con Python (Volatility, pefile)
+272. Introducción a la ingeniería inversa móvil (APK)
+273. Descompilación de apps Android (apktool, jadx)
+274. Análisis de tráfico de red malicioso
+275. Análisis de phishing: plantillas, URLs y servidores
+276. Introducción a ataques APT (Advanced Persistent Threats)
+277. Casos famosos de malware: WannaCry, NotPetya, Stuxnet
+278. Ingeniería inversa de macros de Office maliciosos
+279. Búsqueda de IOCs (Indicators of Compromise)
+280. Técnicas de análisis forense post-infección
+
+281. Introducción a ciberinteligencia (Cyber Threat Intelligence)
+282. Fuentes de inteligencia: OSINT, HUMINT, SIGINT
+283. Creación de perfiles de amenazas (Threat Actor Profiling)
+284. MITRE ATT&CK Framework - Uso práctico
+285. TTPs de atacantes (Tactics, Techniques, Procedures)
+286. Modelos de amenazas: STRIDE, DREAD, PASTA
+287. Análisis de campañas de malware en grupos APT
+288. Introducción al Threat Hunting
+289. Indicadores de ataque (IOA) vs Indicadores de compromiso (IOC)
+290. Threat Feeds y herramientas (AlienVault OTX, MISP)
+
+291. Introducción a la ciberseguridad ofensiva avanzada
+292. Post-explotación: movimiento lateral y persistencia
+293. Técnicas de evasión de antivirus y EDR
+294. Red Teaming vs Pentesting tradicional
+295. Frameworks de ataque: Cobalt Strike, Empire, Sliver
+296. Uso de Metasploit a nivel avanzado
+297. Simulación de adversarios (Adversary Emulation)
+298. Técnicas de exfiltración de datos
+299. Abuso de servicios legítimos para C2 (Twitter, Dropbox)
+300. Red teaming en ambientes corporativos reales
+
+Nivel Avanzado – Pentesting Profesional y Ciberinteligencia
+301-310: Hacking Web Avanzado
+CSRF Token Bypass
+
+Abuso de lógica de negocio
+
+Web Cache Deception
+
+HTTP Request Smuggling
+
+CORS Misconfigurations
+
+SSRF (Server Side Request Forgery)
+
+Deserialización Insegura
+
+Explotación de GraphQL
+
+Hacking APIs REST y SOAP
+
+Exploits en Single Page Applications (SPA)
+
+311-320: Hacking de Aplicaciones y Servicios
+Inyección en XML (XXE)
+
+Inyección en NoSQL
+
+Vulnerabilidades en CMS (WordPress, Joomla, Drupal)
+
+Explotación de Jenkins y CI/CD
+
+Hacking de microservicios y contenedores
+
+Ataques en Kubernetes
+
+Seguridad en Docker y explotación de imágenes
+
+Identificación y explotación de SOAP/REST APIs
+
+SAST y DAST: herramientas y estrategias
+
+Hooking de aplicaciones JavaScript
+
+321-330: Post-Explotación Avanzada
+Mimikatz a profundidad
+
+Lateral Movement con Pass-the-Hash / Pass-the-Ticket
+
+Golden Ticket y Silver Ticket
+
+Dumping y análisis de LSASS
+
+Persistence en Windows y Linux
+
+Técnicas de Bypass de Antivirus / EDR
+
+Living off the Land (LOL) Binaries
+
+Uso de herramientas como Empire, Covenant, Cobalt Strike
+
+Powershell Empire para persistencia
+
+UAC Bypass y Privilege Escalation
+
+331-340: Ciberinteligencia y Threat Hunting
+Conceptos de CTI (Cyber Threat Intelligence)
+
+Fuentes OSINT para CTI
+
+Modelos ATT&CK, Diamond Model y Cyber Kill Chain
+
+Indicadores de Compromiso (IoCs)
+
+Técnicas de Threat Hunting
+
+Uso de SIEM en Threat Hunting
+
+MITRE ATT&CK para detección y defensa
+
+Análisis de malware básico para CTI
+
+Creación de perfiles de atacantes (Threat Actor Profiling)
+
+Enriquecimiento de eventos y contexto
+
+341-350: Ciberseguridad Industrial y Avanzada
+Ciberseguridad en entornos SCADA/ICS
+
+Protocolos industriales (Modbus, DNP3, OPC, etc.)
+
+Ataques a PLCs y sistemas industriales
+
+Técnicas de protección en OT (Operational Technology)
+
+Ciberseguridad en redes 5G
+
+Seguridad en entornos cloud híbridos
+
+Introducción a Zero Trust Architecture
+
+Evaluación de riesgos avanzados
+
+Preparación y respuesta ante incidentes de gran escala
+
+Simulacros de Red Team vs Blue Team (Purple Teaming)
+
+🔐 Nivel Experto – Red Team, Blue Team y Gestión Estratégica
+351–360: Red Team Operations
+Planeación de ejercicios Red Team
+
+Técnicas de Reconocimiento ofensivo (Open Source y Activo)
+
+Desarrollo y uso de payloads personalizados
+
+Uso avanzado de Metasploit y Cobalt Strike
+
+Simulación de APTs (Amenazas Persistentes Avanzadas)
+
+Evasión de EDR y soluciones Next-Gen AV
+
+C2 Frameworks: Sliver, Mythic, Havoc
+
+Técnicas avanzadas de pivoting
+
+Análisis de defensas y puntos ciegos
+
+Reporte técnico y ejecutivo en ejercicios Red Team
+
+361–370: Blue Team – Defensa en Profundidad
+Diseño de defensas en capas (Layered Defense)
+
+Estrategias de hardening en entornos corporativos
+
+Configuración avanzada de firewalls y WAF
+
+Respuesta ante alertas falsas positivas
+
+Análisis de tráfico en tiempo real (Wireshark, Zeek)
+
+Tuning de reglas en SIEM (Splunk, ELK, QRadar)
+
+Implementación de honeypots y deception tech
+
+Seguridad en arquitecturas Zero Trust
+
+Threat Hunting avanzado con MITRE ATT&CK
+
+Gestión y respuesta a ransomware
+
+371–380: Auditorías, Normativas y Cumplimiento
+Auditorías de seguridad informática
+
+ISO 27001: controles y auditoría
+
+NIST Cybersecurity Framework
+
+PCI-DSS: cumplimiento en tarjetas de pago
+
+HIPAA: seguridad en salud
+
+GDPR: protección de datos en Europa
+
+Evaluación de riesgos (metodologías OCTAVE, MAGERIT)
+
+Gestión de continuidad del negocio (BCP/DRP)
+
+Seguridad en entornos DevOps (DevSecOps)
+
+Certificaciones y estándares de ciberseguridad globales
+
+381–390: Análisis de Malware y Forense Digital Avanzado
+Ingeniería inversa con Ghidra e IDA Pro
+
+Técnicas de empaquetado y cifrado de malware
+
+Sandbox y análisis dinámico
+
+Análisis de rootkits y bootkits
+
+Técnicas anti-forense y evasión
+
+Análisis de ataques fileless
+
+Investigaciones forenses en Windows y Linux
+
+Extracción de evidencia en discos e imágenes
+
+Investigación de incidentes en entornos cloud
+
+Trazabilidad y reconstrucción de ataques complejos
+
+391–400: Estrategia, Liderazgo y Futuro de la Ciberseguridad
+Gestión de crisis cibernéticas
+
+Liderazgo en equipos SOC, Red y Blue Team
+
+Evaluación de madurez en ciberseguridad (CMMI, NIST)
+
+Gobierno de la ciberseguridad en organizaciones
+
+Rol del CISO y estrategias empresariales de seguridad
+
+Tendencias emergentes: IA en ciberseguridad
+
+Quantum computing y riesgos en criptografía
+
+Seguridad en IoT y dispositivos embebidos
+
+Simulaciones de guerra cibernética (Cyber War Games)
+
+Carrera profesional y roadmap continuo en ciberseguridad

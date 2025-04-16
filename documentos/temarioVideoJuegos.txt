@@ -1,0 +1,469 @@
+🧱 Nivel 1: Fundamentos de los Videojuegos (1-100)
+Conceptos Generales (1-20)
+1. ¿Qué es un videojuego?
+Comportate como un profesor experto en creacion de videojuegos, enséñame la clase 2 de estos temas, quiero ser un profecional en creacion de videojuegos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar
+2. Historia de los videojuegos
+3. Clasificación de videojuegos por género
+4. Tipos de cámaras en videojuegos (2D, 3D, isométrico)
+5. Jugabilidad (gameplay)
+6. Mecánicas de juego
+7. Elementos narrativos en videojuegos
+8. Diseño de niveles (level design)
+9. Introducción a las engines de videojuegos
+10. Videojuegos Indie vs Triple A
+11. Concepto de loop de juego
+12. Recompensas y progresión
+13. HUD y UI en videojuegos
+14. Dificultad y balanceo
+15. Diseño de misiones y objetivos
+16. Narrativa emergente vs. narrativa guiada
+17. Concepto de “game feel”
+18. El papel del jugador
+19. El ciclo de desarrollo de un videojuego
+20. Estudio de casos: videojuegos populares
+
+Arte y Diseño Visual (21-40)
+21. Pixel art
+22. Sprites y tilesets
+23. Principios básicos del diseño gráfico
+24. Colores y contraste en videojuegos
+25. Diseño de personajes
+26. Animación cuadro a cuadro
+27. Fundamentos del arte digital
+28. Diseño de entornos (environment design)
+29. Ilustración para videojuegos
+30. Animación por huesos (rigging)
+31. Uso de herramientas como Photoshop y Aseprite
+32. Diseño de interfaces gráficas (UI)
+33. Iconografía en videojuegos
+34. Diseño de efectos visuales (VFX)
+35. Storyboarding para videojuegos
+36. Estética retro vs moderna
+37. Diseño 2D vs 3D
+38. Blender para principiantes
+39. Importación de assets
+40. Atlas de sprites
+
+Programación Básica (41–70)
+41. Introducción a la lógica de programación
+42. Variables y tipos de datos
+43. Estructuras de control (if, else, loops)
+44. Funciones y métodos
+45. Programación orientada a objetos
+46. Clases y objetos
+47. Eventos y colisiones
+48. Estados del juego (menus, pausa, gameplay)
+49. Control de personajes (input)
+50. Temporizadores y cronómetros
+51. Vidas y puntajes
+52. Movimiento en 2D
+53. Física básica en videojuegos
+54. Detección de colisiones
+55. Spawneo de enemigos
+56. Disparo de proyectiles
+57. Enemigos con IA simple (seguir al jugador)
+58. Guardado y carga de datos
+59. Introducción a los motores de juego
+60. ¿Qué es un Game Loop?
+
+Herramientas y Motores (71–100)
+61. Instalación de Unity
+62. Exploración de la interfaz de Unity
+63. Introducción a Unreal Engine
+64. Motores 2D: Godot, Construct, GameMaker
+65. Lenguaje C# para Unity
+66. Blueprints en Unreal
+67. Escenas y jerarquía de objetos
+68. Importar assets en Unity
+69. Uso de la cámara
+70. UI en Unity
+71. Eventos y triggers en Unity
+72. Creación de animaciones en Unity
+73. Controlador de animaciones
+74. Audio en Unity
+75. Sistema de partículas
+76. Navegación y NavMesh
+77. PlayerPrefs para guardar datos
+78. Build y exportación del juego
+79. Debugging en Unity
+80. Sistema de prefabs
+81. Tilemaps en Unity
+82. Colliders y rigidbody
+83. Unity Asset Store
+84. Lighting básico
+85. Postprocesamiento
+86. Introducción a Godot Engine
+87. Escenas y nodos en Godot
+88. Programación en GDScript
+89. Proyecto 2D en Godot
+90. Física y colisiones en Godot
+91. UI en Godot
+92. Animación en Godot
+93. Exportación en Godot
+94. Comparativa Unity vs Godot vs Unreal
+95. Herramientas para sonido: Audacity, Bfxr
+96. Licencias de assets
+97. Control de versiones con Git
+98. Organización de archivos en un proyecto
+99. Game Design Document (GDD)
+100. Proyecto: Primer juego 2D (tipo Pong o Plataformas)
+Nivel 3: Interactividad y Lógica de Juego (Temas 81–120)
+81. Estados del juego (Game States)
+82. Controladores de entrada (teclado, mouse, gamepad)
+83. Programación de ciclos de juego (Game Loop)
+84. Timers y cronómetros
+85. Colisiones 2D básicas
+86. Colisiones 3D básicas
+87. Física básica (gravedad, fricción, rebote)
+88. Rigid Bodies y Colliders
+89. Detección de colisiones por coordenadas
+90. Eventos y triggers
+
+91. Sistema de puntuación
+92. Temporizador de nivel
+93. Condiciones de victoria y derrota
+94. Reinicio de niveles
+95. Guardado y carga de progreso
+96. Power-ups y mejoras temporales
+97. IA básica: movimiento enemigo
+98. IA básica: patrones de ataque
+99. IA básica: seguimiento de jugador
+100. Creación de HUD básico (Health, Score)
+
+101. Barras de vida y energía
+102. Menú de pausa
+103. Menú de inicio
+104. Menú de Game Over
+105. Configuración de opciones (audio, controles)
+106. Navegación entre escenas o niveles
+107. Sistema de inventario básico
+108. Ítems recolectables
+109. Sistema de diálogo básico
+110. Árboles de diálogo
+
+111. Misiones simples
+112. Seguimiento de objetivos
+113. Registro de misiones
+114. Tutorial interactivo
+115. Uso de scripts externos
+116. Scripts de comportamiento por objeto
+117. Delegados y eventos en C# (Unity)
+118. Coroutines y delays
+119. Singleton pattern para gestión global
+120. ScriptableObjects (Unity)
+
+Nivel 4: Contenido, Audio y Efectos Especiales (Temas 121–160)
+121. Importación y uso de assets externos
+122. Creación de paquetes de assets personalizados
+123. Uso de Tilemaps (juegos 2D)
+124. Diseño modular de niveles
+125. Organización jerárquica de objetos
+126. Lightmapping y luces estáticas
+127. Iluminación dinámica y sombras
+128. Uso de cámaras múltiples
+129. Cinemáticas simples con Timeline (Unity)
+130. Control de cámara por script
+
+131. Efectos de postprocesado
+132. Bloom, motion blur y ambient occlusion
+133. Profundidad de campo (Depth of Field)
+134. Transiciones entre escenas con efectos
+135. Sistema de partículas
+136. Humo, fuego, explosiones con partículas
+137. Efectos de sonido (SFX)
+138. Música de fondo
+139. Cambios de música por evento
+140. Mixer de audio (Unity)
+
+141. Control de volumen global
+142. Transiciones de audio suave (fade in/out)
+143. 3D spatial audio
+144. Audio ambiental (viento, lluvia, etc.)
+145. Animaciones 2D por sprites
+146. Animaciones con Animator (Unity)
+147. Transiciones entre animaciones
+148. Control de animaciones desde código
+149. Blend Trees en animaciones 3D
+150. Uso de rigs humanoides (esqueletos animados)
+
+151. Animaciones de UI (interfaz)
+152. Feedback visual al usuario (flashes, vibraciones)
+153. Partículas asociadas a eventos del jugador
+154. Partículas para enemigos y efectos de daño
+155. Sincronización de sonido y animación
+156. Secuencias animadas de intro
+157. Créditos animados
+158. Editor de Timeline para cinemáticas
+159. Grabación de gameplay (demos o trailers)
+160. Captura de pantallas desde el juego
+
+Nivel 5: Diseño Avanzado y Game Design (Temas 161–200)
+161. Fundamentos del game design
+162. El bucle central del juego (core loop)
+163. Tipos de jugadores y estilos de juego (Bartle's Taxonomy)
+164. Mecánicas de juego básicas y avanzadas
+165. Dinámicas de juego (cómo interactúan las mecánicas)
+166. Estética del juego (lo que experimenta el jugador)
+167. Teoría MDA (Mecánica, Dinámica, Estética)
+168. Progresión y escalado de dificultad
+169. Diseño de niveles (Level Design)
+170. Curva de aprendizaje y engagement
+
+171. Diseño de tutoriales efectivos
+172. Introducción progresiva de mecánicas
+173. Diseño de narrativa interactiva
+174. Técnicas de storytelling en juegos
+175. Diálogos ramificados y decisiones del jugador
+176. Diseño de misiones y objetivos
+177. Juegos sandbox vs juegos dirigidos
+178. Diseño de mundos abiertos
+179. Sistemas de economía en juegos
+180. Balance entre recompensa y desafío
+
+181. Psicología del jugador (motivación, flow)
+182. Técnicas de gamificación
+183. Loot y recompensas
+184. Diseño de enemigos y jefes
+185. Inteligencia artificial basada en estados
+186. Uso de árboles de comportamiento (Behavior Trees)
+187. Diseño de UI/UX para videojuegos
+188. Menús intuitivos y accesibles
+189. HUD (heads-up display) funcional y claro
+190. Diseño accesible para todos los jugadores
+
+191. Pruebas de juego (playtesting)
+192. Feedback del usuario y su aplicación
+193. Iteración de diseño basada en pruebas
+194. Documentación de diseño (Game Design Document)
+195. Pitch de juegos y presentación de ideas
+196. Prototipado rápido de conceptos
+197. Diseño centrado en la historia
+198. Mecánicas basadas en narrativa
+199. Diseño emocional y conexión con el jugador
+200. Análisis de juegos comerciales (deconstrucción)
+
+Nivel 6: Multijugador, Redes y Servicios Online (Temas 201–240)
+201. Fundamentos del desarrollo multijugador
+202. Arquitectura cliente-servidor vs peer-to-peer
+203. Sincronización de estados entre jugadores
+204. Interpolación y extrapolación de movimiento
+205. Tipos de latencia y cómo mitigarlas
+206. Autoridad del servidor y seguridad básica
+207. Introducción a sockets y comunicación TCP/UDP
+208. Serialización de datos para la red
+209. Lag compensation y predicción del cliente
+210. Desarrollo de lobby y salas de espera
+
+211. Implementación de chat en línea
+212. Matchmaking: conceptos y tipos
+213. Sistema de partidas privadas y públicas
+214. Hosting de partidas: local, LAN y en la nube
+215. Bases del protocolo WebSocket
+216. Introducción a Photon Engine (Unity)
+217. Introducción a Mirror Networking (Unity)
+218. Implementación básica de multijugador en Unreal Engine
+219. Persistencia de datos en juegos online
+220. Guardado de progreso en la nube
+
+221. Integración con servicios de backend
+222. Autenticación de usuarios (OAuth, JWT, Firebase Auth)
+223. Creación de rankings y tablas de clasificación
+224. Registro y seguimiento de estadísticas del jugador
+225. Monitoreo de sesiones de juego
+226. Gestión de usuarios y perfiles online
+227. Sistema de amigos y mensajería
+228. Gestión de clanes o gremios
+229. Moderación de contenido generado por usuarios (UGC)
+230. Prevención de trampas y exploits
+
+231. Validación de movimientos en servidor
+232. Técnicas anti-cheat básicas
+233. Seguridad en los datos transmitidos
+234. Actualización en vivo de contenido (hot patching)
+235. Arquitectura de microservicios para videojuegos
+236. Uso de bases de datos NoSQL (MongoDB, Redis) en juegos
+237. APIs RESTful y GraphQL para backend de juegos
+238. Manejo de eventos en tiempo real
+239. Escalabilidad de servidores para MMOs
+240. Uso de servicios cloud: PlayFab, GameSparks, Firebase
+
+Nivel 7: Audio, Música y Sonido Interactivo (Temas 241–280)
+241. Fundamentos del diseño de sonido para videojuegos
+242. Tipos de sonidos en videojuegos: SFX, UI, ambientales, etc.
+243. Formatos de audio más utilizados (.wav, .mp3, .ogg)
+244. Introducción a la edición de sonido con Audacity o Reaper
+245. Grabación de sonidos personalizados
+246. Uso de bibliotecas de sonidos libres de derechos
+247. Implementación de efectos de sonido en Unity
+248. Implementación de efectos de sonido en Unreal Engine
+249. Sonido 2D vs sonido 3D
+250. Audio espacial y posicionamiento 3D
+
+251. Efectos de atenuación de sonido (rolloff)
+252. Sonido direccional: frontales y traseros
+253. Creación de paisajes sonoros (soundscapes)
+254. Uso de reverb y ecos en entornos virtuales
+255. Creación de bucles perfectos para música ambiental
+256. Transiciones suaves entre pistas (crossfading)
+257. Composición musical básica para videojuegos
+258. Herramientas para música: FL Studio, LMMS, Ableton
+259. Generación procedural de música
+260. Introducción a sistemas de música interactiva
+
+261. Diseño de música reactiva al gameplay
+262. Integración de middleware de audio: FMOD
+263. Integración de middleware de audio: Wwise
+264. Configuración de bancos de sonido en FMOD/Wwise
+265. Uso de parámetros para modular sonido dinámicamente
+266. Audio basado en eventos del juego
+267. Optimización de audio en videojuegos
+268. Técnicas de mezcla y masterización para juegos
+269. Diseño de sonido para interfaces (UX)
+270. Efectos de sonido para personajes y enemigos
+
+271. Foley para videojuegos
+272. Audio adaptativo según el entorno (lluvia, fuego, etc.)
+273. Música dinámica en combate o exploración
+274. Sincronización de sonido con animaciones
+275. Control del volumen desde el menú de opciones
+276. Efectos de sonido para narrativa y cinemáticas
+277. Diseño de sonido para realidad virtual (VR)
+278. Audio multicanal y soporte para 5.1 / 7.1
+279. Accesibilidad auditiva: subtítulos, vibración, indicadores
+280. Testing y depuración de sistemas de audio
+
+Nivel 8: Diseño Narrativo e Historia Interactiva (Temas 281–320)
+281. Fundamentos del diseño narrativo en videojuegos
+282. Estructuras narrativas clásicas (inicio, conflicto, resolución)
+283. La narrativa emergente vs narrativa dirigida
+284. Construcción de mundos narrativos (worldbuilding)
+285. Desarrollo de personajes jugables y NPCs
+286. Creación de biografías y trasfondos para personajes
+287. Diseño de tramas principales y misiones secundarias
+288. Árboles de decisiones y ramificación de historias
+289. Sistemas de moralidad y consecuencias en la narrativa
+290. Técnicas para escribir diálogos naturales
+
+291. Uso de scripts de diálogo en motores de juego
+292. Diseño de conversaciones interactivas con elecciones
+293. Implementación de narrativa no lineal
+294. Integración de cinemáticas y narrativa visual
+295. Lenguaje corporal y actuación para personajes
+296. Voz en off, narradores y técnicas de storytelling
+297. Sistemas de relaciones entre personajes
+298. Manejo de emociones y tono en la historia
+299. Mecánicas que refuerzan la narrativa
+300. Creación de tensión, drama y clímax narrativo
+
+301. Worldbuilding coherente con mecánicas y arte
+302. Sistemas de misiones con narrativa dinámica
+303. Diseño de finales múltiples y finales secretos
+304. Introducción a herramientas como Twine para narrativa
+305. Integración de la historia con el HUD y la UI
+306. Lore ambiental: contar sin palabras
+307. Codex y documentos dentro del juego
+308. Narrativa ambiental mediante diseño de niveles
+309. Escritura de diarios, notas y mensajes en el juego
+310. Narrativa en juegos de mundo abierto
+
+311. Narrativa en juegos de terror y suspenso
+312. Diseño narrativo en juegos RPG
+313. Narrativa en juegos de plataformas y acción
+314. Análisis de narrativa en juegos famosos (The Last of Us, Witcher, etc.)
+315. El jugador como narrador: decisiones y consecuencias
+316. Construcción de mitologías ficticias
+317. Técnicas para crear cliffhangers
+318. Narrativa y ritmo del juego
+319. Pruebas de narrativa: coherencia y feedback
+320. Colaboración entre diseñadores narrativos y guionistas
+
+Nivel 9: Publicación, Monetización y Marketing (Temas 321–360)
+321. Introducción al ciclo de publicación de videojuegos
+322. Opciones de autopublicación vs editoras (publishers)
+323. Plataformas de publicación (Steam, Epic, itch.io, consolas)
+324. Requisitos y procesos para publicar en Steam
+325. Publicación en consolas: Nintendo, PlayStation, Xbox
+326. Cómo publicar juegos móviles en Google Play y App Store
+327. Versionado y preparación para el lanzamiento
+328. Creación de builds finales y control de calidad
+329. Estrategias de pre-lanzamiento
+330. Cómo hacer un tráiler de videojuego efectivo
+
+331. Preparar una página atractiva del juego (landing page)
+332. Creación de perfiles en redes sociales para el juego
+333. Campañas de email marketing para lanzamiento
+334. Uso de Discord y comunidades online
+335. Cómo contactar a streamers e influencers de videojuegos
+336. Cómo conseguir reviews en sitios especializados
+337. Marketing orgánico vs marketing pagado
+338. Publicidad en redes sociales (Facebook, Instagram, TikTok)
+339. Crowdfunding para videojuegos (Kickstarter, Indiegogo)
+340. Cómo escribir una campaña de Kickstarter exitosa
+
+341. Estrategias de monetización: pago único
+342. Monetización con publicidad (ads)
+343. Modelo freemium y microtransacciones
+344. Pases de temporada y contenido descargable (DLC)
+345. Suscripciones y contenido exclusivo
+346. Tienda dentro del juego y economía interna
+347. Ética de la monetización: evitar el pay-to-win
+348. Monetización en juegos móviles
+349. Análisis de monetización en juegos populares
+350. Cómo establecer el precio de tu videojuego
+
+351. Gestión de derechos de autor y licencias
+352. Uso de música y recursos con licencias comerciales
+353. Contratos con publishers y revenue share
+354. Protección contra piratería
+355. Cumplimiento de normas legales (GDPR, COPPA, etc.)
+356. Análisis de ventas y métricas de publicación
+357. Manejo de actualizaciones post-lanzamiento
+358. Gestión de bugs y soporte al cliente
+359. Planificación de roadmap de contenidos
+360. Casos de éxito: cómo lo hicieron los indies
+
+Nivel 10: Inteligencia Artificial, Redes y Multijugador (Temas 361–400)
+361. Fundamentos de la Inteligencia Artificial (IA) en videojuegos
+362. Máquinas de estados finitos (FSM)
+363. Árboles de comportamiento (Behavior Trees)
+364. Sistemas de percepción: visión, audición y estímulos
+365. Pathfinding con A* (A estrella)
+366. Sistema de navegación (NavMesh) en Unity y Unreal
+367. Decisiones basadas en utilidad (Utility AI)
+368. IA para enemigos simples (patrullaje, persecución, huida)
+369. IA para aliados y NPCs interactivos
+370. IA adaptativa basada en el comportamiento del jugador
+
+371. Aprendizaje automático en videojuegos (Machine Learning básico)
+372. Redes neuronales simples aplicadas a juegos
+373. IA generativa para creación de niveles
+374. Dificultad dinámica y balance automático
+375. Simulación de multitudes y comportamientos grupales
+
+376. Introducción al desarrollo multijugador
+377. Modelos de red: cliente-servidor vs peer-to-peer
+378. Sincronización de estado entre jugadores
+379. Lag, interpolación y predicción de movimiento
+380. Autenticación y sesiones de usuario
+
+381. Multijugador local vs multijugador en línea
+382. Herramientas de red en Unity (Netcode for GameObjects)
+383. Herramientas de red en Unreal Engine (Replicación)
+384. Sistema de lobby y matchmaking
+385. Chat en línea y comunicación entre jugadores
+386. Guardado y carga en servidores (state saving)
+387. Seguridad en juegos en línea: validación del servidor
+388. Prevención de trampas (anti-cheat básico)
+389. Hosting de servidores dedicados
+390. Uso de servicios en la nube para juegos multijugador (Photon, PlayFab, Firebase)
+
+391. Diseño de juegos cooperativos en línea
+392. Diseño de juegos competitivos y PvP
+393. Balanceo de juegos multijugador
+394. Economía en juegos en línea
+395. Análisis de juegos como Fortnite, Apex, LoL, Valorant
+396. Gestión de comunidades online y soporte técnico
+397. Actualizaciones live service y parches
+398. Sistemas de ranking y progreso
+399. Eventos en vivo y temporadas
+400. Cómo lanzar y mantener un juego multijugador exitoso
