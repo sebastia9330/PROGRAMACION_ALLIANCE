@@ -4,7 +4,7 @@
 4. Sistema Gestor de Bases de Datos (SGBD) --
 5. Definición de SGBD --
 6. Características de un SGBD --
-7. Tipos de SGBD -
+7. Tipos de SGBD --
 8. Relacionales -
 9. No Relacionales -
 10. Multidimensional -
@@ -97,7 +97,7 @@ SEGUNDO SEMESTRE______________________________________________________
 94. Definición de la Metodología Kimball. -
 95. Diferenciación de otros enfoques (como el enfoque Inmon). 
 96. Principios y Enfoques Clave de Kimball -
-Comportate como un profesor experto en ingenieria de datos, enséñame la clase 148 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 98 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 7 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos
+Comportate como un profesor experto en ingenieria de datos, enséñame la clase 149 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 99 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 8 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos
 97. Enfoque bottom-up (de abajo hacia arriba). -
 98. Importancia de los Data Marts. -
 99. Dimensionalidad: Foco en las dimensiones y hechos. -
@@ -149,7 +149,7 @@ Comportate como un profesor experto en ingenieria de datos, enséñame la clase 
 145. Sugerencias para mantener la calidad de los datos y el rendimiento del sistema. -
 146. odi12c -
 147. mappings (ODI12c) -
-148. mappings conectados (ODI12c)
+148. mappings conectados (ODI12c) -
 149. joins (ODI12c)
 150. filtros, VARIABLES (ODI12c)
 151. Excel a tabla con odi 12c
@@ -447,3 +447,6 @@ procesamiento paralelo masivo
 computación en la nube elástica
 CRISP-DM
 PACE
+bases dedatos vectoriales
+modelos de lenguaje largo
+error cuadratico medio
