@@ -1,8 +1,8 @@
 🧱 Nivel 1: Fundamentos de los Videojuegos (1-100)
 Conceptos Generales (1-20)
 1. ¿Qué es un videojuego?
-Comportate como un profesor experto en creacion de videojuegos, enséñame la clase 2 de estos temas, quiero ser un profecional en creacion de videojuegos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar
 2. Historia de los videojuegos
+Comportate como un profesor experto en creacion de videojuegos, enséñame la clase 3 de estos temas, quiero ser un profecional en creacion de videojuegos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar
 3. Clasificación de videojuegos por género
 4. Tipos de cámaras en videojuegos (2D, 3D, isométrico)
 5. Jugabilidad (gameplay)

@@ -1,0 +1,24 @@
+##########
+Escucha en todas las interfaces: La línea 0.0.0.0:1521 LISTENING es clave
+para las conexiones externas, ya que significa que el listener de Oracle está escuchando en todas las interfaces IPv4.
+
+
+
+lsnrctl start
+
+HOST = SRV-IA.it-services.loc
+
+###CREAR PROTOLO 1521#########
+netsh advfirewall firewall add rule name="Abrir puerto 1521 Oracle salida" protocol=TCP dir=out localport=1521 action=allow
+
+##### ELIMINAR LOS PROTOCOLOS######
+
+netsh advfirewall firewall delete rule name="Abrir puerto 1521 Oracle"
+
+#######VALIDACION DE LA REGLA #######
+
+netsh advfirewall firewall delete rule name="Abrir puerto 1521 Oracle salida"
+
+
+####### VERIFICAR EL PUERTO SI SE ECCUENTRA ABIERTO######
+netstat -an | findstr 1521

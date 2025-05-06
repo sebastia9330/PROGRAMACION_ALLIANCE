@@ -1,10 +1,10 @@
 🧩 Nivel 1: Fundamentos de TI (0–50)
-entar 
+
 1. ¿Qué es la ciberseguridad? -
 2. Tipos de amenazas -
-Comportate como un profesor experto en Ciberseguridad, enséñame la clase 3 de estos temas, quiero ser un profecional en Ciberseguridad, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalim
-3. Tipos de hackers
-4. Historia de la ciberseguridad
+3. Tipos de hackers -
+4. Historia de la ciberseguridad -
+Comportate como un profesor experto en Ciberseguridad, enséñame la clase 5 de estos temas, quiero ser un profecional en Ciberseguridad, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalim
 5. Confidencialidad, integridad y disponibilidad (CIA)
 6. Sistemas operativos: Windows, Linux, macOS
 7. Estructura de redes informáticas

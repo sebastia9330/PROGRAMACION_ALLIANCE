@@ -1,0 +1,5 @@
+jdbc:oracle:thin:@158.247.127.76:1521/orclpdb
+
+
+jdbc:weblogic:sqlserver://149.130.171.7:1433;DatabaseName=SQL_ALLIANCE
+149.130.171.7

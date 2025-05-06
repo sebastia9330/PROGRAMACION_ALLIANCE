@@ -9,7 +9,7 @@
 =========================================================*/
 CREATE TABLE DIM_TIEMPO(
     SK_NUM_DIM_TIEMPO NUMBER(7),
-    NUM_ID_FECHA NUMBER(8),
+    NUM_ID_PERIODO NUMBER(8),
     DT_FECHA DATE,
     NUM_AÑO NUMBER(4),
     NUM_MES NUMBER(2),
@@ -26,7 +26,7 @@ CREATE TABLE DIM_TIEMPO(
 ###################### COMENTARIOS ######################
 =========================================================*/
 COMMENT ON COLUMN DIM_TIEMPO.SK_NUM_DIM_TIEMPO IS 'Secuencia generada automaticamente';
-COMMENT ON COLUMN DIM_TIEMPO.NUM_ID_FECHA IS 'Identificador único de la fecha en formato YYYYMMDD';
+COMMENT ON COLUMN DIM_TIEMPO.NUM_ID_PERIODO IS 'Identificador único de la fecha en formato YYYYMMDD';
 COMMENT ON COLUMN DIM_TIEMPO.DT_FECHA IS 'Fecha en formato DATE';
 COMMENT ON COLUMN DIM_TIEMPO.NUM_AÑO IS 'Año de la fecha';
 COMMENT ON COLUMN DIM_TIEMPO.NUM_MES IS 'Número del mes (1-12)';
@@ -46,11 +46,11 @@ DECLARE
 BEGIN
     WHILE V_FECHA <= TO_DATE('31-12-2045', 'DD-MM-YYYY') LOOP
         INSERT INTO dim_tiempo (
-            SK_NUM_DIM_TIEMPO, NUM_ID_FECHA, DT_FECHA, NUM_AÑO, NUM_MES, STR_NOMBRE_MES, NUM_TRIMESTRE, NUM_SEMANA,
+            SK_NUM_DIM_TIEMPO, NUM_ID_PERIODO, DT_FECHA, NUM_AÑO, NUM_MES, STR_NOMBRE_MES, NUM_TRIMESTRE, NUM_SEMANA,
             STR_NOMBRE_DIA, NUM_DIA, STR_FIN_SEMANA, STR_BISIESTO
         ) VALUES (
             SEQ_SK_DIM_TIEMPO.NEXTVAL,
-            TO_NUMBER(TO_CHAR(V_FECHA, 'YYYYMMDD')),  -- NUM_ID_FECHA 
+            TO_NUMBER(TO_CHAR(V_FECHA, 'YYYYMM')),  -- NUM_ID_FECHA 
             V_FECHA,
             EXTRACT(YEAR FROM V_FECHA),
             EXTRACT(MONTH FROM V_FECHA),

@@ -1,0 +1,6 @@
+dir /s /b "C:\ODI_12_APP" | find "rcu.log"
+
+ruta de creacion del agente
+C:\ODI_12_APP\user_projects\domains\base_domain
+
+agent.cmd -NAME=OracleDIAgent1 -PORT=20910

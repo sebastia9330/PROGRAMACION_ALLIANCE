@@ -5,8 +5,8 @@
 5. Definición de SGBD --
 6. Características de un SGBD --
 7. Tipos de SGBD --
-8. Relacionales -
-9. No Relacionales -
+8. Relacionales --
+9. No Relacionales --
 10. Multidimensional -
 11. Distribuidas -
 12. Orientadas a objetos -
@@ -97,11 +97,11 @@ SEGUNDO SEMESTRE______________________________________________________
 94. Definición de la Metodología Kimball. -
 95. Diferenciación de otros enfoques (como el enfoque Inmon). 
 96. Principios y Enfoques Clave de Kimball -
-Comportate como un profesor experto en ingenieria de datos, enséñame la clase 149 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 99 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 8 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos
 97. Enfoque bottom-up (de abajo hacia arriba). -
 98. Importancia de los Data Marts. -
 99. Dimensionalidad: Foco en las dimensiones y hechos. -
 100. Componentes del Proceso Kimball -
+Comportate como un profesor experto en ingenieria de datos, enséñame la clase 151 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 101 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 10 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos
 101. ETL (Extract, Transform, Load): Explicación del proceso de extracción, transformación y carga de datos. -
 102. Modelado Dimensional: Cómo se estructuran los datos en términos de tablas de hechos y dimensiones. -
 103. Data Marts Integrados: Creación de Data Marts que pueden integrarse para formar un almacén de datos completo. -
@@ -150,8 +150,8 @@ Comportate como un profesor experto en ingenieria de datos, enséñame la clase 
 146. odi12c -
 147. mappings (ODI12c) -
 148. mappings conectados (ODI12c) -
-149. joins (ODI12c)
-150. filtros, VARIABLES (ODI12c)
+149. joins (ODI12c) -
+150. filtros, VARIABLES (ODI12c) -
 151. Excel a tabla con odi 12c
 152. vista Materializada
 153. power bi
@@ -450,3 +450,4 @@ PACE
 bases dedatos vectoriales
 modelos de lenguaje largo
 error cuadratico medio
+Bases de datos sindicadas
