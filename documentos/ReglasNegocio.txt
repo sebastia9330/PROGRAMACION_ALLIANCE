@@ -1,0 +1,54 @@
+🧠 RUTA COMPLETA PARA APRENDER A INTEGRAR REGLAS DE NEGOCIO EN MODELOS DIMENSIONALES
+🔹 Módulo 1: Fundamentos
+¿Qué es una regla de negocio? -
+Tipos de reglas: filtros, agregaciones, exclusiones -
+¿Qué es un modelo dimensional? -
+Granularidad y su impacto en las reglas -
+
+🔹 Módulo 2: Integración en el modelo
+Reglas aplicadas en hechos y dimensiones
+
+Reglas aplicadas en el ETL/ELT (SQL, ODI, Python)
+
+Reglas en Power BI (medidas DAX, relaciones, filtros)
+
+🔹 Módulo 3: Ejecución práctica
+SQL: aplicar reglas desde JOINs con tablas de parámetros
+
+Power BI: crear medidas que respeten reglas de negocio
+
+ODI o Python: aplicar filtros dinámicos antes de cargar
+
+🔹 Módulo 4: Documentación y trazabilidad
+Diccionario de reglas de negocio
+
+Documentación técnica y funcional
+
+Lineage: fuente → regla → resultado
+
+Control de versiones y auditoría
+
+🔹 Módulo 5: Reglas de negocio dinámicas ✅ (NUEVO)
+🧩 Objetivo:
+Aprender a manejar reglas que cambian con el tiempo sin reescribir el modelo o el código.
+
+📘 Temas:
+¿Qué hace que una regla sea dinámica?
+
+Diseño de tablas de parámetros para reglas
+
+Uso de vigencia temporal (periodo_inicio, periodo_fin)
+
+Aplicación de reglas dinámicas en:
+
+SQL (JOIN + BETWEEN)
+
+Power BI (filtrado contextual con relaciones)
+
+ETL/ELT (aplicar reglas al vuelo)
+
+Cómo hacer que el usuario funcional pueda editar reglas sin tocar el modelo
+
+🧪 Ejercicio:
+Diseñar una tabla de reglas dinámicas y aplicarla en una consulta SQL o una medida de Power BI, mostrando su efecto al cambiar la parametrización.
+

@@ -4,16 +4,16 @@
 2. Tipos de amenazas -
 3. Tipos de hackers -
 4. Historia de la ciberseguridad -
-Comportate como un profesor experto en Ciberseguridad, enséñame la clase 5 de estos temas, quiero ser un profecional en Ciberseguridad, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalim
-5. Confidencialidad, integridad y disponibilidad (CIA)
-6. Sistemas operativos: Windows, Linux, macOS
-7. Estructura de redes informáticas
-8. TCP/IP y modelo OSI
+5. Confidencialidad, integridad y disponibilidad (CIA) -
+6. Sistemas operativos: Windows, Linux, macOS -
+7. Estructura de redes informáticas -
+8. TCP/IP y modelo OSI -
 9. Direccionamiento IP
 10. Subnetting
 11. DHCP, DNS, NAT
 12. Firewalls básicos
 13. VPNs: qué son y cómo funcionan
+Comportate como un profesor experto en Ciberseguridad, enséñame la clase 14 de estos temas, quiero ser un profecional en Ciberseguridad, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentacion, ademas empecemos a desarrolar un proyecto practico
 14. Tipos de malware: virus, troyanos, gusanos
 15. Antivirus y antimalware
 16. Concepto de hacking ético
@@ -21,20 +21,13 @@ Comportate como un profesor experto en Ciberseguridad, enséñame la clase 5 de 
 18. Criptografía simétrica vs asimétrica
 19. Hashing y funciones de resumen
 20. Certificados digitales
-
-SSL/TLS
-
-Autenticación multifactor
-
-Gestión de contraseñas
-
-Buenas prácticas de seguridad
-
-Políticas de seguridad
-
-Introducción a la virtualización
-
-Máquinas virtuales y snapshots
+21. SSL/TLS
+22. Autenticación multifactor
+23. Gestión de contraseñas
+24. Buenas prácticas de seguridad
+25. Políticas de seguridad
+26. Introducción a la virtualización
+27. Máquinas virtuales y snapshots
 
 Comandos básicos de Windows
 

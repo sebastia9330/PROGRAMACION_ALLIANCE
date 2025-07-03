@@ -58,7 +58,7 @@ BEGIN
             CEIL(EXTRACT(MONTH FROM V_FECHA) / 3),
             TO_CHAR(V_FECHA, 'IW'),  -- Número de semana del año
             TO_CHAR(V_FECHA, 'Day', 'NLS_DATE_LANGUAGE = SPANISH'),
-            TO_CHAR(V_FECHA, 'DDD'),
+            TO_CHAR(V_FECHA, 'DD'),
             CASE WHEN TO_CHAR(V_FECHA, 'D') IN ('1', '7') THEN 'SI' ELSE 'NO' END,
             CASE WHEN MOD(EXTRACT(YEAR FROM V_FECHA), 4) = 0 AND 
                     (MOD(EXTRACT(YEAR FROM V_FECHA), 100) <> 0 OR 

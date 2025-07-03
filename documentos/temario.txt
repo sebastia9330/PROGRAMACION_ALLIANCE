@@ -7,21 +7,21 @@
 7. Tipos de SGBD --
 8. Relacionales --
 9. No Relacionales --
-10. Multidimensional -
-11. Distribuidas -
+10. Multidimensional --
+11. Distribuidas --
 12. Orientadas a objetos -
-13. Herramientas de Análisis de Datos Indispensables para el Data Management -
-14. Bases de Datos Relacionales -
-15. ¿Cuándo usar una base de datos relacional? -
-16. Modelo Entidad-Relación -
-17. Entidades y atributos -
-18. Cardinalidad -
-19. Acciones (Operaciones en relaciones) -
-20. Llave primaria y llave foránea -
-21. Normalización -
-22. 1FN -
-23. 2FN -
-24. 3FN -
+13. Herramientas de Análisis de Datos Indispensables para el Data Management --
+14. Bases de Datos Relacionales --
+15. ¿Cuándo usar una base de datos relacional? --
+16. Modelo Entidad-Relación --
+17. Entidades y atributos --
+18. Cardinalidad --
+19. Acciones (Operaciones en relaciones) --
+20. Llave primaria y llave foránea --
+21. Normalización --
+22. 1FN --
+23. 2FN --
+24. 3FN --
 25. Introducción a SQL -
 26. Definición y propósito de SQL -
 27. Usos de SQL -
@@ -101,7 +101,6 @@ SEGUNDO SEMESTRE______________________________________________________
 98. Importancia de los Data Marts. -
 99. Dimensionalidad: Foco en las dimensiones y hechos. -
 100. Componentes del Proceso Kimball -
-Comportate como un profesor experto en ingenieria de datos, enséñame la clase 151 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 101 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 10 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos
 101. ETL (Extract, Transform, Load): Explicación del proceso de extracción, transformación y carga de datos. -
 102. Modelado Dimensional: Cómo se estructuran los datos en términos de tablas de hechos y dimensiones. -
 103. Data Marts Integrados: Creación de Data Marts que pueden integrarse para formar un almacén de datos completo. -
@@ -117,6 +116,7 @@ Comportate como un profesor experto en ingenieria de datos, enséñame la clase 
 113. Tablas de Dimensiones: Almacenan descripciones contextuales de los hechos (producto, cliente, tiempo, etc.). -
 114. Ejemplo Práctico: Creación de un esquema en estrella para un caso de uso específico (por ejemplo, finanzas). -
 115. Ventajas: Sencillez y rendimiento en consultas. -
+Comportate como un profesor experto en ingenieria de datos, enséñame la clase 165 de estos temas, quiero ser un profecional en ingenieria de datos, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar y proporciona una pregunta sobre la clase 115 para practicar temas antes vistos, ademas proporciona una pregunta sobre la clase 24 para mayor practica se la mejor profesora que puedas, no olvides usar ejemplos practicos, ademas empecemos a desarrolar un proyecto practico pequeño ademas dime algun tema que deba agregar a mi pensum para aprenderlo
 116. Desventajas: Redundancia de datos en las dimensiones. -
 117. Esquema en Copo de Nieve (Snowflake Schema) -
 118. Definición: Expansión del esquema en estrella donde las tablas de dimensiones están normalizadas. -
@@ -152,27 +152,27 @@ Comportate como un profesor experto en ingenieria de datos, enséñame la clase 
 148. mappings conectados (ODI12c) -
 149. joins (ODI12c) -
 150. filtros, VARIABLES (ODI12c) -
-151. Excel a tabla con odi 12c
-152. vista Materializada
-153. power bi
-154. creación de un erp
-155. agentes en odi
-156. pl/sql básico
-157. pl/sql intermedio
-158. pl/sql avanzado
-159. bases de datos de varios clientes (CDB)
-160. base de datos de conexión (PDB)
-161. git
-162. control de versiones
-162. manejo de versiones desde otras ramas
-163. GitHub
-164. repositorio maestro/repositorio de trabajo
+151. Excel a tabla con odi 12c -
+152. vista Materializada -
+153. power bi -
+154. creación de un erp -
+155. agentes en odi -
+156. pl/sql básico  -
+157. pl/sql intermedio -
+158. pl/sql avanzado -
+159. bases de datos de varios clientes (CDB) -
+160. base de datos de conexión (PDB) -
+161. git -
+162. control de versiones -
+162. manejo de versiones desde otras ramas -
+163. GitHub -
+164. repositorio maestro/repositorio de trabajo odi12c -
 165. modelado dimensional, paso a paso
 166. apache nifi
 167. tuberías de datos, rápidas y frías
 168. apache spark, flink, airflow
 169. amazon redshift, snowfleke, amazon athena
-170. tensorflow, scikit learn
+170. tensorflow, scikitlearn
 171. amazon s3, sqs, ec2
 172. digitalocean
 173. Salesforce
@@ -451,3 +451,411 @@ bases dedatos vectoriales
 modelos de lenguaje largo
 error cuadratico medio
 Bases de datos sindicadas
+Notacion big O
+Arbol binario
+hipervisor
+postman
+data mesh
+Integracion de reglas de negocio al modelo dimensional
+Modelo de datos corporativo de alto nivel
+🔧 FUNDAMENTOS DE SERVIDORES (30)
+1. ¿Qué es un servidor?
+2. Tipos de servidores (físicos, virtuales, cloud)
+3. Componentes de hardware del servidor
+4. Tipos de sistemas operativos de servidor
+5. Arquitectura cliente-servidor
+6. Protocolos de red esenciales
+Comportate como un profesor experto en creacion y mantenimiento de servidores, enséñame la clase 7 de estos temas, quiero ser un profecional en creacion y mantenimiento de servidores, ademas proporciona 5 preguntas sobre la clase con el objetivo de retroalimentar, ademas empecemos a desarrolar un proyecto practico
+7. Modelos OSI y TCP/IP
+8. Configuración de BIOS/UEFI para servidores
+9. Sistemas de archivos (ext4, NTFS, ZFS, etc.)
+10. Conceptos de IP, DNS, DHCP, y NAT
+11. Administración de recursos del sistema
+12. Planificación de capacidad
+13. Balanceo de carga
+14. Redundancia y tolerancia a fallos
+15. Virtualización básica
+16. Introducción al almacenamiento (NAS, SAN)
+17. Interfaces de red (NIC bonding)
+18. Uptime y disponibilidad
+19. Temperatura y consumo eléctrico
+20. Rackeo y cableado estructurado
+21. Monitorización básica
+22. Seguridad física de servidores
+23. Roles de servidores (DNS, DHCP, Web, etc.)
+24. Gestión de licencias
+25. Consolidación de servidores
+26. Backup y recuperación
+27. Snapshots y puntos de restauración
+28. Contenedores vs. máquinas virtuales
+29. Cloud computing básico
+30. Tipos de entornos: Dev, Test, Prod
+
+🐧 ADMINISTRACIÓN DE SERVIDORES LINUX (80)
+Distribuciones populares (Ubuntu, CentOS, Debian, etc.)
+
+Instalación de Linux en servidores
+
+Comandos básicos de terminal
+
+Usuarios y permisos (chmod, chown)
+
+Cron y tareas programadas
+
+Estructura del sistema de archivos
+
+Configuración de red
+
+Administrar paquetes (apt, yum, dnf, zypper)
+
+Configuración de SSH
+
+FirewallD / UFW
+
+SELinux / AppArmor
+
+Logs del sistema (/var/log)
+
+Monitorización con top, htop, iostat
+
+Systemd y servicios
+
+Análisis de uso de disco (df, du)
+
+Montaje de volúmenes
+
+RAID por software (mdadm)
+
+LVM (Logical Volume Manager)
+
+Scripts bash
+
+Automatización con Ansible
+
+rsync y copias remotas
+
+Fail2Ban
+
+Apache/Nginx instalación y configuración
+
+FTP/SFTP/SAMBA
+
+Proxy Squid
+
+VPN con OpenVPN/WireGuard
+
+Configuración de DNS interno con BIND
+
+Servidor de correo (Postfix, Dovecot)
+
+MySQL/MariaDB/PostgreSQL básico
+
+Instalación de contenedores Docker
+
+Administración con Cockpit
+
+Certificados SSL con Let’s Encrypt
+
+Servidores Git (Gitea, GitLab)
+
+Configuración de hostname
+
+Seguridad SSH (clave pública/privada)
+
+Gestión de procesos y servicios
+
+Kernel tuning
+
+Copias de seguridad con rsnapshot
+
+Firewall avanzado con iptables/nftables
+
+Configuración de interfaces de red (Netplan)
+
+Comandos para diagnósticos de red
+
+Supervisión con Nagios/Zabbix
+
+Gestión de errores de paquetes
+
+Instalación headless
+
+Clústeres y HA en Linux
+
+Administración de RedHat
+
+Certificación LPIC/CompTIA Linux+
+
+Administración remota
+
+Scripts de mantenimiento automatizados
+
+Seguridad de servicios públicos
+
+🪟 ADMINISTRACIÓN DE SERVIDORES WINDOWS (80)
+Versiones de Windows Server
+
+Instalación de Windows Server
+
+Active Directory
+
+DNS y DHCP en Windows
+
+Controladores de dominio
+
+Usuarios y grupos
+
+Políticas de grupo (GPO)
+
+Permisos NTFS
+
+Roles y características
+
+PowerShell básico
+
+PowerShell avanzado
+
+WMI y administración remota
+
+Hyper-V
+
+WSUS (actualizaciones)
+
+Servidor de archivos
+
+DFS (Distributed File System)
+
+Auditoría de eventos
+
+BitLocker
+
+Windows Defender AV
+
+Servidor RDP (Remote Desktop)
+
+DHCP failover
+
+Licenciamiento CAL
+
+NTFS vs. ReFS
+
+Task Scheduler
+
+Servicios de impresión
+
+Backup y recuperación
+
+Shadow Copies
+
+Clústeres de conmutación por error
+
+Administración con Server Manager
+
+Administración de certificados
+
+DNSSEC
+
+Integración con Azure AD
+
+Creación de scripts con PowerShell
+
+Configuración de NIC teaming
+
+Implementación de roles vía PowerShell
+
+Manejo de discos y particiones
+
+Windows Admin Center
+
+Performance Monitor
+
+Conexión a Linux desde Windows
+
+Sysprep y clonación
+
+WSUS y actualizaciones centralizadas
+
+Migración de AD
+
+Group Policy para seguridad
+
+Configuración de red
+
+Diagnóstico con Event Viewer
+
+Uso de Process Explorer
+
+Auditoría de inicio de sesión
+
+Windows Firewall avanzado
+
+Configuración NTP
+
+Servicios esenciales: WINS, RRAS
+
+Instalación no asistida
+
+Licencias MAK y KMS
+
+Administración de seguridad
+
+User Profile Disks
+
+Configuración de perfiles móviles
+
+Administración de certificados
+
+Servicios de directorio ligero
+
+Administración de sesiones RDS
+
+MCSA/MCE fundamentos
+
+Diagnóstico de hardware
+
+🛠️ ADMINISTRACIÓN DE REDES Y SEGURIDAD (50)
+VLANs y subredes
+
+DHCP estático vs dinámico
+
+Seguridad en redes LAN
+
+Segmentación de red
+
+Port mirroring
+
+WireShark
+
+IDS/IPS
+
+Protocolos seguros (HTTPS, SFTP, SSH)
+
+VPNs site-to-site
+
+Autenticación RADIUS/TACACS
+
+Auditoría de tráfico
+
+Filtrado de contenido
+
+Políticas de acceso
+
+Zonas DMZ
+
+Balanceo con HAProxy
+
+OpenSSL y certificados
+
+HTTPS y TLS
+
+Prevención de ataques DoS
+
+Monitoreo SNMP
+
+Topologías físicas y lógicas
+
+Routers y switches
+
+SSH bastions
+
+Firewalls perimetrales
+
+DNS filtering
+
+Actualizaciones automáticas seguras
+
+Autenticación multifactor (MFA)
+
+Gestión de credenciales
+
+Puertos de red comunes
+
+Zero Trust
+
+Seguridad basada en roles (RBAC)
+
+Logs centralizados
+
+Cifrado de datos
+
+Pruebas de penetración
+
+OpenVAS
+
+Hardening de servidores
+
+☁️ CLOUD, VIRTUALIZACIÓN Y CONTENEDORES (40)
+Conceptos básicos de nube
+
+IaaS vs PaaS vs SaaS
+
+Virtualización con VMware
+
+VirtualBox
+
+KVM
+
+Proxmox VE
+
+Vagrant
+
+Administración de AWS EC2
+
+Google Cloud Compute Engine
+
+Azure Virtual Machines
+
+Crear imágenes base
+
+Instancia spot vs reservada
+
+Almacenamiento S3 y blobs
+
+Redes virtuales en cloud
+
+Dockerfile y contenedores
+
+Docker Compose
+
+Kubernetes
+
+Helm
+
+Rancher
+
+Microservicios en contenedores
+
+CI/CD básico con Jenkins
+
+Escalabilidad automática
+
+Logs con ELK stack
+
+Monitoring cloud con Prometheus
+
+Infraestructura como código (Terraform)
+
+📊 MONITOREO Y MANTENIMIENTO (20)
+Zabbix
+
+Prometheus + Grafana
+
+Nagios
+
+LibreNMS
+
+Uptime Robot
+
+Logs centralizados (Graylog)
+
+Alertas y notificaciones
+
+Scripts de monitoreo
+
+Thresholds de uso
+
+Integración con correo/Slack
+Control y Monitoreo de Procesos ETL
+Slowly Changing Dimensions (SCD)
+
+

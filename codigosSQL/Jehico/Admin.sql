@@ -49,7 +49,7 @@ SNP_SESS_STEP	Pasos individuales dentro de una ejecución de sesión.
 /*######### CNUEVO CONTEXTO EN ODI##############*/  
 NOMBRE : PROD
 CODIGO : PROD
-CONTRASEÑA : Cambio21*
+CONTRASEÑA : Cambio24*   
  
 /*######### CREACION DE BD EN CDB##############*/ 
 CREATE PLUGGABLE DATABASE WORK_ODS
@@ -122,6 +122,9 @@ BEGIN
    END LOOP;
 END;
 /
+
+/*cambiar de contraseña*/
+ALTER USER system IDENTIFIED BY "Cambio24*" CONTAINER=ALL;
 
 
 
